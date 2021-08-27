@@ -1,6 +1,13 @@
 const {gql} = require('apollo-server-express')
 
 const typeDefs = gql`
+    type ProfileData {
+        _id: ID
+        username: String
+        email: String
+        haveCollected: Array
+    }
+
     type HighGrade {
         _id: ID
         gunplaName: String
@@ -62,6 +69,11 @@ const typeDefs = gql`
         getPG: [PerfectGrade]
         getSD: [SDGrade]
         getConverge: [Converge]
+        user: [ProfileData]
+    }
+
+    type Mutation {
+        
     }
 `;
 module.exports = typeDefs;
