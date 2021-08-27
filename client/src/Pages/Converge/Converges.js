@@ -10,12 +10,12 @@ const Converges = ({converges}) => {
   const dispatch = useDispatch()
   const state = useSelector((state) => state);
   const [loadingConverge, setLoadingConverge] = useState(true)
-  const { loading, data } = useQuery(GET_ALL_CONVERGES)
+  const {loading, data} = useQuery(GET_ALL_CONVERGES)
   let {getConverges} = state
   const [AllConverge, setAllConverge] = useState(() => [])
 
   useEffect(() => {
-    if(loading == false && data) {
+    if(loading === false && data) {
       dispatch({type: GET_CONVERGES, payload: data.getConverges})
       if(getConverges.length === 0) {
         setAllConverge(data.getConverges)
@@ -23,22 +23,24 @@ const Converges = ({converges}) => {
         setAllConverge(getConverges)
       }
     }
+    console.log(data)
   }, [loading ,data])
 
   useEffect(() => {
     setTimeout(() => {
       setLoadingConverge(false);
-    }, 500);
+    }, 1000);
   });
 
   if (loading) return <Spinner className="bidSpinner" animation="grow" variant="dark" />;
+
     return (
         <>
           <Container>
               {loadingConverge && <Spinner animation="border" role="status"/>}
-              <Row>
-                {!loadingConverge && !loading && AllConverge && <ConvergeList converges={AllConverge}></ConvergeList>}
-              </Row>
+                <Row>
+                  {!loadingConverge && !loading && <ConvergeList converges={AllConverge} />}
+                </Row>
           </Container>
         </>
     )
