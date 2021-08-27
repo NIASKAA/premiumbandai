@@ -61,6 +61,10 @@ const typeDefs = gql`
         releaseDate: Number
         price: Number
     }
+    type Auth {
+        _id: Int!
+        publicId: String!
+    }
 
     type Query {
         getHG: [HighGrade]
@@ -73,7 +77,8 @@ const typeDefs = gql`
     }
 
     type Mutation {
-        
+        addUser(username: String!, email: String!, password: String!): Auth
+        login(email: String!, password: String): Auth
     }
 `;
 module.exports = typeDefs;
