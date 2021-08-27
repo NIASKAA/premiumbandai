@@ -1,7 +1,9 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { ApolloClient, InMemoryCache, ApolloProvider, createHttpLink, split } from "@apollo/client";
+import { ApolloClient, InMemoryCache, ApolloProvider, createHttpLink} from "@apollo/client";
+import { setContext } from '@apollo/client/link/context';
 import {Navigation, Footer} from './Components';
+import {Home} from './Pages'
 
 const httpLink = createHttpLink({
   uri: "/graphql"
