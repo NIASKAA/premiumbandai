@@ -72,7 +72,7 @@ const typeDefs = gql`
         getMG: [MasterGrade]
         getPG: [PerfectGrade]
         getSD: [SDGrade]
-        getConverge: [Converge]
+        getConverges: [Converge]
         user: [ProfileData]
     }
 

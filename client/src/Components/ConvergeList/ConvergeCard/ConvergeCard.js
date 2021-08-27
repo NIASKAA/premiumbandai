@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Col, Card} from 'react-bootstrap'
 const ConvergeCard = ({converge}) => {
     return (
         <>

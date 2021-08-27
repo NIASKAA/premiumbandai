@@ -18,7 +18,7 @@ const resolvers = {
         getSD: async () => {
             return await SDGrade.find({});
         },
-        getConverge: async () => {
+        getConverges: async () => {
             return await Converge.find({});
         },
         user: async (parent, args, context) => {

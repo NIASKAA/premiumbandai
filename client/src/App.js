@@ -1,9 +1,11 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { ApolloClient, InMemoryCache, ApolloProvider, createHttpLink} from "@apollo/client";
+import { Provider } from "react-redux";
 import { setContext } from '@apollo/client/link/context';
 import {Navigation, Footer} from './Components';
 import {Home, HighGrade, RealGrade, MasterGrade, PerfectGrade, SDGrade, Converges} from './Pages'
+import store from './utils/state/store';
 
 const httpLink = createHttpLink({
   uri: "/graphql"
@@ -27,21 +29,23 @@ function App() {
   
   return (
     <ApolloProvider client={client}>
-      <Router>
-        <>
-          <Navigation />
-            <Switch>
-              <Route exact path="/" component={Home}/>
-              <Route exact path="/hg" component={HighGrade}/>
-              <Route exact path="/mg" component={MasterGrade}/>
-              <Route exact path="/rg" component={RealGrade}/>
-              <Route exact path="/pg" component={PerfectGrade}/>
-              <Route exact path="/sd" component={SDGrade}/>
-              <Route exact path="/converges" component={Converges}/>
-            </Switch>
-          <Footer/>
-        </>
-      </Router>
+      <Provider store={store}>
+        <div className="App">
+          <Router>
+            <Navigation />
+              <Switch>
+                <Route exact path="/" component={Home}/>
+                <Route exact path="/hg" component={HighGrade}/>
+                <Route exact path="/mg" component={MasterGrade}/>
+                <Route exact path="/rg" component={RealGrade}/>
+                <Route exact path="/pg" component={PerfectGrade}/>
+                <Route exact path="/sd" component={SDGrade}/>
+                <Route exact path="/converges" component={Converges}/>
+              </Switch>
+            <Footer/>
+          </Router>
+        </div>
+      </Provider>
     </ApolloProvider>
   );
 }
