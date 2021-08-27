@@ -24,6 +24,7 @@ function App() {
     link: getToken.concat(httpLink),
     cache: new InMemoryCache(),
   });
+  
   return (
     <ApolloProvider client={client}>
       <Router>
