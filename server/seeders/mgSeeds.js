@@ -10,7 +10,7 @@ const mgSeeds = [
     },
 ];
 
-const mgSeeds = async () => {
+const mgSeed = async () => {
     try {
         await MasterGrade.deleteMany({});
         const masterGrade = await MasterGrade.insertMany(mgSeeds)
@@ -21,3 +21,5 @@ const mgSeeds = async () => {
         return;
     }
 }
+
+module.exports = {mgSeed};

@@ -10,7 +10,7 @@ const convergeSeeds = [
     },
 ];
 
-const convergeSeeds = async () => {
+const convergeSeed = async () => {
     try {
         await Converge.deleteMany({});
         const converge = await Converge.insertMany(convergeSeeds);
@@ -21,3 +21,5 @@ const convergeSeeds = async () => {
         return;
     }
 }
+
+module.exports = {convergeSeed};

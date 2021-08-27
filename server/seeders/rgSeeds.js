@@ -10,7 +10,7 @@ const rgSeeds = [
     },
 ];
 
-const rgSeeds = async () => {
+const rgSeed = async () => {
     try {
         await RealGrade.deleteMany({});
         const realGrade = await RealGrade.insertMany(rgSeeds)
@@ -21,3 +21,5 @@ const rgSeeds = async () => {
         return;
     }
 }
+
+module.exports = {rgSeed};

@@ -5,7 +5,7 @@ const typeDefs = gql`
         _id: ID
         username: String
         email: String
-        haveCollected: Array
+        haveCollected: String
     }
 
     type HighGrade {
@@ -13,8 +13,8 @@ const typeDefs = gql`
         gunplaName: String
         image: String
         series: String
-        releaseDate: Number
-        price: Number
+        releaseDate: Float
+        price: Float
     }
 
     type RealGrade {
@@ -22,8 +22,8 @@ const typeDefs = gql`
         gunplaName: String
         image: String
         series: String
-        releaseDate: Number
-        price: Number
+        releaseDate: Float
+        price: Float
     }
 
     type MasterGrade {
@@ -31,8 +31,8 @@ const typeDefs = gql`
         gunplaName: String
         image: String
         series: String
-        releaseDate: Number
-        price: Number
+        releaseDate: Float
+        price: Float
     }
 
     type PerfectGrade {
@@ -40,8 +40,8 @@ const typeDefs = gql`
         gunplaName: String
         image: String
         series: String
-        releaseDate: Number
-        price: Number
+        releaseDate: Float
+        price: Float
     }
 
     type SDGrade {
@@ -49,8 +49,8 @@ const typeDefs = gql`
         gunplaName: String
         image: String
         series: String
-        releaseDate: Number
-        price: Number
+        releaseDate: Float
+        price: Float
     }
 
     type Converge {
@@ -58,8 +58,8 @@ const typeDefs = gql`
         gunplaName: String
         image: String
         series: String
-        releaseDate: Number
-        price: Number
+        releaseDate: Float
+        price: Float
     }
     type Auth {
         _id: Int!

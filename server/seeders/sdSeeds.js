@@ -10,7 +10,7 @@ const sdSeeds = [
     },
 ];
 
-const sdSeeds = async () => {
+const sdSeed = async () => {
     try {
         await SDGrade.deleteMany({});
         const sdGrade = await SDGrade.insertMany(sdSeeds)
@@ -21,3 +21,5 @@ const sdSeeds = async () => {
         return;
     }
 }
+
+module.exports = {sdSeed};

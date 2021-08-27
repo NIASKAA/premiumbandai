@@ -10,7 +10,7 @@ const hgSeeds = [
     },
 ];
 
-const hgSeeds = async () => {
+const hgSeed = async () => {
     try {
         await HighGrade.deleteMany({});
         const highGrade = await HighGrade.insertMany(hgSeeds)
@@ -21,3 +21,5 @@ const hgSeeds = async () => {
         return;
     }
 }
+
+module.exports = {hgSeed};

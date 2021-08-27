@@ -10,7 +10,7 @@ const pgSeeds = [
     },
 ];
 
-const pgSeeds = async () => {
+const pgSeed = async () => {
     try {
         await PerfectGrade.deleteMany({});
         const perfectGrade = await PerfectGrade.insertMany(pgSeeds)
@@ -21,3 +21,5 @@ const pgSeeds = async () => {
         return;
     }
 }
+
+module.exports = {pgSeed};

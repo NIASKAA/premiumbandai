@@ -1,17 +1,19 @@
 const db = require('../config/connection')
-const {convergeSeeds} = require('./convergeSeeds')
-const {hgSeeds} = require('./hgSeeds')
-const {mgSeeds} = require('./mgSeeds')
-const {pgSeeds} = require('./pgSeeds')
-const {rgSeeds} = require('./rgSeeds')
+const {convergeSeed} = require('./convergeSeeds')
+const {hgSeed} = require('./hgSeeds')
+const {mgSeed} = require('./mgSeeds')
+const {pgSeed} = require('./pgSeeds')
+const {rgSeed} = require('./rgSeeds')
+const {sdSeed} = require('./sdSeeds')
 
 db.once("open", async () => {
     try {
-        await convergeSeeds();
-        await hgSeeds();
-        await mgSeeds();
-        await pgSeeds();
-        await rgSeeds();
+        await convergeSeed();
+        await hgSeed();
+        await mgSeed();
+        await pgSeed();
+        await rgSeed();
+        await sdSeed();
     } catch (error) {
         console.log(error);
         process.exit(1);
