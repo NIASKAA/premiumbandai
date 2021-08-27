@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { ApolloClient, InMemoryCache, ApolloProvider, createHttpLink} from "@apollo/client";
 import { setContext } from '@apollo/client/link/context';
 import {Navigation, Footer} from './Components';
-import {Home} from './Pages'
+import {Home, HighGrade, RealGrade, MasterGrade, PerfectGrade, SDGrade, Converges} from './Pages'
 
 const httpLink = createHttpLink({
   uri: "/graphql"
@@ -31,6 +31,12 @@ function App() {
           <Navigation />
             <Switch>
               <Route exact path="/" component={Home}/>
+              <Route exact path="/hg" component={HighGrade}/>
+              <Route exact path="/mg" component={MasterGrade}/>
+              <Route exact path="/rg" component={RealGrade}/>
+              <Route exact path="/pg" component={PerfectGrade}/>
+              <Route exact path="/sd" component={SDGrade}/>
+              <Route exact path="/converges" component={Converges}/>
             </Switch>
           <Footer/>
         </>

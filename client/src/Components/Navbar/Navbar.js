@@ -23,6 +23,8 @@ const Navigation = () => {
                                     <NavDropdown.Item as={Link} to={'/mg'}>Master Grade</NavDropdown.Item>
                                     <NavDropdown.Divider />
                                     <NavDropdown.Item as={Link} to={'/pg'}>Perfect Grade</NavDropdown.Item>
+                                    <NavDropdown.Divider />
+                                    <NavDropdown.Item as={Link} to={'/converges'}>Converges</NavDropdown.Item>
                                 </NavDropdown>
                                <Nav.Link exact activeClassName="active" className="navBtns" as={Link} to={'/login'}>Login</Nav.Link>
                                <Nav.Link exact activeClassName="active" className="navBtns" as={Link} to={'/profile'}>Profile</Nav.Link>
