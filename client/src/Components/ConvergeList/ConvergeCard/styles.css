@@ -1,0 +1,51 @@
+.infoCard {
+    width: 18rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-size: cover;
+    transition: transform 500ms ease;
+}
+
+.infoCard:hover {
+    transform: scale(1.05);
+}
+
+.infoContent {
+    --padding: 1.5rem;
+    padding: var(--padding);
+    background: linear-gradient(
+        hsl( 0 0% 0% / 0),
+        hsl(0 0% 0% / 0.2),
+        hsl(0 0% 0% / 0.1)
+    );
+    transform: translateY(65%);
+    transition: transform 500ms ease;
+}
+
+.infoCard:hover .infoContent {
+    transform: translateY(0);
+}
+
+.infoText {
+    position: relative;
+    font-size: 15px;
+}
+
+.infoText::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    bottom: -2px;
+    left: calc(var(--padding) * -1);
+    width: calc(100% +var(--padding));
+    transform: scaleX(0);
+    transform: transform 500ms ease;
+}
+
+.infoCard:hover .infoText::after {
+    transform: scaleX(2);
+}
+
+.infoBody {
+    margin: 0;
+    text-align: left;
+}
