@@ -8,6 +8,13 @@ const convergeSeeds = [
         releaseDate: 11-2021,
         price: 4500
     },
+    {
+        gunplaName: "Freedom Gundam CORE Ver.GCP",
+        image: 'https://res.cloudinary.com/ddtqwizaf/image/upload/v1630175544/freedom_tnfb8e.jpg',
+        series: 'Gundam Seed',
+        releaseDate: 10-2021,
+        price: 2100
+    }
 ];
 
 const convergeSeed = async () => {

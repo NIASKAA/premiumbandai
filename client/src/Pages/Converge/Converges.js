@@ -1,14 +1,14 @@
 import React, {useState, useEffect} from 'react'
-import {useDispatch, useSelector} from "react-redux";
-import {Row, Container, Spinner} from "react-bootstrap";
-import {useQuery} from "@apollo/client";
+import {useDispatch, useSelector} from "react-redux"
+import {Row, Container, Spinner} from "react-bootstrap"
+import {useQuery} from "@apollo/client"
 import {GET_ALL_CONVERGES} from '../../utils/queries'
 import {GET_CONVERGES} from '../../utils/state/actions'
-import ConvergeList from '../../Components/ConvergeList/ConvergeList'
+import ConvergeList from '../../Components'
 
 const Converges = ({converges}) => {
   const dispatch = useDispatch()
-  const state = useSelector((state) => state);
+  const state = useSelector((state) => state)
   const [loadingConverge, setLoadingConverge] = useState(true)
   const {loading, data} = useQuery(GET_ALL_CONVERGES)
   let {getConverges} = state
@@ -32,7 +32,7 @@ const Converges = ({converges}) => {
     }, 1000);
   });
 
-  if (loading) return <Spinner className="bidSpinner" animation="grow" variant="dark" />;
+  if (loading) return <Spinner className="spinner" animation="grow" variant="dark" />;
 
     return (
         <>
