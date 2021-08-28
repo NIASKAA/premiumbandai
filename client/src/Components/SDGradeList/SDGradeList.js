@@ -1,10 +1,13 @@
 import React from 'react'
+import SDGradeCard from './SDGradeCard/SDGradeCard'
 
-const SDGradeList = () => {
+const SDGradeList = ({sdGrades}) => {
     return (
-        <div>
-            
-        </div>
+        <>
+            {sdGrades.map((sdGrade) => (
+                <SDGradeCard sdGrade={sdGrade} key={sdGrade.id}/>
+            ))}
+        </>
     )
 }
 

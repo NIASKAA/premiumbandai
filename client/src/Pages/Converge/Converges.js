@@ -6,7 +6,7 @@ import {GET_ALL_CONVERGES} from '../../utils/queries'
 import {GET_CONVERGES} from '../../utils/state/actions'
 import ConvergeList from '../../Components/ConvergeList/ConvergeList'
 
-const Converges = ({converges}) => {
+const Converges = () => {
   const dispatch = useDispatch()
   const state = useSelector((state) => state)
   const [loadingConverge, setLoadingConverge] = useState(true)
