@@ -1,10 +1,13 @@
 import React from 'react'
+import RealGradeCard from './RealGradeCard/RealGradeCard'
 
-const RealGradeList = () => {
+const RealGradeList = ({realGrades}) => {
     return (
-        <div>
-            
-        </div>
+        <>
+            {realGrades.map((realGrade) => (
+                <RealGradeCard realGrade={realGrade} key={realGrade.id}/>
+            ))}
+        </>
     )
 }
 
