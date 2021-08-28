@@ -6,7 +6,7 @@ const HighGradeList = ({highGrades}) => {
         <>
             {highGrades.map((highGrade) => (
                 <HighGradeCard highGrade={highGrade} key={highGrade.id}/>
-        ))}
+            ))}
         </>
     )
 }

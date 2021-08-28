@@ -4,7 +4,7 @@ import {Row, Container, Spinner} from "react-bootstrap"
 import {useQuery} from "@apollo/client"
 import {GET_ALL_MG} from '../../utils/queries'
 import {GET_MGS} from '../../utils/state/actions'
-import MasterGradeList from '../../Components'
+import MasterGradeList from '../../Components/MasterGradeList/MasterGradeList'
 
 
 const MasterGrade = () => {

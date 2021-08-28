@@ -4,7 +4,7 @@ import {Row, Container, Spinner} from "react-bootstrap"
 import {useQuery} from "@apollo/client"
 import {GET_ALL_CONVERGES} from '../../utils/queries'
 import {GET_CONVERGES} from '../../utils/state/actions'
-import ConvergeList from '../../Components'
+import ConvergeList from '../../Components/ConvergeList/ConvergeList'
 
 const Converges = ({converges}) => {
   const dispatch = useDispatch()

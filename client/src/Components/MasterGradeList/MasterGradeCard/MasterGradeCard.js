@@ -6,12 +6,12 @@ const MasterGradeCard = ({masterGrade}) => {
         <>
             <Col>
                 <Card className="infoCard">
-                    <Card.Img src={} style={{width: '17.9rem'}}/>
+                    <Card.Img src={masterGrade.image} style={{width: '17.9rem'}}/>
                     <Card.Body>
-                        <h3 className="infoText">{""}</h3>
-                        <p className="infoBody">Series: {""}</p>
-                        <p className="infoBody">Release Date: {""}</p>
-                        <p className="infoBody">Price: {""} Yen</p>
+                        <h3 className="infoText">{masterGrade.gunplaName}</h3>
+                        <p className="infoBody">Series: {masterGrade.series}</p>
+                        <p className="infoBody">Release Date: {masterGrade.releaseDate}</p>
+                        <p className="infoBody">Price: {masterGrade.price} Yen</p>
                     </Card.Body>
                 </Card>
             </Col>
