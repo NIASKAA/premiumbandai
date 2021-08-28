@@ -10,7 +10,7 @@ const RealGrade = () => {
     const dispatch = useDispatch()
     const state = useSelector((state) => state)
     const [loadRealGrade, setLoadRealGrade] = useState(true)
-    const [loading ,data] = useQuery(GET_ALL_RG)
+    const {loading, data} = useQuery(GET_ALL_RG)
     let {getRG} = state
     const [AllRealGrade, setAllRealGrade] = useState(() => [])
 

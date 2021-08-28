@@ -8,7 +8,7 @@ const SDGradeCard = ({sdGrade}) => {
             <Col>
                 <Card className="infoCard">
                     <Card.Img src={sdGrade.image} style={{width: '17.9rem'}} />
-                    <Card.Body>
+                    <Card.Body className="infoContent">
                         <h3 className="infoText">{sdGrade.gunplaName}</h3>
                         <p className="infoBody">Series: {sdGrade.series}</p>
                         <p className="infoBody">Release Date: {sdGrade.releaseDate}</p>
