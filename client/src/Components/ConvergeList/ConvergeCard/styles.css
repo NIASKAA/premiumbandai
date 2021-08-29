@@ -12,6 +12,7 @@
 
 .infoContent {
     --padding: 1.5em;
+    max-height: 20ch !important;
     padding: var(--padding);
     background: linear-gradient(
         hsl( 0 0% 0% / 0),
@@ -22,24 +23,14 @@
     transition: transform 500ms ease;
 }
 
-.infoText::after {
-    content: '';
-    position: absolute;
-    height: 4px;
-    left: calc(var(--padding) * -1);
-    bottom: -2px;
-    width: calc(100% +var(--padding));
-    transform: scaleX(0);
-    transform: transform 500ms ease;
-}
-
 .infoCard:hover .infoContent {
     transform: translateY(0);
+    margin: 0;
 }
 
 .infoText {
     position: relative;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .infoCard:hover .infoText::after {

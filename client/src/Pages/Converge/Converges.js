@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import {useDispatch, useSelector} from "react-redux"
-import {Row, Container, Spinner} from "react-bootstrap"
+import {Row, Container, Spinner, Grid} from "react-bootstrap"
 import {useQuery} from "@apollo/client"
 import {GET_ALL_CONVERGES} from '../../utils/queries'
 import {GET_CONVERGES} from '../../utils/state/actions'

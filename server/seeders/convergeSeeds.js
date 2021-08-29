@@ -2,7 +2,7 @@ const {Converge} = require('../models')
 
 const convergeSeeds = [
     {
-        gunplaName: "Gundam Dust Anchor and Gundam Phantom V2 Set",
+        gunplaName: "Gundam Anchor and Phantom Set",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1629989235/01_bzq8x1.jpg",
         series: "Gundam Dust",
         releaseDate: 11-2021,
@@ -14,6 +14,27 @@ const convergeSeeds = [
         series: 'Gundam Seed',
         releaseDate: 10-2021,
         price: 2100
+    },
+    {
+        gunplaName: "Pegasus-Class Ship White Base",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630246466/dffd_zyhuzi.jpg",
+        series: 'Mobile Suit Gundam',
+        releaseDate: 08-2021,
+        price: 4500
+    },
+    {
+        gunplaName: "U.C. Set 10th Anniversary",
+        image: 'https://res.cloudinary.com/ddtqwizaf/image/upload/v1630246671/fdffd_jcvt02.jpg',
+        series: 'All',
+        releaseDate: 05-2021,
+        price: 5400
+    },
+    {
+        gunplaName: 'α/Azir Optional Parts',
+        image: 'https://res.cloudinary.com/ddtqwizaf/image/upload/v1630246864/vd_pd0i4a.jpg',
+        series: 'Char CounterAttack',
+        releaseDate: 02-2021,
+        price: 2300
     }
 ];
 
