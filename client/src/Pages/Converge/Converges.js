@@ -5,6 +5,7 @@ import {useQuery} from "@apollo/client"
 import {GET_ALL_CONVERGES} from '../../utils/queries'
 import {GET_CONVERGES} from '../../utils/state/actions'
 import ConvergeList from '../../Components/ConvergeList/ConvergeList'
+import './styles.css'
 
 const Converges = () => {
   const dispatch = useDispatch()
@@ -38,9 +39,9 @@ const Converges = () => {
         <>
           <Container>
               {loadingConverge && <Spinner animation="border" role="status"/>}
-                <Row>
+                <div className="row">
                   {!loadingConverge && !loading && <ConvergeList converges={AllConverge} />}
-                </Row>
+                </div>
           </Container>
         </>
     )

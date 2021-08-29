@@ -4,10 +4,9 @@
     background-size: cover;
     transition: transform 500ms ease;
     overflow: hidden;
-}
-
-.infoCard:hover {
-    transform: scale(1.05);
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+    margin-bottom: 6% !important;
 }
 
 .infoContent {
@@ -40,4 +39,11 @@
 .infoBody {
     margin: 0;
     text-align: left;
+}
+
+.column {
+    padding-right: 0% !important;
+    padding-left: 0% !important;
+    margin-left: 0 !important;
+    margin-right: 0% !important;
 }
