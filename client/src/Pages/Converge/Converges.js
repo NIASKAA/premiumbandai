@@ -5,6 +5,7 @@ import {useQuery} from "@apollo/client"
 import {GET_ALL_CONVERGES} from '../../utils/queries'
 import {GET_CONVERGES} from '../../utils/state/actions'
 import ConvergeList from '../../Components/ConvergeList/ConvergeList'
+import Pagination from '../../Components/Pagination/Pagination'
 import './styles.css'
 
 const Converges = () => {
@@ -14,6 +15,8 @@ const Converges = () => {
   const {loading, data} = useQuery(GET_ALL_CONVERGES)
   let {getConverges} = state
   const [AllConverge, setAllConverge] = useState(() => [])
+  const [currentPage, setCurrentPage] = useState(1)
+  const [itemsPerPage] = useState(16)
 
   useEffect(() => {
     if(loading === false && data) {
@@ -26,6 +29,12 @@ const Converges = () => {
     }
     console.log(data)
   }, [loading ,data])
+
+  const indexOfLastItem = currentPage * itemsPerPage
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage
+  const currentItems = AllConverge.slice(indexOfFirstItem, indexOfLastItem)
+
+  const paginate = pageNumber => setCurrentPage(pageNumber)
 
   useEffect(() => {
     setTimeout(() => {
@@ -40,9 +49,14 @@ const Converges = () => {
           <Container>
               {loadingConverge && <Spinner animation="border" role="status"/>}
                 <div className="row">
-                  {!loadingConverge && !loading && <ConvergeList converges={AllConverge} />}
+                  {!loadingConverge && !loading && <ConvergeList converges={currentItems} />}
                 </div>
           </Container>
+          <Pagination
+            itemsPerPage={itemsPerPage}
+            totalItems={AllConverge.length}
+            paginate={paginate}
+          />
         </>
     )
 }
