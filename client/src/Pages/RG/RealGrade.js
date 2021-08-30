@@ -5,6 +5,7 @@ import {useQuery} from "@apollo/client"
 import {GET_ALL_RG} from '../../utils/queries'
 import {GET_RGS} from '../../utils/state/actions'
 import RealGradeList from '../../Components/RealGradeList/RealGradeList'
+import Pagination from '../../Components/Pagination/Pagination'
 
 const RealGrade = () => {
     const dispatch = useDispatch()
@@ -13,6 +14,8 @@ const RealGrade = () => {
     const {loading, data} = useQuery(GET_ALL_RG)
     let {getRG} = state
     const [AllRealGrade, setAllRealGrade] = useState(() => [])
+    const [currentPage, setCurrentPage] = useState(1)
+    const [itemsPerPage] = useState(16)
 
     useEffect(() => {
         if(loading === false && data) {
@@ -25,6 +28,12 @@ const RealGrade = () => {
         }
     }, [loading, data])
 
+    const indexOfLastItem = currentPage * itemsPerPage
+    const indexOfFirstItem = indexOfLastItem - itemsPerPage
+    const currentItems = AllRealGrade.slice(indexOfFirstItem, indexOfLastItem)
+
+    const paginate = pageNumber => setCurrentPage(pageNumber)
+    
     useEffect(() => {
         setTimeout(() => {
             setLoadRealGrade(false)
@@ -38,9 +47,14 @@ const RealGrade = () => {
             <Container>
                 {loadRealGrade && <Spinner animation="border" role="status"/>}
                 <Row>
-                  {!loadRealGrade && !loading && <RealGradeList realGrades={AllRealGrade} />}
+                  {!loadRealGrade && !loading && <RealGradeList realGrades={currentItems} />}
                 </Row>
             </Container>
+            <Pagination
+                itemsPerPage={itemsPerPage}
+                totalItems={AllRealGrade.length}
+                paginate={paginate}
+            />
         </>
     )
 }
