@@ -5,7 +5,7 @@ import {useQuery} from "@apollo/client"
 import {GET_ALL_MG} from '../../utils/queries'
 import {GET_MGS} from '../../utils/state/actions'
 import MasterGradeList from '../../Components/MasterGradeList/MasterGradeList'
-
+import Pagination from '../../Components/Pagination/Pagination'
 
 const MasterGrade = () => {
     const dispatch = useDispatch()
@@ -14,6 +14,8 @@ const MasterGrade = () => {
     const {loading, data} = useQuery(GET_ALL_MG)
     let {getMG} = state
     const [AllMasterGrade, setAllMasterGrade] = useState(() => [])
+    const [currentPage, setCurrentPage] = useState(1)
+    const [itemsPerPage] = useState(16)
 
     useEffect(() => {
         if(loading === false && data) {
@@ -26,6 +28,12 @@ const MasterGrade = () => {
         }
     }, [loading, data])
 
+    const indexOfLastItem = currentPage * itemsPerPage
+    const indexOfFirstItem = indexOfLastItem - itemsPerPage
+    const currentItems = AllMasterGrade.slice(indexOfFirstItem, indexOfLastItem)
+
+    const paginate = pageNumber => setCurrentPage(pageNumber)
+    
     useEffect(() => {
         setTimeout(() => {
             setLoadMasterGrade(false)
@@ -39,9 +47,14 @@ const MasterGrade = () => {
             <Container>
                 {loadMasterGrade && <Spinner animation="border" role="status"/>}
                 <Row>
-                    {!loadMasterGrade && !loading && <MasterGradeList masterGrades={AllMasterGrade}/>}
-                </Row>
+                    {!loadMasterGrade && !loading && <MasterGradeList masterGrades={currentItems}/>}
+                </Row> 
             </Container>
+            <Pagination 
+                itemsPerPage={itemsPerPage}
+                totalItems={AllMasterGrade.length}
+                paginate={paginate}
+            />
         </>
     )
 }

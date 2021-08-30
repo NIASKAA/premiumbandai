@@ -5,6 +5,7 @@ import {Row, Container, Spinner} from 'react-bootstrap'
 import {GET_ALL_HG} from '../../utils/queries'
 import {GET_HGS} from '../../utils/state/actions'
 import HighGradeList from '../../Components/HighGradeList/HighGradeList'
+import Pagination from '../../Components/Pagination/Pagination'
 
 const HighGrade = () => {
     const dispatch = useDispatch()
@@ -13,6 +14,8 @@ const HighGrade = () => {
     const {loading, data} = useQuery(GET_ALL_HG)
     let {getHG} = state
     const [AllHighGrade, setAllHighGrade] = useState(() => [])
+    const [currentPage, setCurrentPage] = useState(1)
+    const [itemsPerPage] = useState(16)
 
     useEffect(() => {
         if(loading === false && data) {
@@ -25,6 +28,12 @@ const HighGrade = () => {
         }
         console.log(data)
     }, [loading, data])
+
+    const indexOfLastItem = currentPage * itemsPerPage
+    const indexOfFirstItem = indexOfLastItem - itemsPerPage
+    const currentItems = AllHighGrade.slice(indexOfFirstItem, indexOfLastItem)
+    
+    const paginate = pageNumber => setCurrentPage(pageNumber)
 
     useEffect(() => {
         setTimeout(() => {
@@ -39,9 +48,14 @@ const HighGrade = () => {
             <Container>
                 {loading && <Spinner animation="border" role="status"/>}
                 <Row>
-                    {!loadHighGrades && !loading && <HighGradeList highGrades={AllHighGrade}/>}
+                    {!loadHighGrades && !loading && <HighGradeList highGrades={currentItems}/>}
                 </Row>
             </Container>
+            <Pagination
+                itemsPerPage={itemsPerPage}
+                totalItems={AllHighGrade.length}
+                paginate={paginate}
+            />
         </>
     )
 }
