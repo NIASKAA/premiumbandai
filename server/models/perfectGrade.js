@@ -8,5 +8,5 @@ const perfectGrade = new mongoose.Schema({
     price: {type: Number}
 });
 
-const model = mongoose.model("PerfectGrade", perfectGrade);
-module.exports = {model, perfectGrade};
+const PerfectGrade = mongoose.model("PerfectGrade", perfectGrade);
+module.exports = {PerfectGrade, perfectGrade};

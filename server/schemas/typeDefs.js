@@ -92,8 +92,8 @@ const typeDefs = gql`
     }
 
     type Auth {
-        _id: Int!
-        publicId: String!
+      token: ID
+      user: ProfileData
     }
 
     type Query {

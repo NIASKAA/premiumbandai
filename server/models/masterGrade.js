@@ -8,5 +8,5 @@ const masterGrade = new mongoose.Schema({
     price: {type: Number}
 });
 
-const model = mongoose.model("MasterGrade", masterGrade);
-module.exports = {model, masterGrade};
+const MasterGrade = mongoose.model("MasterGrade", masterGrade);
+module.exports = {MasterGrade, masterGrade};

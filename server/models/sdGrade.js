@@ -8,5 +8,5 @@ const sdGrade = new mongoose.Schema({
     price: {type: Number}
 });
 
-const model = mongoose.model("SDGrade", sdGrade);
-module.exports = {model, sdGrade};
+const SDGrade = mongoose.model("SDGrade", sdGrade);
+module.exports = {SDGrade, sdGrade};

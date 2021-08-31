@@ -8,5 +8,5 @@ const converge = new mongoose.Schema({
     price: {type: Number}
 });
 
-const model = mongoose.model("Converge", converge);
-module.exports = {model, converge};
+const Converge = mongoose.model("Converge", converge);
+module.exports = {Converge, converge};

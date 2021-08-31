@@ -8,5 +8,5 @@ const realGrade = new mongoose.Schema({
     price: {type: Number}
 });
 
-const model = mongoose.model("RealGrade", realGrade);
-module.exports = {model, realGrade};
+const RealGrade = mongoose.model("RealGrade", realGrade);
+module.exports = {RealGrade, realGrade};
