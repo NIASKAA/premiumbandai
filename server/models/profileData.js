@@ -1,11 +1,22 @@
 const mongoose = require('mongoose')
 const bcrypt = require('bcrypt')
+const {converge} = require('./converge')
+const {highGrade} = require('./highGrade')
+const {realGrade} = require('./realGrade')
+const {masterGrade} = require('./masterGrade')
+const {perfectGrade} = require('./perfectGrade')
+const {sdGrade} = require('./sdGrade')
 
 const profileSchema = new mongoose.Schema({
     username: {type: String, require: true, unique: true},
     password: {type: String, required: true},
     email: {type: String, unique: true, required: true, match: [/.+@.+\..+/, 'Must use a valid email address']},
-    haveCollected: {type: Array}
+    gotConverges: [converge],
+    gotHighGrades: [highGrade],
+    gotRealGrades: [realGrade],
+    gotMasterGrades: [masterGrade],
+    gotPerfectGrades: [perfectGrade],
+    gotSDGrades: [sdGrade]
 });
 
 profileSchema.pre('save', async function(next) {

@@ -5,7 +5,12 @@ const typeDefs = gql`
         _id: ID
         username: String
         email: String
-        haveCollected: String
+        gotConverges: [Converge]
+        gotHighGrades: [HighGrade]
+        gotRealGrades: [RealGrade]
+        gotMasterGrades: [MasterGrade]
+        gotPerfectGrades: [PerfectGrade]
+        gotSDGrades: [SDGrade]
     }
 
     type HighGrade {
@@ -61,6 +66,31 @@ const typeDefs = gql`
         releaseDate: Float
         price: Float
     }
+
+    input GetConverge {
+        gunplaName: String!
+    }
+
+    input GetHighGrade {
+        gunplaName: String!
+    }
+
+    input GetRealGrade {
+        gunplaName: String!
+    }
+
+    input GetMasterGrade {
+        gunplaName: String!
+    }
+
+    input GetPerfectGrade {
+        gunplaName: String!
+    }
+
+    input GetSDGrade {
+        gunplaName: String!
+    }
+
     type Auth {
         _id: Int!
         publicId: String!
@@ -79,6 +109,12 @@ const typeDefs = gql`
     type Mutation {
         addUser(username: String!, email: String!, password: String!): Auth
         login(email: String!, password: String): Auth
+        saveConverge(input: GetConverge!): ProfileData
+        saveHighGrade(input: GetHighGrade!): ProfileData
+        saveRealGrade(input: GetRealGrade!): ProfileData
+        saveMasterGrade(input: GetMasterGrade!): ProfileData
+        savePerfectGrade(input: GetPerfectGrade!): ProfileData
+        saveSDGrade(input: GetSDGrade!): ProfileData
     }
 `;
 module.exports = typeDefs;

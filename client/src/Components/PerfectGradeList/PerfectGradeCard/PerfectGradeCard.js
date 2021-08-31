@@ -8,7 +8,7 @@ const PerfectGradeCard = ({perfectGrade}) => {
             <Col>
                 <CardGroup>
                     <Card className="infoCard">
-                        <Card.Img src={perfectGrade.image} style={{width: '17.9rem'}} />
+                        <Card.Img src={perfectGrade.image} style={{width: '17.9rem', height: "17rem"}} />
                         <Card.Body className="infoContent">
                             <h3 className="infoText">{perfectGrade.gunplaName}</h3>
                             <p className="infoBody">Series: {perfectGrade.series}</p>

@@ -52,6 +52,66 @@ const resolvers = {
             }
             const token = signToken(user)
             return {token, user}
+        },
+        saveConverge: async (parent, {input}, context) => {
+            const converge = {...input}
+            if(context.user) {
+                return ProfileData.findByIdAndUpdate(
+                    {_id: context.user.id},
+                    {$push: {gotConverges: converge}},
+                    {new: true}
+                )
+            }
+        },
+        saveHighGrade: async (parent, {input}, context) => {
+            const highGrade = {...input}
+            if(context.user) {
+                return ProfileData.findByIdAndUpdate(
+                    {_id: context.user.id},
+                    {$push: {gotHighGrades: highGrade}},
+                    {new: true}
+                )
+             }
+        },
+        saveRealGrade: async (parent, {input}, context) => {
+            const realGrade = {...input}
+            if(context.user) {
+                return ProfileData.findByIdAndUpdate(
+                    {_id: context.user.id},
+                    {$push: {gotRealGrades: realGrade}},
+                    {new: true}
+                )
+            }
+        },
+        saveMasterGrade: async (parent, {input}, context) => {
+            const masterGrade = {...input}
+            if(context.user) {
+                return ProfileData.findByIdAndUpdate(
+                    {_id: context.user.id},
+                    {$push: {gotMasterGrades: masterGrade}},
+                    {new: true}
+                )
+            }
+        },
+        savePerfectGrade: async (parent, {input}, context) => {
+            const perfectGrade = {...input}
+            if(context.user) {
+                return ProfileData.findByIdAndUpdate(
+                    {_id: context.user.id},
+                    {$push: {gotPerfectGrades: perfectGrade}},
+                    {new: true}
+                )
+            }
+        },
+        saveSDGrade: async (parent, {input}, context) => {
+            const sdGrade = {...input}
+            if(context.user) {
+                return ProfileData.findByIdAndUpdate(
+                    {_id: context.user.id},
+                    {$push: {gotSDGrades: sdGrade}},
+                    {new: true}
+                )
+            }
         }
     }
 }

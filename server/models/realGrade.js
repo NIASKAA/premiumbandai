@@ -9,4 +9,4 @@ const realGrade = new mongoose.Schema({
 });
 
 const model = mongoose.model("RealGrade", realGrade);
-module.exports = model;
+module.exports = {model, realGrade};

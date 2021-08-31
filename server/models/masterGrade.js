@@ -9,4 +9,4 @@ const masterGrade = new mongoose.Schema({
 });
 
 const model = mongoose.model("MasterGrade", masterGrade);
-module.exports = model;
+module.exports = {model, masterGrade};

@@ -9,4 +9,4 @@ const perfectGrade = new mongoose.Schema({
 });
 
 const model = mongoose.model("PerfectGrade", perfectGrade);
-module.exports = model;
+module.exports = {model, perfectGrade};

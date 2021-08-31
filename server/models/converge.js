@@ -9,4 +9,4 @@ const converge = new mongoose.Schema({
 });
 
 const model = mongoose.model("Converge", converge);
-module.exports = model;
+module.exports = {model, converge};

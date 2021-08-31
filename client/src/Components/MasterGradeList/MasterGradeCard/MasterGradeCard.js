@@ -8,7 +8,7 @@ const MasterGradeCard = ({masterGrade}) => {
             <Col>
                 <CardGroup>
                     <Card className="infoCard">
-                        <Card.Img src={masterGrade.image} style={{width: '17.9rem'}}/>
+                        <Card.Img src={masterGrade.image} style={{width: '17.9rem', height: "17rem"}}/>
                         <Card.Body className="infoContent">
                             <h3 className="infoText">{masterGrade.gunplaName}</h3>
                             <p className="infoBody">Series: {masterGrade.series}</p>

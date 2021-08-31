@@ -9,4 +9,4 @@ const highGrade = new mongoose.Schema({
 });
 
 const model = mongoose.model("HighGrade", highGrade);
-module.exports = model;
+module.exports = {model, highGrade};
