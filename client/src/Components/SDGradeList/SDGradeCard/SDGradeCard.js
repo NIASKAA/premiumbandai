@@ -1,8 +1,31 @@
-import React from 'react'
+import React, {useState} from 'react'
+import {useMutation} from '@apollo/client'
+import {SAVE_SDGRADE} from '../../../utils/mutations'
 import {Col, Card, CardGroup, Button, ButtonGroup} from 'react-bootstrap'
 import './styles.css'
 
 const SDGradeCard = ({sdGrade}) => {
+    const [saveSDGrade] = useMutation(SAVE_SDGRADE)
+    const [ProfileData, setProfileData] = useState({
+        email: 'No email',
+        username: 'No username',
+        gotSDGrades: 'No sdgrades'
+    })
+
+    const saveToList = async (event) => {
+        event.preventDefault();
+        try {
+            const response = await saveSDGrade({
+                variables: {
+                    name: sdGrade.gunplaName
+                }
+            })
+            setProfileData({...ProfileData, gotSDGrades: response})
+        } catch (error) {
+            console.log(error)
+        }
+    }
+    
     return (
         <>
             <Col>
@@ -15,11 +38,11 @@ const SDGradeCard = ({sdGrade}) => {
                             <p className="infoBody">Release Date: {sdGrade.releaseDate}</p>
                             <p className="infoBody">Price: {sdGrade.price} Yen</p>
                         </Card.Body>
-                        <ButtonGroup>
-                            <Button>Save</Button>
-                            <Button>Add to Wishlist</Button>
-                        </ButtonGroup>
                     </Card>
+                    <ButtonGroup>
+                        <Button onClick={saveToList}>Save</Button>
+                        <Button onClick={""}>Add to Wishlist</Button>
+                    </ButtonGroup>
                 </CardGroup>
             </Col>
         </>

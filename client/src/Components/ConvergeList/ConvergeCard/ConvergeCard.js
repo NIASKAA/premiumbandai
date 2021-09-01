@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import {useMutation} from '@apollo/client'
 import {SAVE_CONVERGE} from '../../../utils/mutations'
 import {Col, Card, CardGroup, ButtonGroup, Button} from 'react-bootstrap'
@@ -13,9 +13,9 @@ const ConvergeCard = ({converge}) => {
     });
 
     const saveToList = async (event) => {
+        event.preventDefault();
         try {
-            event.preventDefault();
-             const response = await saveConverge({
+            const response = await saveConverge({
                 variables: {
                     name: converge.gunplaName
                 }
@@ -40,7 +40,7 @@ const ConvergeCard = ({converge}) => {
                         </Card.Body>
                         <ButtonGroup>
                             <Button onClick={saveToList}>Save</Button>
-                            <Button>Add to Wishlist</Button>
+                            <Button onClick={""}>Add to Wishlist</Button>
                         </ButtonGroup>
                     </Card>
                 </CardGroup>

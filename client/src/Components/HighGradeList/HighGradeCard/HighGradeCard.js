@@ -1,8 +1,30 @@
-import React from 'react'
-import {Col, Card, CardGroup} from 'react-bootstrap'
+import React, {useState} from 'react'
+import {useMutation} from '@apollo/client'
+import {SAVE_HIGHGRADE} from '../../../utils/mutations'
+import {Col, Card, CardGroup, ButtonGroup, Button} from 'react-bootstrap'
 import './styles.css'
 
 const HighGradeCard = ({highGrade}) => {
+    const [saveHighGrade] = useMutation(SAVE_HIGHGRADE)
+    const [ProfileData, setProfileData] = useState({
+        email: 'No email',
+        username: 'No username',
+        gotHighGrades: 'No highgrades'
+    })
+
+    const saveToList = async (event) => {
+        event.preventDefault()
+        try {
+            const response = await saveHighGrade({
+                variables: {
+                    name: highGrade.gunplaName
+                }
+            })
+            setProfileData({...ProfileData, gotHighGrades: response})
+        } catch (error) {
+            console.log(error)
+        }
+    }
     return (
         <>
             <Col>
@@ -15,6 +37,10 @@ const HighGradeCard = ({highGrade}) => {
                             <p className="infoBody">Release Date: {highGrade.releaseDate}</p>
                             <p className="infoBody">Price: {highGrade.price} Yen</p>
                         </Card.Body>
+                        <ButtonGroup>
+                            <Button onClick={saveToList}>Save</Button>
+                            <Button onClick={""}>Add to Wishlist</Button>
+                        </ButtonGroup>
                     </Card>
                 </CardGroup>
             </Col>

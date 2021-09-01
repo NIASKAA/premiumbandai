@@ -1,8 +1,31 @@
-import React from 'react'
-import {Col, Card, CardGroup} from 'react-bootstrap'
+import React, {useState} from 'react'
+import {useMutation} from '@apollo/client'
+import {SAVE_PERFECTGRADE} from '../../../utils/mutations'
+import {Col, Card, CardGroup, ButtonGroup, Button} from 'react-bootstrap'
 import './styles.css'
 
 const PerfectGradeCard = ({perfectGrade}) => {
+    const [savePerfectGrade] = useMutation(SAVE_PERFECTGRADE)
+    const [ProfileData, setProfileData] = useState({
+        email: 'No email',
+        username: 'No username',
+        gotPerfectGrades: 'No perfectgrade'
+    })
+
+    const saveToList = async (event) => {
+        event.preventDefault()
+        try {
+            const response = await savePerfectGrade({
+                variables: {
+                    name: perfectGrade.gunplaName
+                }
+            })
+            setProfileData({...ProfileData, gotPerfectGrades: response})
+        } catch (error) {
+            console.log(error)
+        }
+    }
+    
     return (
         <>
             <Col>
@@ -16,6 +39,10 @@ const PerfectGradeCard = ({perfectGrade}) => {
                             <p className="infoBody">Price: {perfectGrade.price} Yen</p>
                         </Card.Body>
                     </Card>
+                    <ButtonGroup>
+                        <Button onClick={saveToList}>Save</Button>
+                        <Button onClick={""}>Add to Wishlist</Button>
+                    </ButtonGroup>
                 </CardGroup>
             </Col>
         </>
