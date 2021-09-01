@@ -27,6 +27,13 @@ const resolvers = {
                 return user;
             }
             throw new AuthenticationError("Not Logged In")
+        },
+        getUserConverge: async (parent, args, context) => {
+            if(context.user) {
+                const userConverges = await ProfileData.findById(context.user.id).populate('gotConverges').populate('gunplaName')
+                return userConverges
+            }
+            throw new AuthenticationError("Not logged in");
         }
     },
 

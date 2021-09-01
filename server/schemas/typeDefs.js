@@ -104,6 +104,7 @@ const typeDefs = gql`
         getSD: [SDGrade]
         getConverges: [Converge]
         user: [ProfileData]
+        getUserConverge: ProfileData
     }
 
     type Mutation {

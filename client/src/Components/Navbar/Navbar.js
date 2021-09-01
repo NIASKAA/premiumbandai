@@ -1,7 +1,7 @@
 import React from 'react'
 import { Navbar, Container, Nav, NavDropdown} from 'react-bootstrap';
 import {Link} from 'react-router-dom'; 
-//import Auth from '../../utils/auth';
+import Auth from '../../utils/auth';
 import './styles.css'
 
 const Navigation = () => {
@@ -26,8 +26,14 @@ const Navigation = () => {
                                     <NavDropdown.Divider />
                                     <NavDropdown.Item as={Link} to={'/converges'}>Converges</NavDropdown.Item>
                                 </NavDropdown>
-                               <Nav.Link exact activeClassName="active" className="navBtns" as={Link} to={'/login'}>Login</Nav.Link>
-                               <Nav.Link exact activeClassName="active" className="navBtns" as={Link} to={'/profile'}>Profile</Nav.Link>
+                                {Auth.loggedIn() ? (
+                                    <>
+                                        <Nav.Link exact activeClassName="active" className="navBtns" as={Link} to={'/profile'}>Profile</Nav.Link>
+                                        <Nav.Link exact activeClassName="active" className="navBtns" onClick={Auth.logout}>Logout</Nav.Link>
+                                    </>
+                                ) : (
+                                    <Nav.Link exact activeClassName="active" className="navBtns" as={Link} to={'/login'}>Login</Nav.Link>
+                                )}
                             </Nav>
                     </Navbar.Collapse>
                 </Container>
