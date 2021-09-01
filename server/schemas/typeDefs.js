@@ -110,11 +110,11 @@ const typeDefs = gql`
         addUser(username: String!, email: String!, password: String!): Auth
         login(email: String!, password: String): Auth
         saveConverge(name: String! id: ID): ProfileData
-        saveHighGrade(input: GetHighGrade!): ProfileData
-        saveRealGrade(input: GetRealGrade!): ProfileData
-        saveMasterGrade(input: GetMasterGrade!): ProfileData
-        savePerfectGrade(input: GetPerfectGrade!): ProfileData
-        saveSDGrade(input: GetSDGrade!): ProfileData
+        saveHighGrade(name: String! id: ID): ProfileData
+        saveRealGrade(name: String! id: ID): ProfileData
+        saveMasterGrade(name: String! id: ID): ProfileData
+        savePerfectGrade(name: String! id: ID): ProfileData
+        saveSDGrade(name: String! id: ID): ProfileData
     }
 `;
 module.exports = typeDefs;

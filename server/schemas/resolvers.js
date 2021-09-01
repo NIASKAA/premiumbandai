@@ -70,55 +70,85 @@ const resolvers = {
                 new: true
             })
         },
-        saveHighGrade: async (parent, {input}, context) => {
-            const highGrade = {...input}
-            if(context.user) {
-                return ProfileData.findByIdAndUpdate(
-                    {_id: context.user.id},
-                    {$push: {gotHighGrades: highGrade}},
-                    {new: true}
-                )
-             }
-        },
-        saveRealGrade: async (parent, {input}, context) => {
-            const realGrade = {...input}
-            if(context.user) {
-                return ProfileData.findByIdAndUpdate(
-                    {_id: context.user.id},
-                    {$push: {gotRealGrades: realGrade}},
-                    {new: true}
-                )
+        saveHighGrade: async (parent, {name, id}, context) => {
+            let userId = context.user ? context.user._id: id
+            const findHighGrade = await HighGrade.findOne({gunplaName: name})
+            if(!findHighGrade) {
+                return 'HighGrade does not exist'
             }
+            return await ProfileData.findByIdAndUpdate({
+                _id: userId
+            },
+            {
+                $push: {gotHighGrades: findHighGrade}
+            },
+            {
+                new: true
+            })
         },
-        saveMasterGrade: async (parent, {input}, context) => {
-            const masterGrade = {...input}
-            if(context.user) {
-                return ProfileData.findByIdAndUpdate(
-                    {_id: context.user.id},
-                    {$push: {gotMasterGrades: masterGrade}},
-                    {new: true}
-                )
+        saveRealGrade: async (parent, {name, id}, context) => {
+            let userId = context.user ? context.user._id: id
+            const findRealGrade = await RealGrade.findOne({gunplaName: name})
+            if(!findRealGrade) {
+                return 'RealGrade does not exist'
             }
+            return await ProfileData.findByIdAndUpdate({
+                _id: userId
+            },
+            {
+                $push: {gotRealGrades: findRealGrade}
+            },
+            {
+                new: true
+            })
         },
-        savePerfectGrade: async (parent, {input}, context) => {
-            const perfectGrade = {...input}
-            if(context.user) {
-                return ProfileData.findByIdAndUpdate(
-                    {_id: context.user.id},
-                    {$push: {gotPerfectGrades: perfectGrade}},
-                    {new: true}
-                )
+        saveMasterGrade: async (parent, {name, id}, context) => {
+            let userId = context.user ? context.user._id: id
+            const findMasterGrade = await MasterGrade.findOne({gunplaName: name})
+            if(!findMasterGrade) {
+                return 'MasterGrade does not exist'
             }
+            return await ProfileData.findByIdAndUpdate({
+                _id: userId
+            },
+            {
+                $push: {gotMasterGrades: findMasterGrade}
+            },
+            {
+                new: true
+            })
         },
-        saveSDGrade: async (parent, {input}, context) => {
-            const sdGrade = {...input}
-            if(context.user) {
-                return ProfileData.findByIdAndUpdate(
-                    {_id: context.user.id},
-                    {$push: {gotSDGrades: sdGrade}},
-                    {new: true}
-                )
+        savePerfectGrade: async (parent, {name, id}, context) => {
+            let userId = context.user ? context.user._id: id
+            const findPerfectGrade = await PerfectGrade.findOne({gunplaName: name})
+            if(!findPerfectGrade) {
+                return 'PerfectGrade does not exist'
             }
+            return await ProfileData.findByIdAndUpdate({
+                _id: userId
+            },
+            {
+                $push: {gotPerfectGrades: findPerfectGrade}
+            },
+            {
+                new: true
+            })
+        },
+        saveSDGrade: async (parent, {name, id}, context) => {
+            let userId = context.user ? context.user._id: id
+            const findSDGrade = await SDGrade.findOne({gunplaName: name})
+            if(!findSDGrade) {
+                return 'SDGrade does not exist'
+            }
+            return await ProfileData.findByIdAndUpdate({
+                _id: userId
+            },
+            {
+                $push: {gotSDGrades: findSDGrade}
+            },
+            {
+                new: true
+            })
         }
     }
 }
