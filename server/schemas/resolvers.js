@@ -156,6 +156,22 @@ const resolvers = {
             {
                 new: true
             })
+        },
+        convergeWishlist: async (parent, {name, id}, context) => {
+            let userId = context.user ? context.user._id: id
+            const fetchConverge = await Converge.findOne({gunplaName: name})
+            if(!fetchConverge) {
+                return 'Converge does not exist'
+            }
+            return await ProfileData.findByIdAndUpdate({
+                _id: userId
+            },
+            {
+                $push: {convergeWish: fetchConverge}
+            },
+            {
+                new: true
+            })
         }
     }
 }

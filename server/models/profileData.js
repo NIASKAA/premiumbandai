@@ -16,7 +16,13 @@ const profileSchema = new mongoose.Schema({
     gotRealGrades: [realGrade],
     gotMasterGrades: [masterGrade],
     gotPerfectGrades: [perfectGrade],
-    gotSDGrades: [sdGrade]
+    gotSDGrades: [sdGrade],
+    convergeWish: [converge],
+    highGradeWish: [highGrade],
+    realGradeWish: [realGrade],
+    masterGradeWish: [masterGrade],
+    perfectGradeWish: [perfectGrade],
+    sdGradeWish: [sdGrade]
 });
 
 profileSchema.pre('save', async function(next) {

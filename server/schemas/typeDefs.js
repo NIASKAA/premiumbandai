@@ -11,6 +11,12 @@ const typeDefs = gql`
         gotMasterGrades: [MasterGrade]
         gotPerfectGrades: [PerfectGrade]
         gotSDGrades: [SDGrade]
+        convergeWish: [Converge]
+        realGradeWish: [RealGrade]
+        highGradeWish: [HighGrade]
+        masterGradeWish: [MasterGrade]
+        perfectGradeWish: [PerfectGrade]
+        sdGradeWish: [SDGrade]
     }
 
     type HighGrade {
@@ -66,31 +72,7 @@ const typeDefs = gql`
         releaseDate: Float
         price: Float
     }
-
-    input GetConverge {
-        gunplaName: String!
-    }
-
-    input GetHighGrade {
-        gunplaName: String!
-    }
-
-    input GetRealGrade {
-        gunplaName: String!
-    }
-
-    input GetMasterGrade {
-        gunplaName: String!
-    }
-
-    input GetPerfectGrade {
-        gunplaName: String!
-    }
-
-    input GetSDGrade {
-        gunplaName: String!
-    }
-
+    
     type Auth {
       token: ID
       user: ProfileData
@@ -116,6 +98,7 @@ const typeDefs = gql`
         saveMasterGrade(name: String! id: ID): ProfileData
         savePerfectGrade(name: String! id: ID): ProfileData
         saveSDGrade(name: String! id: ID): ProfileData
+        convergeWishlist(name: String! id: ID): ProfileData
     }
 `;
 module.exports = typeDefs;
