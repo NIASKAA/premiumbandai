@@ -1,8 +1,31 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
+import {useMutation} from '@apollo/client'
+import {SAVE_CONVERGE} from '../../../utils/mutations'
 import {Col, Card, CardGroup, ButtonGroup, Button} from 'react-bootstrap'
 import './styles.css'
 
 const ConvergeCard = ({converge}) => {
+    const [saveConverge] = useMutation(SAVE_CONVERGE)
+    const [ProfileData, setProfileData] = useState({
+        email: 'No email',
+        username: 'No username',
+        gotConverges: "No Converges",
+    });
+
+    const saveToList = async (event) => {
+        try {
+            event.preventDefault();
+             const response = await saveConverge({
+                variables: {
+                    name: converge.gunplaName
+                }
+            })
+            setProfileData({...ProfileData, gotConverges: response})
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
     return (    
         <>  
             <Col className="column">
@@ -16,7 +39,7 @@ const ConvergeCard = ({converge}) => {
                             <p className="infoBody">Price: {converge.price} Yen</p>
                         </Card.Body>
                         <ButtonGroup>
-                            <Button>Save</Button>
+                            <Button onClick={saveToList}>Save</Button>
                             <Button>Add to Wishlist</Button>
                         </ButtonGroup>
                     </Card>

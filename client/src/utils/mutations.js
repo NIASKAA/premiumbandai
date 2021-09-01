@@ -25,7 +25,7 @@ export const ADD_USER = gql`
 `;
 
 export const SAVE_CONVERGE = gql`
-    mutation saveConverge($name: String!, id: ID) {
+    mutation saveConverge($name: String!, $id: ID) {
         saveConverge(name: $name id: $id) {
             username
             email
@@ -41,7 +41,7 @@ export const SAVE_CONVERGE = gql`
 `;
 
 export const SAVE_HIGHGRADE = gql`
-    mutation saveHighGrade($name: String!, id: ID) {
+    mutation saveHighGrade($name: String!, $id: ID) {
         saveHighGrade(name: $name id: $id) {
             username
             email
@@ -57,7 +57,7 @@ export const SAVE_HIGHGRADE = gql`
 `;
 
 export const SAVE_REALGRADE = gql`
-    mutation saveRealGrade($name: String!, id: ID) {
+    mutation saveRealGrade($name: String!, $id: ID) {
         saveRealGrade(name: $name id: $id) {
             username
             email
@@ -73,7 +73,7 @@ export const SAVE_REALGRADE = gql`
 `;
 
 export const SAVE_MASTERGRADE = gql`
-    mutation saveMasterGrade($name: String!, id: ID) {
+    mutation saveMasterGrade($name: String!, $id: ID) {
         saveMasterGrade(name: $name id: $id) {
             username
             email
@@ -89,7 +89,7 @@ export const SAVE_MASTERGRADE = gql`
 `;
 
 export const SAVE_PERFECTGRADE = gql`
-    mutation savePerfectGrade($name: String!, id: ID) {
+    mutation savePerfectGrade($name: String!, $id: ID) {
         savePerfectGrade(name: $name id: $id) {
             username
             email
@@ -105,7 +105,7 @@ export const SAVE_PERFECTGRADE = gql`
 `;
 
 export const SAVE_SDGRADE = gql`
-    mutation saveSDGrade($name: String!, id: ID) {
+    mutation saveSDGrade($name: String!, $id: ID) {
         saveSDGrade(name: $name id: $id) {
             username
             email
