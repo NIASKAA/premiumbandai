@@ -19,7 +19,7 @@ Add badges from somewhere like:
   
 ## Deployment
 
-Link to heroku: 
+Link to heroku: https://premiumbandaitracker.herokuapp.com/
 
 
 ## Authors
