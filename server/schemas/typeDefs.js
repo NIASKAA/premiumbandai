@@ -109,7 +109,7 @@ const typeDefs = gql`
     type Mutation {
         addUser(username: String!, email: String!, password: String!): Auth
         login(email: String!, password: String): Auth
-        saveConverge(input: GetConverge!): ProfileData
+        saveConverge(name: String! id: ID): ProfileData
         saveHighGrade(input: GetHighGrade!): ProfileData
         saveRealGrade(input: GetRealGrade!): ProfileData
         saveMasterGrade(input: GetMasterGrade!): ProfileData

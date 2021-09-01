@@ -1,6 +1,6 @@
 const { AuthenticationError } = require("apollo-server-express")
 const {HighGrade, RealGrade, MasterGrade, PerfectGrade, Converge, SDGrade, ProfileData} = require('../models')
-
+const {signToken} = require('../utils/auth')
 const resolvers = {
     Query: {
         getHG: async () => {
@@ -53,15 +53,22 @@ const resolvers = {
             const token = signToken(user)
             return {token, user}
         },
-        saveConverge: async (parent, {input}, context) => {
-            const converge = {...input}
-            if(context.user) {
-                return ProfileData.findByIdAndUpdate(
-                    {_id: context.user.id},
-                    {$push: {gotConverges: converge}},
-                    {new: true}
-                )
+        saveConverge: async (parent, {name, id}, context) => {
+            let userId = context.user ? context.user._id : id
+            const findConverge = await Converge.findOne({gunplaName: name})
+            console.log(findConverge)
+            if(!findConverge) {
+                return 'Converge does not exist'
             }
+            return await ProfileData.findByIdAndUpdate({
+                _id: userId
+            },
+            {
+                $push: {gotConverges: findConverge}
+            },
+            {
+                new: true
+            })
         },
         saveHighGrade: async (parent, {input}, context) => {
             const highGrade = {...input}
