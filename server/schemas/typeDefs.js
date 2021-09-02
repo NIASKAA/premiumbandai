@@ -92,6 +92,7 @@ const typeDefs = gql`
         getUserMasterGrade: ProfileData
         getUserPerfectGrade: ProfileData
         getUserSDGrade: ProfileData
+        getUserConvergeWishlist: ProfileData
     }
 
     type Mutation {

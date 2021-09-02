@@ -4,4 +4,3 @@ export const GET_RGS = "GET_RGS";
 export const GET_MGS = "GET_MGS";
 export const GET_PGS = "GET_PGS";
 export const GET_SDS = "GET_SDS";
-export const GET_SAVED_CONVERGE = "GET_SAVED_CONVERGE";

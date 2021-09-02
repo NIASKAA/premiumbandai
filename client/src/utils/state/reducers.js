@@ -37,11 +37,6 @@ export const reducers = (state, action) => {
                 ...state,
                 getSD: action.payload
             };
-        case GET_SAVED_CONVERGE:
-            return {
-                ...state,
-                getUserConverge: action.payload
-            }
         default: 
             return state;
     }

@@ -6,7 +6,7 @@ import {GET_SAVE_CONVERGE,
     GET_SAVE_PERFECTGRADE, 
     GET_SAVE_SDGRADE} from '../../utils/queries'
 import {useQuery} from "@apollo/client"
-import {Accordion, Table} from 'react-bootstrap'
+import {Accordion, Table, Button} from 'react-bootstrap'
 import './styles.css'
 
 const Profile = () => {
@@ -14,10 +14,14 @@ const Profile = () => {
     const {loading: loadHigh, data: highData} = useQuery(GET_SAVE_HIGHGRADE)
     const {loading: loadReal, data: realData} = useQuery(GET_SAVE_REALGRADE)
     const {loading: loadMaster, data: masterData} = useQuery(GET_SAVE_MASTERGRADE)
+    const {loading: loadPerfect, data: perfectData} = useQuery(GET_SAVE_PERFECTGRADE)
+    const {loading: loadSD, data: sdData} = useQuery(GET_SAVE_SDGRADE)
     const [loadConverge, setLoadConverge] = useState(undefined)
     const [loadHighGrade, setLoadHighGrade] = useState(undefined)
     const [loadRealGrade, setLoadRealGrade] = useState(undefined)
     const [loadMasterGrade, setLoadMasterGrade] = useState(undefined)
+    const [loadPerfectGrade, setLoadPerfectGrade] = useState(undefined)
+    const [loadSDGrade, setLoadSDGrade] = useState(undefined)
 
     useEffect(() => {
         if(!loading && data) {
@@ -42,6 +46,18 @@ const Profile = () => {
             setLoadMasterGrade(masterData.getUserMasterGrade.gotMasterGrades)
         }
     }, [loadMaster, masterData])
+
+    useEffect(() => {
+        if(!loadPerfect && perfectData) {
+            setLoadPerfectGrade(perfectData.getUserPerfectGrade.gotPerfectGrades)
+        }
+    }, [loadPerfect, perfectData])
+
+    useEffect(() => {
+        if(!loadSDGrade && sdData) {
+            setLoadSDGrade(sdData.getUserSDGrade.gotSDGrades)
+        }
+    }, [loadSD, sdData])
 
     return (
         <>  
@@ -154,13 +170,53 @@ const Profile = () => {
                 <Accordion.Item eventKey="4">
                     <Accordion.Header>Saved Perfect Grades</Accordion.Header>
                     <Accordion.Body>
-                    
+                        <Table>
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Series</th>
+                                    <th>Price</th>
+                                    <th>Release Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {!loadPerfect && loadPerfectGrade &&
+                                loadPerfectGrade.map((perfect) => (
+                                    <tr key={perfect.id}>
+                                        <td>{perfect.gunplaName}</td>
+                                        <td>{perfect.series}</td>
+                                        <td>{perfect.price}</td>
+                                        <td>{perfect.releaseDate}</td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </Table>
                     </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="5">
                     <Accordion.Header>Saved SD</Accordion.Header>
                     <Accordion.Body>
-                    
+                        <Table>
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Series</th>
+                                    <th>Price</th>
+                                    <th>Release Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {!loadSD && loadSDGrade &&
+                                loadSDGrade.map((SDGrade) => (
+                                    <tr key={SDGrade.id}>
+                                        <td>{SDGrade.gunplaName}</td>
+                                        <td>{SDGrade.series}</td>
+                                        <td>{SDGrade.price}</td>
+                                        <td>{SDGrade.releaseDate}</td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </Table>
                     </Accordion.Body>
                 </Accordion.Item>
             </Accordion>

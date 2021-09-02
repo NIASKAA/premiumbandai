@@ -70,6 +70,13 @@ const resolvers = {
                 return userSDGrade
             }
             throw new AuthenticationError("Not logged in");
+        },
+        getUserConvergeWishlist: async (parent, args, context) => {
+            if(context.user) {
+                const userConvergeWish = await ProfileData.findById(context.user._id).populate('convergeWish').populate('gunplaName')
+                return userConvergeWish
+            }
+            throw new AuthenticationError("Not logged in");
         }
     },
 
