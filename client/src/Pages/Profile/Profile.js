@@ -1,38 +1,19 @@
 import React, {useState, useEffect} from 'react'
-import {useDispatch, useSelector} from "react-redux"
 import {GET_SAVE_CONVERGE} from '../../utils/queries'
-import {GET_SAVED_CONVERGE} from '../../utils/state/actions'
 import {useQuery} from "@apollo/client"
-import ConvergeSaveList from '../../Components/SaveContentList/ConvergeSave/ConvergeSaveList'
-import {Accordion, Table, Spinner} from 'react-bootstrap'
+import {Accordion, Table} from 'react-bootstrap'
 import './styles.css'
 
 const Profile = () => {
-    const dispatch = useDispatch()
-    const state = useSelector((state) => state)
-    const [loadConverge, setLoadConverge] = useState(true)
     const {loading, data} = useQuery(GET_SAVE_CONVERGE)
-    let {getUserConverge} = state
-    const [AllUserConverge, setAllUserConverge] = useState(() => [])
-
+    const [loadConverge, setLoadConverge] = useState(undefined)
 
     useEffect(() => {
-        if(loading === false && data) {
-            dispatch({type: GET_SAVED_CONVERGE, payload: data.getUserConverge})
-            if(getUserConverge.length === 0){
-                setAllUserConverge(data.getUserConverge)
-            } else {
-                setAllUserConverge(getUserConverge)
-            }
+        if(!loading && data) {
+            setLoadConverge(data.getUserConverge.gotConverges)
         }
         console.log(data)
     }, [loading, data])
-
-    useEffect(() => {
-        setTimeout(() => {
-          setLoadConverge(false);
-        }, 1000);
-      });
 
     return (
         <>  
@@ -41,7 +22,27 @@ const Profile = () => {
                 <Accordion.Item eventKey="0">
                     <Accordion.Header>Saved Converges</Accordion.Header>
                     <Accordion.Body>
-                        
+                        <Table>
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Series</th>
+                                    <th>Price</th>
+                                    <th>Release Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {!loading && loadConverge &&
+                                loadConverge.map((converge) => (
+                                    <tr key={converge.id}>
+                                        <td>{converge.gunplaName}</td>
+                                        <td>{converge.series}</td>
+                                        <td>{converge.price}</td>
+                                        <td>{converge.releaseDate}</td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </Table>
                     </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="1">
