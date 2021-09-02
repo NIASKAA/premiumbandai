@@ -221,3 +221,37 @@ export const SDGRADE_WISHLIST = gql`
         }
     }
 `;
+
+export const DELETE_CONVERGE_SAVE = gql`
+    mutation deleteConvergeSave($convergeID: ID! $id: ID){
+        deleteConvergeSave(convergeID: $convergeID id: $id) {
+            username
+            email
+            gotConverges {
+            _id
+            gunplaName
+            image
+            series
+            price
+            releaseDate
+            }
+        }
+    }
+`;
+
+export const DELETE_HIGHGRADE_SAVE = gql`
+    mutation deleteHighGradeSave($highGradeID: ID! $id: ID){
+        deleteHighGradeSave(convergeID: $highGradeID id: $id) {
+            username
+            email
+            gotConverges {
+            _id
+            gunplaName
+            image
+            series
+            price
+            releaseDate
+            }
+        }
+    }
+`;

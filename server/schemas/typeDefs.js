@@ -93,6 +93,11 @@ const typeDefs = gql`
         getUserPerfectGrade: ProfileData
         getUserSDGrade: ProfileData
         getUserConvergeWishlist: ProfileData
+        getUserHighWishlist: ProfileData
+        getUserRealWishlist: ProfileData
+        getUserMasterWishlist: ProfileData
+        getUserPerfectWishlist: ProfileData
+        getUserSDWishlist: ProfileData
     }
 
     type Mutation {
@@ -110,6 +115,8 @@ const typeDefs = gql`
         masterGradeWishlist(name: String! id: ID): ProfileData
         perfectGradeWishlist(name: String! id: ID): ProfileData
         sdGradeWishlist(name: String! id: ID): ProfileData
+        deleteConvergeSave(convergeID: ID! id: ID): ProfileData
+        deleteHighGradeSave(highGradeID: ID! id: ID): ProfileData
     }
 `;
 module.exports = typeDefs;

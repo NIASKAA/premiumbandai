@@ -190,3 +190,105 @@ export const GET_SAVE_SDGRADE = gql`
         }
     }
 `;
+
+export const GET_CONVERGE_WISH = gql`
+    query {
+        getUserConvergeWishlist{
+            username
+            email
+            convergeWish {
+                _id
+                gunplaName
+                series
+                image
+                releaseDate
+                price
+            }
+        }
+    }
+`;
+
+export const GET_HIGHGRADE_WISH = gql`
+    query {
+        getUserHighWishlist{
+            username
+            email
+            highGradeWish {
+                _id
+                gunplaName
+                series
+                image
+                releaseDate
+                price
+            }
+        }
+    }
+`;
+
+export const GET_REALGRADE_WISH = gql`
+    query {
+        getUserRealWishlist{
+            username
+            email
+            realGradeWish {
+                _id
+                gunplaName
+                series
+                image
+                releaseDate
+                price
+            }
+        }
+    }
+`;
+
+export const GET_MASTERGRADE_WISH = gql`
+    query {
+        getUserMasterWishlist{
+            username
+            email
+            masterGradeWish {
+                _id
+                gunplaName
+                series
+                image
+                releaseDate
+                price
+            }
+        }
+    }
+`;
+
+export const GET_PERFECTGRADE_WISH = gql`
+    query {
+        getUserPerfectWishlist{
+            username
+            email
+            perfectGradeWish {
+                _id
+                gunplaName
+                series
+                image
+                releaseDate
+                price
+            }
+        }
+    }
+`;
+
+export const GET_SDGRADE_WISH = gql`
+    query {
+        getUserSDWishlist{
+            username
+            email
+            sdGradeWish {
+                _id
+                gunplaName
+                series
+                image
+                releaseDate
+                price
+            }
+        }
+    }
+`;

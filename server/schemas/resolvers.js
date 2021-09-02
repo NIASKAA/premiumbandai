@@ -77,6 +77,41 @@ const resolvers = {
                 return userConvergeWish
             }
             throw new AuthenticationError("Not logged in");
+        },
+        getUserHighWishlist: async (parent, args, context) => {
+            if(context.user) {
+                const userHighWish = await ProfileData.findById(context.user._id).populate('highGradeWish').populate('gunplaName')
+                return userHighWish
+            }
+            throw new AuthenticationError("Not logged in");
+        },
+        getUserRealWishlist: async (parent, args, context) => {
+            if(context.user) {
+                const userRealWish = await ProfileData.findById(context.user._id).populate('realGradeWish').populate('gunplaName')
+                return userRealWish
+            }
+            throw new AuthenticationError("Not logged in");
+        },
+        getUserMasterWishlist: async (parent, args, context) => {
+            if(context.user) {
+                const userMasterWish = await ProfileData.findById(context.user._id).populate('masterGradeWish').populate('gunplaName')
+                return userMasterWish
+            }
+            throw new AuthenticationError("Not logged in");
+        },
+        getUserPerfectWishlist: async (parent, args, context) => {
+            if(context.user) {
+                const userPerfectWish = await ProfileData.findById(context.user._id).populate('perfectGradeWish').populate('gunplaName')
+                return userPerfectWish
+            }
+            throw new AuthenticationError("Not logged in");
+        },
+        getUserSDWishlist: async (parent, args, context) => {
+            if(context.user) {
+                const userSDWish = await ProfileData.findById(context.user._id).populate('sdGradeWish').populate('gunplaName')
+                return userSDWish
+            }
+            throw new AuthenticationError("Not logged in");
         }
     },
 
@@ -291,6 +326,39 @@ const resolvers = {
             },
             {
                 $push: {sdGradeWish: fetchSDGrade}
+            },
+            {
+                new: true
+            })
+        },
+        deleteConvergeSave: async (parent, {convergeID, id}, context) => {
+            let userId = context.user ? context.user_id: id
+            return await ProfileData.findOneAndUpdate({
+                _id: userId
+            },
+            { $pull: 
+                {
+                    'gotConverges': {
+                        _id: convergeID
+                    }
+                }
+            },
+            {
+                new: true
+            })
+            
+        },
+        deleteHighGradeSave: async (parent, {highGradeID, id}, context) => {
+            let userId = context.user ? context.user_id: id
+            return await ProfileData.findOneAndUpdate({
+                _id: userId
+            },
+            {
+                $pull: {
+                    'gotHighGrades': {
+                        _id: highGradeID
+                    }
+                }
             },
             {
                 new: true
