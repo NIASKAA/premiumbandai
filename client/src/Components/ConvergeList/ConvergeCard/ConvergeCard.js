@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import {useMutation} from '@apollo/client'
 import {SAVE_CONVERGE} from '../../../utils/mutations'
 import {CONVERGE_WISHLIST} from '../../../utils/mutations'
+import Auth from '../../../utils/auth'
 import {Col, Card, CardGroup, ButtonGroup, Button} from 'react-bootstrap'
 import './styles.css'
 
@@ -14,8 +15,6 @@ const ConvergeCard = ({converge}) => {
         gotConverges: "No Converges",
         convergeWish: 'No Converges'
     });
-
-    
 
     const saveToList = async (event) => {
         event.preventDefault();
@@ -57,10 +56,17 @@ const ConvergeCard = ({converge}) => {
                             <p className="infoBody">Release Date: {converge.releaseDate}</p>
                             <p className="infoBody">Price: {converge.price} Yen</p>
                         </Card.Body>
-                        <ButtonGroup>
-                            <Button onClick={saveToList}>Save</Button>
-                            <Button onClick={saveToWishlist}>Add to Wishlist</Button>
-                        </ButtonGroup>
+                        {Auth.loggedIn() ? (
+                            <>
+                                <ButtonGroup>
+                                    <Button onClick={saveToList}>Save</Button>
+                                    <Button onClick={saveToWishlist}>Add to Wishlist</Button>
+                                </ButtonGroup>
+                            </>
+                        ) : (
+                            <>
+                            </>
+                        )}
                     </Card>
                 </CardGroup>
             </Col>

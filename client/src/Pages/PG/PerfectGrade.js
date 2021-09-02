@@ -7,6 +7,7 @@ import {GET_PGS} from '../../utils/state/actions'
 import PerfectGradeList from '../../Components/PerfectGradeList/PerfectGradeList'
 import Pagination from '../../Components/Pagination/Pagination'
 
+
 const PerfectGrade = () => {
     const dispatch = useDispatch()
     const state = useSelector((state) => state)
@@ -36,7 +37,7 @@ const PerfectGrade = () => {
 
     useEffect(() => {
         setTimeout(() => {
-            setAllPerfectGrade(false)
+            setLoadPerfectGrades(false)
         }, 1000)
     })
 

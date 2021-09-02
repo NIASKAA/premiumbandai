@@ -38,11 +38,11 @@ const RealGradeCard = ({realGrade}) => {
                             <p className="infoBody">Release Date: {realGrade.releaseDate}</p>
                             <p className="infoBody">Price: {realGrade.price} Yen</p>
                         </Card.Body>
+                        <ButtonGroup>
+                            <Button onClick={saveToList}>Save</Button>
+                            <Button onClick={""}>Add to Wishlist</Button>
+                        </ButtonGroup>
                     </Card>
-                    <ButtonGroup>
-                        <Button onClick={saveToList}>Save</Button>
-                        <Button onClick={""}>Add to Wishlist</Button>
-                    </ButtonGroup>
                 </CardGroup>
             </Col>
         </>

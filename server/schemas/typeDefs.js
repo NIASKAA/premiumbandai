@@ -72,7 +72,7 @@ const typeDefs = gql`
         releaseDate: Float
         price: Float
     }
-    
+
     type Auth {
       token: ID
       user: ProfileData
@@ -99,6 +99,11 @@ const typeDefs = gql`
         savePerfectGrade(name: String! id: ID): ProfileData
         saveSDGrade(name: String! id: ID): ProfileData
         convergeWishlist(name: String! id: ID): ProfileData
+        highGradeWishlist(name: String! id: ID): ProfileData
+        realGradeWishlist(name: String! id: ID): ProfileData
+        masterGradeWishlist(name: String! id: ID): ProfileData
+        perfectGradeWishlist(name: String! id: ID): ProfileData
+        sdGradeWishlist(name: String! id: ID): ProfileData
     }
 `;
 module.exports = typeDefs;

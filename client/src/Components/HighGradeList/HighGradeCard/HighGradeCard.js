@@ -1,15 +1,19 @@
 import React, {useState} from 'react'
 import {useMutation} from '@apollo/client'
 import {SAVE_HIGHGRADE} from '../../../utils/mutations'
+import {HIGHGRADE_WISHLIST} from '../../../utils/mutations'
 import {Col, Card, CardGroup, ButtonGroup, Button} from 'react-bootstrap'
+import Auth from '../../../utils/auth'
 import './styles.css'
 
 const HighGradeCard = ({highGrade}) => {
     const [saveHighGrade] = useMutation(SAVE_HIGHGRADE)
+    const [highGradeWishlist] = useMutation(HIGHGRADE_WISHLIST)
     const [ProfileData, setProfileData] = useState({
         email: 'No email',
         username: 'No username',
-        gotHighGrades: 'No highgrades'
+        gotHighGrades: 'No highgrades',
+        highGradeWish: 'No highgrades'
     })
 
     const saveToList = async (event) => {
@@ -21,6 +25,20 @@ const HighGradeCard = ({highGrade}) => {
                 }
             })
             setProfileData({...ProfileData, gotHighGrades: response})
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+    const saveToWishlist = async (event) => {
+        event.preventDefault()
+        try {
+            const wishResponse = await highGradeWishlist({
+                variables: {
+                    name: highGrade.gunplaName
+                }
+            })
+            setProfileData({...ProfileData, highGradeWish: wishResponse})
         } catch (error) {
             console.log(error)
         }
@@ -37,10 +55,17 @@ const HighGradeCard = ({highGrade}) => {
                             <p className="infoBody">Release Date: {highGrade.releaseDate}</p>
                             <p className="infoBody">Price: {highGrade.price} Yen</p>
                         </Card.Body>
-                        <ButtonGroup>
-                            <Button onClick={saveToList}>Save</Button>
-                            <Button onClick={""}>Add to Wishlist</Button>
-                        </ButtonGroup>
+                        {Auth.loggedIn() ? (
+                            <>
+                                <ButtonGroup>
+                                    <Button onClick={saveToList}>Save</Button>
+                                    <Button onClick={saveToWishlist}>Add to Wishlist</Button>
+                                </ButtonGroup>
+                            </>
+                        ) : (
+                            <>
+                            </>
+                        )}
                     </Card>
                 </CardGroup>
             </Col>

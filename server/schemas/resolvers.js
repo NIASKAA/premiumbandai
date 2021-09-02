@@ -1,6 +1,7 @@
 const { AuthenticationError } = require("apollo-server-express")
 const {HighGrade, RealGrade, MasterGrade, PerfectGrade, Converge, SDGrade, ProfileData} = require('../models')
 const {signToken} = require('../utils/auth')
+
 const resolvers = {
     Query: {
         getHG: async () => {
@@ -168,6 +169,86 @@ const resolvers = {
             },
             {
                 $push: {convergeWish: fetchConverge}
+            },
+            {
+                new: true
+            })
+        },
+        highGradeWishlist: async (parent, {name, id}, context) => {
+            let userId = context.user ? context.user_id: id
+            const fetchHighGrade = await HighGrade.findOne({gunplaName: name})
+            if(!fetchHighGrade) {
+                return 'HighGrade does not exist'
+            }
+            return await ProfileData.findByIdAndUpdate({
+                _id: userId
+            },
+            {
+                $push: {highGradeWish: fetchHighGrade}
+            },
+            {
+                new: true
+            })
+        },
+        realGradeWishlist: async (parent, {name, id}, context) => {
+            let userId = context.user ? context.user_id: id
+            const fetchRealGrade = await RealGrade.findOne({gunplaName: name})
+            if(!fetchRealGrade) {
+                return 'RealGrade does not exist'
+            }
+            return await ProfileData.findByIdAndUpdate({
+                _id: userId
+            },
+            {
+                $push: {realGradeWish: fetchRealGrade}
+            },
+            {
+                new: true
+            })
+        },
+        masterGradeWishlist: async (parent, {name, id}, context) => {
+            let userId = context.user ? context.user_id: id
+            const fetchMasterGrade = await MasterGrade.findOne({gunplaName: name})
+            if(!fetchMasterGrade) {
+                return 'MasterGrade does not exist'
+            }
+            return await ProfileData.findByIdAndUpdate({
+                _id: userId
+            },
+            {
+                $push: {masterGradeWish: fetchMasterGrade}
+            },
+            {
+                new: true
+            })
+        },
+        perfectGradeWishlist: async (parent, {name, id}, context) => {
+            let userId = context.user ? context.user_id: id
+            const fetchPerfectGrade = await PerfectGrade.findOne({gunplaName: name})
+            if(!fetchPerfectGrade) {
+                return 'PerfectGrade does not exist'
+            }
+            return await ProfileData.findByIdAndUpdate({
+                _id: userId
+            },
+            {
+                $push: {perfectGradeWish: fetchPerfectGrade}
+            },
+            {
+                new: true
+            })
+        },
+        sdGradeWishlist: async (parent, {name, id}, context) => {
+            let userId = context.user ? context.user_id: id
+            const fetchSDGrade = await SDGrade.findOne({gunplaName: name})
+            if(!fetchSDGrade) {
+                return 'SDGrade does not exist'
+            }
+            return await ProfileData.findByIdAndUpdate({
+                _id: userId
+            },
+            {
+                $push: {sdGradeWish: fetchSDGrade}
             },
             {
                 new: true

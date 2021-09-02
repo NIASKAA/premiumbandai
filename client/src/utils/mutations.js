@@ -136,3 +136,88 @@ export const CONVERGE_WISHLIST = gql`
         }
     }
 `;
+
+export const HIGHGRADE_WISHLIST = gql`
+    mutation highGradeWishlist($name: String! $id: ID) {
+        highGradeWishlist(name: $name id: $id) {
+            username
+            email
+            convergeWish {
+            _id
+            gunplaName
+            image
+            series
+            releaseDate
+            price
+            }
+        }
+    }
+`;
+
+export const REALGRADE_WISHLIST = gql`
+    mutation realGradeWishlist($name: String! $id: ID) {
+        realGradeWishlist(name: $name id: $id) {
+            username
+            email
+            convergeWish {
+            _id
+            gunplaName
+            image
+            series
+            releaseDate
+            price
+            }
+        }
+    }
+`;
+
+export const MASTERGRADE_WISHLIST = gql`
+    mutation masterGradeWishlist($name: String! $id: ID) {
+        masterGradeWishlist(name: $name id: $id) {
+            username
+            email
+            convergeWish {
+            _id
+            gunplaName
+            image
+            series
+            releaseDate
+            price
+            }
+        }
+    }
+`;
+
+export const PERFECTGRADE_WISHLIST = gql`
+    mutation perfectGradeWishlist($name: String! $id: ID) {
+        perfectGradeWishlist(name: $name id: $id) {
+            username
+            email
+            convergeWish {
+            _id
+            gunplaName
+            image
+            series
+            releaseDate
+            price
+            }
+        }
+    }
+`;
+
+export const SDGRADE_WISHLIST = gql`
+    mutation sdGradeWishlist($name: String! $id: ID) {
+        sdGradeWishlist(name: $name id: $id) {
+            username
+            email
+            convergeWish {
+            _id
+            gunplaName
+            image
+            series
+            releaseDate
+            price
+            }
+        }
+    }
+`;
