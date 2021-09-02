@@ -35,6 +35,41 @@ const resolvers = {
                 return userConverges
             }
             throw new AuthenticationError("Not logged in");
+        },
+        getUserHighGrade: async (parent, args, context) => {
+            if(context.user) {
+                const userHighGrade = await ProfileData.findById(context.user._id).populate('gotHighGrades').populate('gunplaName')
+                return userHighGrade
+            }
+            throw new AuthenticationError("Not logged in");
+        },
+        getUserRealGrade: async (parent, args, context) => {
+            if(context.user) {
+                const userRealGrade = await ProfileData.findById(context.user._id).populate('gotRealGrades').populate('gunplaName')
+                return userRealGrade
+            }
+            throw new AuthenticationError("Not logged in");
+        },
+        getUserMasterGrade: async (parent, args, context) => {
+            if(context.user) {
+                const userMasterGrade = await ProfileData.findById(context.user._id).populate('gotMasterGrades').populate('gunplaName')
+                return userMasterGrade
+            }
+            throw new AuthenticationError("Not logged in");
+        },
+        getUserPerfectGrade: async (parent, args, context) => {
+            if(context.user) {
+                const userPerfectGrade = await ProfileData.findById(context.user._id).populate('gotPerfectGrades').populate('gunplaName')
+                return userPerfectGrade
+            }
+            throw new AuthenticationError("Not logged in");
+        },
+        getUserSDGrade: async (parent, args, context) => {
+            if(context.user) {
+                const userSDGrade = await ProfileData.findById(context.user._id).populate('gotSDGrades').populate('gunplaName')
+                return userSDGrade
+            }
+            throw new AuthenticationError("Not logged in");
         }
     },
 

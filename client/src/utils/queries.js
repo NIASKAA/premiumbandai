@@ -105,3 +105,88 @@ export const GET_SAVE_CONVERGE = gql`
         }
     }
 `;
+
+export const GET_SAVE_HIGHGRADE = gql`
+    query {
+        getUserHighGrade{
+            username
+            email
+            gotHighGrades {
+            _id
+            gunplaName
+            series
+            image
+            releaseDate
+            price
+            }
+        }
+    }
+`;
+
+export const GET_SAVE_REALGRADE = gql`
+    query {
+        getUserRealGrade{
+            username
+            email
+            gotRealGrades {
+            _id
+            gunplaName
+            series
+            image
+            releaseDate
+            price
+            }
+        }
+    }
+`;
+
+export const GET_SAVE_MASTERGRADE = gql`
+    query {
+        getUserMasterGrade{
+            username
+            email
+            gotMasterGrades {
+            _id
+            gunplaName
+            series
+            image
+            releaseDate
+            price
+            }
+        }
+    }
+`;
+
+export const GET_SAVE_PERFECTGRADE = gql`
+    query {
+        getUserPerfectGrade{
+            username
+            email
+            gotPerfectGrades {
+            _id
+            gunplaName
+            series
+            image
+            releaseDate
+            price
+            }
+        }
+    }
+`;
+
+export const GET_SAVE_SDGRADE = gql`
+    query {
+        getUserSDGrade{
+            username
+            email
+            gotSDGrades {
+            _id
+            gunplaName
+            series
+            image
+            releaseDate
+            price
+            }
+        }
+    }
+`;

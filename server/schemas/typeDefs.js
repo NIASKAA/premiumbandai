@@ -87,6 +87,11 @@ const typeDefs = gql`
         getConverges: [Converge]
         user: [ProfileData]
         getUserConverge: ProfileData
+        getUserHighGrade: ProfileData
+        getUserRealGrade: ProfileData
+        getUserMasterGrade: ProfileData
+        getUserPerfectGrade: ProfileData
+        getUserSDGrade: ProfileData
     }
 
     type Mutation {
