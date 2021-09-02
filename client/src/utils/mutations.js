@@ -119,3 +119,20 @@ export const SAVE_SDGRADE = gql`
         }
     }
 `;
+
+export const CONVERGE_WISHLIST = gql`
+    mutation convergeWishlist($name: String! $id: ID) {
+        convergeWishlist(name: $name id: $id) {
+            username
+            email
+            convergeWish {
+            _id
+            gunplaName
+            image
+            series
+            releaseDate
+            price
+            }
+        }
+    }
+`;

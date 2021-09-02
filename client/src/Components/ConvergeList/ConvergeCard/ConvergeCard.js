@@ -1,16 +1,21 @@
 import React, {useState} from 'react'
 import {useMutation} from '@apollo/client'
 import {SAVE_CONVERGE} from '../../../utils/mutations'
+import {CONVERGE_WISHLIST} from '../../../utils/mutations'
 import {Col, Card, CardGroup, ButtonGroup, Button} from 'react-bootstrap'
 import './styles.css'
 
 const ConvergeCard = ({converge}) => {
     const [saveConverge] = useMutation(SAVE_CONVERGE)
+    const [convergeWishlist] = useMutation(CONVERGE_WISHLIST)
     const [ProfileData, setProfileData] = useState({
         email: 'No email',
         username: 'No username',
         gotConverges: "No Converges",
+        convergeWish: 'No Converges'
     });
+
+    
 
     const saveToList = async (event) => {
         event.preventDefault();
@@ -21,6 +26,20 @@ const ConvergeCard = ({converge}) => {
                 }
             })
             setProfileData({...ProfileData, gotConverges: response})
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+    const saveToWishlist = async (event) => {
+        event.preventDefault();
+        try {
+            const wishResponse = await convergeWishlist({
+                variables: {
+                    name: converge.gunplaName
+                }
+            })
+            setProfileData({...ProfileData, convergeWish: wishResponse})
         } catch (error) {
             console.log(error)
         }
@@ -40,7 +59,7 @@ const ConvergeCard = ({converge}) => {
                         </Card.Body>
                         <ButtonGroup>
                             <Button onClick={saveToList}>Save</Button>
-                            <Button onClick={""}>Add to Wishlist</Button>
+                            <Button onClick={saveToWishlist}>Add to Wishlist</Button>
                         </ButtonGroup>
                     </Card>
                 </CardGroup>
