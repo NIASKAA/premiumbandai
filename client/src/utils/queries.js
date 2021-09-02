@@ -88,3 +88,20 @@ export const QUERY_USER = gql`
         }
     }
 `;
+
+export const GET_SAVE_CONVERGE = gql`
+    query {
+        getUserConverge{
+            username
+            email
+            gotConverges {
+            _id
+            gunplaName
+            series
+            image
+            releaseDate
+            price
+            }
+        }
+    }
+`;
