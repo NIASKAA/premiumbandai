@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import {useMutation} from '@apollo/client'
 import {SAVE_PERFECTGRADE} from '../../../utils/mutations'
 import {Col, Card, CardGroup, ButtonGroup, Button} from 'react-bootstrap'
+import Auth from '../../../utils/auth'
 import './styles.css'
 
 const PerfectGradeCard = ({perfectGrade}) => {
@@ -38,10 +39,15 @@ const PerfectGradeCard = ({perfectGrade}) => {
                             <p className="infoBody">Release Date: {perfectGrade.releaseDate}</p>
                             <p className="infoBody">Price: {perfectGrade.price} Yen</p>
                         </Card.Body>
-                        <ButtonGroup>
-                            <Button onClick={saveToList}>Save</Button>
-                            <Button onClick={""}>Add to Wishlist</Button>
-                        </ButtonGroup>
+                        {Auth.loggedIn ? (
+                            <ButtonGroup>
+                                <Button onClick={saveToList}>Save</Button>
+                                <Button onClick={""}>Add to Wishlist</Button>
+                            </ButtonGroup>
+                        ) : (
+                            <>
+                            </>
+                        )}
                     </Card>
                 </CardGroup>
             </Col>

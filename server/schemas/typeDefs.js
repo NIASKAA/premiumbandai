@@ -120,7 +120,7 @@ const typeDefs = gql`
         deleteRealGradeSave(realGradeID: ID! id: ID): ProfileData
         deleteMasterGradeSave(masterGradeID: ID! id: ID): ProfileData
         deletePerfectGradeSave(perfectGradeID: ID! id: ID): ProfileData
-        deleteSDGradeSave(sdGrade: ID! id: ID): ProfileData
+        deleteSDGradeSave(sdGradeID: ID! id: ID): ProfileData
     }
 `;
 module.exports = typeDefs;

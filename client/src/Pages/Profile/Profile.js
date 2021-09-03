@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import {useQuery, useMutation} from "@apollo/client"
+import {useQuery} from "@apollo/client"
 import {GET_SAVE_CONVERGE, 
     GET_SAVE_HIGHGRADE, 
     GET_SAVE_REALGRADE, 
@@ -12,8 +12,8 @@ import {GET_SAVE_CONVERGE,
     GET_MASTERGRADE_WISH, 
     GET_PERFECTGRADE_WISH,
     GET_SDGRADE_WISH} from '../../utils/queries'
-import {DELETE_CONVERGE_SAVE} from '../../utils/mutations'
-import {Accordion, Table, Button} from 'react-bootstrap'
+import {Accordion, Table} from 'react-bootstrap'
+import {ConvergeTable, HighGradeTable, RealGradeTable, MasterGradeTable, PerfectGradeTable, SDGradeTable} from '../../Components'
 import './styles.css'
 
 const Profile = () => {
@@ -29,7 +29,6 @@ const Profile = () => {
     const {loading: loadMasterWish, data: masterWishData} = useQuery(GET_MASTERGRADE_WISH)
     const {loading: loadPerfectGradeWish, data: perfectGradeWishData} = useQuery(GET_PERFECTGRADE_WISH)
     const {loading: loadSDGradeWish, data: sdGradeWishData} = useQuery(GET_SDGRADE_WISH)
-    const [deleteConvergeSave] = useMutation(DELETE_CONVERGE_SAVE)
     const [loadConverge, setLoadConverge] = useState(undefined)
     const [loadHighGrade, setLoadHighGrade] = useState(undefined)
     const [loadRealGrade, setLoadRealGrade] = useState(undefined)
@@ -115,18 +114,7 @@ const Profile = () => {
         }
     }, [loadSDGradeList, sdGradeWishData])
 
-    const deleteItem = (id) => {
-        try {
-            deleteConvergeSave({
-                variables: {
-                    convergeID: id
-                }
-            })
-        } catch (error) {
-            console.log(error)
-        }
-        window.location.reload();   
-    }
+  
 
     return (
         <>  
@@ -135,146 +123,37 @@ const Profile = () => {
                 <Accordion.Item eventKey="0">
                     <Accordion.Header>Saved Converges</Accordion.Header>
                     <Accordion.Body>
-                    {!loading && loadConverge &&
-                                loadConverge.map((converge) => (
-                                    <div key={converge.id}>
-                                        <h6>{converge.gunplaName}</h6>
-                                        <p>{converge.series}</p>
-                                        <p>{converge.price}</p>
-                                        <p>{converge.releaseDate}</p>
-                                        <Button onClick={() => deleteItem(converge._id)} variant="danger"></Button>
-                                    </div>
-                                ))}
+                        {loadConverge && !loading && <ConvergeTable converges={loadConverge}/>}
                     </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="1">
                     <Accordion.Header>Saved High Grades</Accordion.Header>
                     <Accordion.Body>
-                        <Table>
-                            <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Series</th>
-                                    <th>Price</th>
-                                    <th>Release Date</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {!loadHigh && loadHighGrade &&
-                                loadHighGrade.map((highGrade) => (
-                                    <tr key={highGrade.id}>
-                                        <td>{highGrade.gunplaName}</td>
-                                        <td>{highGrade.series}</td>
-                                        <td>{highGrade.price}</td>
-                                        <td>{highGrade.releaseDate}</td>
-                                    </tr>
-                                ))}
-                            </tbody>
-                        </Table>
+                        {loadHighGrade && !loadHigh && <HighGradeTable highGrades={loadHighGrade} />}
                     </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="2">
                     <Accordion.Header>Saved Real Grades</Accordion.Header>
                     <Accordion.Body>
-                        <Table>
-                            <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Series</th>
-                                    <th>Price</th>
-                                    <th>Release Date</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {!loadReal && loadRealGrade &&
-                                loadRealGrade.map((realGrade) => (
-                                    <tr key={realGrade.id}>
-                                        <td>{realGrade.gunplaName}</td>
-                                        <td>{realGrade.series}</td>
-                                        <td>{realGrade.price}</td>
-                                        <td>{realGrade.releaseDate}</td>
-                                    </tr>
-                                ))}
-                            </tbody>
-                        </Table>
+                        {loadRealGrade && !loadReal && <RealGradeTable realGrades={loadRealGrade} />}
                     </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="3">
                     <Accordion.Header>Saved Master Grades</Accordion.Header>
                     <Accordion.Body>
-                        <Table>
-                            <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Series</th>
-                                    <th>Price</th>
-                                    <th>Release Date</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {!loadMaster && loadMasterGrade &&
-                                loadMasterGrade.map((masterGrade) => (
-                                    <tr key={masterGrade.id}>
-                                        <td>{masterGrade.gunplaName}</td>
-                                        <td>{masterGrade.series}</td>
-                                        <td>{masterGrade.price}</td>
-                                        <td>{masterGrade.releaseDate}</td>
-                                    </tr>
-                                ))}
-                            </tbody>
-                        </Table>
+                        {loadMasterGrade && !loadMaster && <MasterGradeTable masterGrades={loadMasterGrade} />}
                     </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="4">
                     <Accordion.Header>Saved Perfect Grades</Accordion.Header>
                     <Accordion.Body>
-                        <Table>
-                            <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Series</th>
-                                    <th>Price</th>
-                                    <th>Release Date</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {!loadPerfect && loadPerfectGrade &&
-                                loadPerfectGrade.map((perfect) => (
-                                    <tr key={perfect.id}>
-                                        <td>{perfect.gunplaName}</td>
-                                        <td>{perfect.series}</td>
-                                        <td>{perfect.price}</td>
-                                        <td>{perfect.releaseDate}</td>
-                                    </tr>
-                                ))}
-                            </tbody>
-                        </Table>
+                        {loadPerfectGrade && !loadPerfect && <PerfectGradeTable perfectGrades={loadPerfectGrade} />}
                     </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="5">
                     <Accordion.Header>Saved SD</Accordion.Header>
                     <Accordion.Body>
-                        <Table>
-                            <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Series</th>
-                                    <th>Price</th>
-                                    <th>Release Date</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {!loadSD && loadSDGrade &&
-                                loadSDGrade.map((SDGrade) => (
-                                    <tr key={SDGrade.id}>
-                                        <td>{SDGrade.gunplaName}</td>
-                                        <td>{SDGrade.series}</td>
-                                        <td>{SDGrade.price}</td>
-                                        <td>{SDGrade.releaseDate}</td>
-                                    </tr>
-                                ))}
-                            </tbody>
-                        </Table>
+                        {loadSDGrade && !loadSD && <SDGradeTable sdGrades={loadSDGrade}/>}
                     </Accordion.Body>
                 </Accordion.Item>
             </Accordion>

@@ -241,16 +241,84 @@ export const DELETE_CONVERGE_SAVE = gql`
 
 export const DELETE_HIGHGRADE_SAVE = gql`
     mutation deleteHighGradeSave($highGradeID: ID! $id: ID){
-        deleteHighGradeSave(convergeID: $highGradeID id: $id) {
+        deleteHighGradeSave(highGradeID: $highGradeID id: $id) {
             username
             email
-            gotConverges {
-            _id
-            gunplaName
-            image
-            series
-            price
-            releaseDate
+            gotHighGrades {
+                _id
+                gunplaName
+                image
+                series
+                price
+                releaseDate
+            }
+        }
+    }
+`;
+
+export const DELETE_REALGRADE_SAVE = gql`
+    mutation deleteRealGradeSave($realGradeID: ID! $id: ID){
+        deleteRealGradeSave(realGradeID: $realGradeID id: $id) {
+            username
+            email
+            gotRealGrades {
+                _id
+                gunplaName
+                image
+                series
+                price
+                releaseDate
+            }
+        }
+    }
+`;
+
+export const DELETE_MASTERGRADE_SAVE = gql`
+    mutation deleteMasterGradeSave($masterGradeID: ID! $id: ID){
+        deleteMasterGradeSave(masterGradeID: $masterGradeID id: $id) {
+            username
+            email
+            gotMasterGrades {
+                _id
+                gunplaName
+                image
+                series
+                price
+                releaseDate
+            }
+        }
+    }
+`;
+
+export const DELETE_PERFECTGRADE_SAVE = gql`
+    mutation deletePerfectGradeSave($perfectGradeID: ID! $id: ID){
+        deletePerfectGradeSave(perfectGradeID: $perfectGradeID id: $id) {
+            username
+            email
+            gotPerfectGrades {
+                _id
+                gunplaName
+                image
+                series
+                price
+                releaseDate
+            }
+        }
+    }
+`;
+
+export const DELETE_SDGRADE_SAVE = gql`
+    mutation deleteSDGradeSave($sdGradeID: ID! $id: ID){
+        deleteSDGradeSave(sdGradeID: $sdGradeID id: $id) {
+            username
+            email
+            gotSDGrades {
+                _id
+                gunplaName
+                image
+                series
+                price
+                releaseDate
             }
         }
     }

@@ -351,26 +351,28 @@ const resolvers = {
             }
             
         },
-        deleteHighGradeSave: async (parent, {highGradeID, id}, context) => {
-            let userId = context.user ? context.user_id: id
-            return await ProfileData.findOneAndUpdate({
-                _id: userId
-            },
-            {
-                $pull: {
-                    'gotHighGrades': {
-                        _id: highGradeID
+        deleteHighGradeSave: async (parent, {highGradeID}, context) => {
+            try{
+                return await ProfileData.findOneAndUpdate({
+                    _id: context.user
+                },
+                {
+                    $pull: {
+                        'gotHighGrades': {
+                            _id: highGradeID
+                        }
                     }
-                }
-            },
-            {
-                new: true
-            })
+                },
+                {
+                    new: true
+                })
+            } catch (error) {
+                console.log(error)
+            }
         },
-        deleteRealGradeSave: async (parent, {realGradeID, id}, context) => {
-            let userId = context.user ? context.user_id: id
+        deleteRealGradeSave: async (parent, {realGradeID}, context) => {
             return await ProfileData.findOneAndUpdate({
-                _id: userId
+                _id: context.user
             },
             {
                 $pull: {
@@ -383,15 +385,48 @@ const resolvers = {
                 new: true
             })
         },
-        deleteMasterGradeSave: async (parent, {masterGradeID, id}, context) => {
-            let userId = context.user ? context.user_id: id
+        deleteMasterGradeSave: async (parent, {masterGradeID}, context) => {
             return await ProfileData.findOneAndUpdate({
-                _id: userId
+                _id: context.user
             },
             {
                 $pull: {
                     'gotMasterGrades': {
                         _id: masterGradeID
+                    }
+                }
+            },
+            {
+                new: true
+            })
+        },
+        deletePerfectGradeSave: async (parent, {perfectGradeID}, context) => {
+            try{
+                return await ProfileData.findOneAndUpdate({
+                    _id: context.user
+                },
+                {
+                    $pull: {
+                        'gotPerfectGrades': {
+                            _id: perfectGradeID
+                        }
+                    }
+                },
+                {
+                    new: true
+                })
+            } catch (error) {
+                console.log(error)
+            }
+        },
+        deleteSDGradeSave: async (parent, {sdGradeID}, context) => {
+            return await ProfileData.findOneAndUpdate({
+                _id: context.user
+            },
+            {
+                $pull: {
+                    'gotSDGrades': {
+                        _id: sdGradeID
                     }
                 }
             },
