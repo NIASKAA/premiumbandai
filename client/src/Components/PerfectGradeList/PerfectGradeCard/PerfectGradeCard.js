@@ -1,12 +1,14 @@
 import React, {useState} from 'react'
 import {useMutation} from '@apollo/client'
 import {SAVE_PERFECTGRADE} from '../../../utils/mutations'
+import {PERFECTGRADE_WISHLIST} from '../../../utils/mutations'
 import {Col, Card, CardGroup, ButtonGroup, Button} from 'react-bootstrap'
 import Auth from '../../../utils/auth'
 import './styles.css'
 
 const PerfectGradeCard = ({perfectGrade}) => {
     const [savePerfectGrade] = useMutation(SAVE_PERFECTGRADE)
+    const [perfectGradeWishlist] = useMutation(PERFECTGRADE_WISHLIST)
     const [ProfileData, setProfileData] = useState({
         email: 'No email',
         username: 'No username',
@@ -22,6 +24,20 @@ const PerfectGradeCard = ({perfectGrade}) => {
                 }
             })
             setProfileData({...ProfileData, gotPerfectGrades: response})
+        } catch (error) {
+            console.log(error)
+        }
+    }
+
+    const saveToWishlist = async () => {
+        try {
+            const response = await perfectGradeWishlist({
+                variables: {
+                    name: perfectGrade.gunplaName
+                }
+            })
+            console.log(response)
+            setProfileData({...ProfileData, perfectGradeWish: response})
         } catch (error) {
             console.log(error)
         }
@@ -42,7 +58,7 @@ const PerfectGradeCard = ({perfectGrade}) => {
                         {Auth.loggedIn ? (
                             <ButtonGroup>
                                 <Button onClick={saveToList}>Save</Button>
-                                <Button onClick={""}>Add to Wishlist</Button>
+                                <Button onClick={saveToWishlist}>Add to Wishlist</Button>
                             </ButtonGroup>
                         ) : (
                             <>

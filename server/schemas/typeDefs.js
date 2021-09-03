@@ -114,13 +114,19 @@ const typeDefs = gql`
         realGradeWishlist(name: String! id: ID): ProfileData
         masterGradeWishlist(name: String! id: ID): ProfileData
         perfectGradeWishlist(name: String! id: ID): ProfileData
-        sdGradeWishlist(name: String! id: ID): ProfileData
+        SDGradeWishlist(name: String! id: ID): ProfileData
         deleteConvergeSave(convergeID: ID! id: ID): ProfileData
         deleteHighGradeSave(highGradeID: ID! id: ID): ProfileData
         deleteRealGradeSave(realGradeID: ID! id: ID): ProfileData
         deleteMasterGradeSave(masterGradeID: ID! id: ID): ProfileData
         deletePerfectGradeSave(perfectGradeID: ID! id: ID): ProfileData
         deleteSDGradeSave(sdGradeID: ID! id: ID): ProfileData
+        deleteConvergeWishlist(convergeID: ID! id:ID): ProfileData
+        deleteHighGradeWishlist(highGradeID: ID! id:ID): ProfileData
+        deleteRealGradeWishlist(realGradeID: ID! id: ID): ProfileData
+        deleteMasterGradeWishlist(masterGradeID: ID! id: ID): ProfileData
+        deletePerfectGradeWishlist(perfectGradeID: ID! id: ID): ProfileData
+        deleteSDGradeWishlist(SDGradeID: ID! id: ID): ProfileData
     }
 `;
 module.exports = typeDefs;

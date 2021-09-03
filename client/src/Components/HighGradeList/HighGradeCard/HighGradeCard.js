@@ -2,8 +2,8 @@ import React, {useState} from 'react'
 import {useMutation} from '@apollo/client'
 import {SAVE_HIGHGRADE} from '../../../utils/mutations'
 import {HIGHGRADE_WISHLIST} from '../../../utils/mutations'
-import {Col, Card, CardGroup, ButtonGroup, Button} from 'react-bootstrap'
 import Auth from '../../../utils/auth'
+import {Col, Card, CardGroup, ButtonGroup, Button} from 'react-bootstrap'
 import './styles.css'
 
 const HighGradeCard = ({highGrade}) => {
@@ -13,11 +13,11 @@ const HighGradeCard = ({highGrade}) => {
         email: 'No email',
         username: 'No username',
         gotHighGrades: 'No highgrades',
-        highGradeWish: 'No highgrades'
+        highGradeWish: 'no highgrades'
     })
 
     const saveToList = async (event) => {
-        event.preventDefault()
+        event.preventDefault();
         try {
             const response = await saveHighGrade({
                 variables: {
@@ -30,15 +30,15 @@ const HighGradeCard = ({highGrade}) => {
         }
     }
 
-    const saveToWishlist = async (event) => {
-        event.preventDefault()
+    const saveToWishlist = async () => {
         try {
-            const wishResponse = await highGradeWishlist({
+            const response = await highGradeWishlist({
                 variables: {
                     name: highGrade.gunplaName
                 }
             })
-            setProfileData({...ProfileData, highGradeWish: wishResponse})
+            console.log(response)
+            setProfileData({...ProfileData, highGradeWish: response})
         } catch (error) {
             console.log(error)
         }

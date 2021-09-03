@@ -252,7 +252,7 @@ const resolvers = {
             })
         },
         highGradeWishlist: async (parent, {name, id}, context) => {
-            let userId = context.user ? context.user_id: id
+            let userId = context.user ? context.user._id: id
             const fetchHighGrade = await HighGrade.findOne({gunplaName: name})
             if(!fetchHighGrade) {
                 return 'HighGrade does not exist'
@@ -268,7 +268,7 @@ const resolvers = {
             })
         },
         realGradeWishlist: async (parent, {name, id}, context) => {
-            let userId = context.user ? context.user_id: id
+            let userId = context.user ? context.user._id: id
             const fetchRealGrade = await RealGrade.findOne({gunplaName: name})
             if(!fetchRealGrade) {
                 return 'RealGrade does not exist'
@@ -284,7 +284,7 @@ const resolvers = {
             })
         },
         masterGradeWishlist: async (parent, {name, id}, context) => {
-            let userId = context.user ? context.user_id: id
+            let userId = context.user ? context.user._id: id
             const fetchMasterGrade = await MasterGrade.findOne({gunplaName: name})
             if(!fetchMasterGrade) {
                 return 'MasterGrade does not exist'
@@ -300,7 +300,7 @@ const resolvers = {
             })
         },
         perfectGradeWishlist: async (parent, {name, id}, context) => {
-            let userId = context.user ? context.user_id: id
+            let userId = context.user ? context.user._id: id
             const fetchPerfectGrade = await PerfectGrade.findOne({gunplaName: name})
             if(!fetchPerfectGrade) {
                 return 'PerfectGrade does not exist'
@@ -315,8 +315,8 @@ const resolvers = {
                 new: true
             })
         },
-        sdGradeWishlist: async (parent, {name, id}, context) => {
-            let userId = context.user ? context.user_id: id
+        SDGradeWishlist: async (parent, {name, id}, context) => {
+            let userId = context.user ? context.user._id: id
             const fetchSDGrade = await SDGrade.findOne({gunplaName: name})
             if(!fetchSDGrade) {
                 return 'SDGrade does not exist'
@@ -426,6 +426,113 @@ const resolvers = {
             {
                 $pull: {
                     'gotSDGrades': {
+                        _id: sdGradeID
+                    }
+                }
+            },
+            {
+                new: true
+            })
+        },
+        deleteConvergeWishlist: async (parent, {convergeID}, context) => {
+            try {
+                return await ProfileData.findOneAndUpdate({
+                    _id: context.user
+                },
+                { $pull: 
+                    {
+                        'convergeWish': {
+                            _id: convergeID
+                        }
+                    }
+                },
+                {
+                    new: true
+                })
+            } catch (error) {
+                console.log(error)
+            }
+            
+        },
+        deleteHighGradeWishlist: async (parent, {highGradeID}, context) => {
+            try{
+                return await ProfileData.findOneAndUpdate({
+                    _id: context.user
+                },
+                {
+                    $pull: {
+                        'highGradeWish': {
+                            _id: highGradeID
+                        }
+                    }
+                },
+                {
+                    new: true
+                })
+            } catch (error) {
+                console.log(error)
+            }
+        },
+        deleteRealGradeWishlist: async (parent, {realGradeID}, context) => {
+            try{
+                return await ProfileData.findOneAndUpdate({
+                    _id: context.user
+                },
+                {
+                    $pull: {
+                        'realGradeWish': {
+                            _id: realGradeID
+                        }
+                    }
+                },
+                {
+                    new: true
+                })
+            } catch (error) {
+                console.log(error)
+            }
+        },
+        deleteMasterGradeWishlist: async (parent, {masterGradeID}, context) => {
+            return await ProfileData.findOneAndUpdate({
+                _id: context.user
+            },
+            {
+                $pull: {
+                    'masterGradeWish': {
+                        _id: masterGradeID
+                    }
+                }
+            },
+            {
+                new: true
+            })
+        },
+        deletePerfectGradeWishlist: async (parent, {perfectGradeID}, context) => {
+            try{
+                return await ProfileData.findOneAndUpdate({
+                    _id: context.user
+                },
+                {
+                    $pull: {
+                        'perfectGradeWish': {
+                            _id: perfectGradeID
+                        }
+                    }
+                },
+                {
+                    new: true
+                })
+            } catch (error) {
+                console.log(error)
+            }
+        },
+        deleteSDGradeWishlist: async (parent, {sdGradeID}, context) => {
+            return await ProfileData.findOneAndUpdate({
+                _id: context.user
+            },
+            {
+                $pull: {
+                    'sdGradeWish': {
                         _id: sdGradeID
                     }
                 }

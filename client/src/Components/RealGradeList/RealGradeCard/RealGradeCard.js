@@ -1,11 +1,13 @@
 import React, {useState} from 'react'
 import {useMutation} from '@apollo/client'
 import {SAVE_REALGRADE} from '../../../utils/mutations'
+import {REALGRADE_WISHLIST} from '../../../utils/mutations'
 import {Col, Card, CardGroup, ButtonGroup, Button} from 'react-bootstrap'
 import './styles.css'
 
 const RealGradeCard = ({realGrade}) => {
     const [saveRealGrade] = useMutation(SAVE_REALGRADE)
+    const [realGradeWishlist] = useMutation(REALGRADE_WISHLIST)
     const [ProfileData, setProfileData] = useState({
         email: 'No email',
         username: 'No username',
@@ -25,6 +27,20 @@ const RealGradeCard = ({realGrade}) => {
             console.log(error)
         }
     }
+
+    const saveToWishlist = async () => {
+        try {
+            const response = await realGradeWishlist({
+                variables: {
+                    name: realGrade.gunplaName
+                }
+            })
+            console.log(response)
+            setProfileData({...ProfileData, realGradeWish: response})
+        } catch (error) {
+            console.log(error)
+        }
+    }
     
     return (
         <>
@@ -40,7 +56,7 @@ const RealGradeCard = ({realGrade}) => {
                         </Card.Body>
                         <ButtonGroup>
                             <Button onClick={saveToList}>Save</Button>
-                            <Button onClick={""}>Add to Wishlist</Button>
+                            <Button onClick={saveToWishlist}>Add to Wishlist</Button>
                         </ButtonGroup>
                     </Card>
                 </CardGroup>

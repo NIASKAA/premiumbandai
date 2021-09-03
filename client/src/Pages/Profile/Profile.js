@@ -12,8 +12,9 @@ import {GET_SAVE_CONVERGE,
     GET_MASTERGRADE_WISH, 
     GET_PERFECTGRADE_WISH,
     GET_SDGRADE_WISH} from '../../utils/queries'
-import {Accordion, Table} from 'react-bootstrap'
-import {ConvergeTable, HighGradeTable, RealGradeTable, MasterGradeTable, PerfectGradeTable, SDGradeTable} from '../../Components'
+import {Accordion} from 'react-bootstrap'
+import {ConvergeTable, HighGradeTable, RealGradeTable, MasterGradeTable, PerfectGradeTable, SDGradeTable, RealGradeWishlistTable} from '../../Components'
+import {ConvergeWishlistTable, HighGradeWishlistTable,  MasterGradeWishlistTable, PerfectGradeWishlistTable, SDGradeWishlistTable} from '../../Components'
 import './styles.css'
 
 const Profile = () => {
@@ -28,7 +29,7 @@ const Profile = () => {
     const {loading: loadRealWish, data: realWishData} = useQuery(GET_REALGRADE_WISH)
     const {loading: loadMasterWish, data: masterWishData} = useQuery(GET_MASTERGRADE_WISH)
     const {loading: loadPerfectGradeWish, data: perfectGradeWishData} = useQuery(GET_PERFECTGRADE_WISH)
-    const {loading: loadSDGradeWish, data: sdGradeWishData} = useQuery(GET_SDGRADE_WISH)
+    const {loading: loadSDWish, data: SDWishData} = useQuery(GET_SDGRADE_WISH)
     const [loadConverge, setLoadConverge] = useState(undefined)
     const [loadHighGrade, setLoadHighGrade] = useState(undefined)
     const [loadRealGrade, setLoadRealGrade] = useState(undefined)
@@ -37,10 +38,10 @@ const Profile = () => {
     const [loadSDGrade, setLoadSDGrade] = useState(undefined)
     const [loadConvergeList, setLoadConvergeList] = useState(undefined)
     const [loadHighList, setLoadHighList] = useState(undefined)
-    const [loadRealList, setLoadRealList]= useState(undefined)
+    const [loadRealList, setLoadRealList] = useState(undefined)
     const [loadMasterList, setLoadMasterList] = useState(undefined)
     const [loadPerfectGradeList, setLoadPerfectGradeList] = useState(undefined)
-    const [loadSDGradeList, setLoadSDGradeList] = useState(undefined)
+    const [loadSDList, setLoadSDList] = useState(undefined)
 
     useEffect(() => {
         if(!loading && data) {
@@ -90,11 +91,11 @@ const Profile = () => {
         }
     }, [loadHighWish, highWishData])
 
-    useEffect(() => {
-        if(!loadRealList && realWishData) {
-            setLoadRealList(realWishData.getUserRealWishlist.realGradeWish)
-        }
-    }, [loadRealWish, realWishData])
+   useEffect(() => {
+       if(!loadRealList && realWishData) {
+           setLoadRealList(realWishData.getUserRealWishlist.realGradeWish)
+       }
+   }, [loadRealWish, realWishData])
 
     useEffect(() => {
         if(!loadMasterList && masterWishData) {
@@ -109,10 +110,10 @@ const Profile = () => {
     }, [loadPerfectGradeList, perfectGradeWishData])
 
     useEffect(() => {
-        if(!loadSDGradeList && sdGradeWishData) {
-            setLoadSDGradeList(sdGradeWishData.getUserSDWishlist.sdGradeWish)
+        if(!loadSDList && SDWishData) {
+            setLoadSDList(SDWishData.getUserSDWishlist.sdGradeWish)
         }
-    }, [loadSDGradeList, sdGradeWishData])
+    }, [loadSDList, SDWishData])
 
   
 
@@ -165,157 +166,37 @@ const Profile = () => {
                 <Accordion.Item eventKey="0">
                     <Accordion.Header>Converge Wishlist</Accordion.Header>
                     <Accordion.Body>
-                        <Table>
-                            <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Series</th>
-                                    <th>Price</th>
-                                    <th>Release Date</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {!loadConvergeWish && loadConvergeList &&
-                                loadConvergeList.map((converge) => (
-                                    <tr key={converge.id}>
-                                        <td>{converge.gunplaName}</td>
-                                        <td>{converge.series}</td>
-                                        <td>{converge.price}</td>
-                                        <td>{converge.releaseDate}</td>
-                                    </tr>
-                                ))}
-                            </tbody>
-                        </Table>
+                        {loadConvergeList && !loadConvergeWish && <ConvergeWishlistTable converges={loadConvergeList} />}
                     </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="1">
                     <Accordion.Header>High Grade Wishlist</Accordion.Header>
                     <Accordion.Body>
-                        <Table>
-                            <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Series</th>
-                                    <th>Price</th>
-                                    <th>Release Date</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {!loadHighWish && loadHighList &&
-                                loadHighList.map((highGrade) => (
-                                    <tr key={highGrade.id}>
-                                        <td>{highGrade.gunplaName}</td>
-                                        <td>{highGrade.series}</td>
-                                        <td>{highGrade.price}</td>
-                                        <td>{highGrade.releaseDate}</td>
-                                    </tr>
-                                ))}
-                            </tbody>
-                        </Table>
+                        {loadHighList && !loadHighWish && <HighGradeWishlistTable highGrades={loadHighList} />}
                     </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="2">
                     <Accordion.Header>Real Grades Wishlist</Accordion.Header>
                     <Accordion.Body>
-                        <Table>
-                            <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Series</th>
-                                    <th>Price</th>
-                                    <th>Release Date</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {!loadRealWish && loadRealList &&
-                                loadRealList.map((realGrade) => (
-                                    <tr key={realGrade.id}>
-                                        <td>{realGrade.gunplaName}</td>
-                                        <td>{realGrade.series}</td>
-                                        <td>{realGrade.price}</td>
-                                        <td>{realGrade.releaseDate}</td>
-                                    </tr>
-                                ))}
-                            </tbody>
-                        </Table>
+                        {loadRealList && !loadRealWish && <RealGradeWishlistTable realGrades={loadRealList} />}
                     </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="3">
                     <Accordion.Header>Master Grades Wishlist</Accordion.Header>
                     <Accordion.Body>
-                        <Table>
-                            <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Series</th>
-                                    <th>Price</th>
-                                    <th>Release Date</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {!loadMasterWish && loadMasterList &&
-                                loadMasterList.map((masterGrade) => (
-                                    <tr key={masterGrade.id}>
-                                        <td>{masterGrade.gunplaName}</td>
-                                        <td>{masterGrade.series}</td>
-                                        <td>{masterGrade.price}</td>
-                                        <td>{masterGrade.releaseDate}</td>
-                                    </tr>
-                                ))}
-                            </tbody>
-                        </Table>
+                        {loadMasterList && !loadMasterWish && <MasterGradeWishlistTable masterGrades={loadMasterList} />}
                     </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="4">
                     <Accordion.Header>Perfect Grade Wishlist</Accordion.Header>
                     <Accordion.Body>
-                        <Table>
-                            <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Series</th>
-                                    <th>Price</th>
-                                    <th>Release Date</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {!loadPerfectGradeWish && loadPerfectGradeList &&
-                                loadPerfectGradeList.map((perfect) => (
-                                    <tr key={perfect.id}>
-                                        <td>{perfect.gunplaName}</td>
-                                        <td>{perfect.series}</td>
-                                        <td>{perfect.price}</td>
-                                        <td>{perfect.releaseDate}</td>
-                                    </tr>
-                                ))}
-                            </tbody>
-                        </Table>
+                        {loadPerfectGradeList && !loadPerfectGradeWish && <PerfectGradeWishlistTable perfectGrades={loadPerfectGradeList} />}
                     </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="5">
                     <Accordion.Header>SD Wishlist</Accordion.Header>
                     <Accordion.Body>
-                        <Table>
-                            <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Series</th>
-                                    <th>Price</th>
-                                    <th>Release Date</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {!loadSDGradeWish && loadSDGradeList &&
-                                loadSDGradeList.map((SDGrade) => (
-                                    <tr key={SDGrade.id}>
-                                        <td>{SDGrade.gunplaName}</td>
-                                        <td>{SDGrade.series}</td>
-                                        <td>{SDGrade.price}</td>
-                                        <td>{SDGrade.releaseDate}</td>
-                                    </tr>
-                                ))}
-                            </tbody>
-                        </Table>
+                       {loadSDList && !loadSDWish && <SDGradeWishlistTable SDGrades={loadSDList} />}
                     </Accordion.Body>
                 </Accordion.Item>
             </Accordion>

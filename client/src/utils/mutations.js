@@ -142,13 +142,13 @@ export const HIGHGRADE_WISHLIST = gql`
         highGradeWishlist(name: $name id: $id) {
             username
             email
-            convergeWish {
-            _id
-            gunplaName
-            image
-            series
-            releaseDate
-            price
+            highGradeWish {
+                _id
+                gunplaName
+                image
+                series
+                releaseDate
+                price
             }
         }
     }
@@ -159,7 +159,7 @@ export const REALGRADE_WISHLIST = gql`
         realGradeWishlist(name: $name id: $id) {
             username
             email
-            convergeWish {
+            realGradeWish {
             _id
             gunplaName
             image
@@ -176,7 +176,7 @@ export const MASTERGRADE_WISHLIST = gql`
         masterGradeWishlist(name: $name id: $id) {
             username
             email
-            convergeWish {
+            masterGradeWish {
             _id
             gunplaName
             image
@@ -193,7 +193,7 @@ export const PERFECTGRADE_WISHLIST = gql`
         perfectGradeWishlist(name: $name id: $id) {
             username
             email
-            convergeWish {
+            perfectGradeWish {
             _id
             gunplaName
             image
@@ -206,11 +206,11 @@ export const PERFECTGRADE_WISHLIST = gql`
 `;
 
 export const SDGRADE_WISHLIST = gql`
-    mutation sdGradeWishlist($name: String! $id: ID) {
-        sdGradeWishlist(name: $name id: $id) {
+    mutation SDGradeWishlist($name: String! $id: ID) {
+        SDGradeWishlist(name: $name id: $id) {
             username
             email
-            convergeWish {
+            sdGradeWish {
             _id
             gunplaName
             image
@@ -313,6 +313,108 @@ export const DELETE_SDGRADE_SAVE = gql`
             username
             email
             gotSDGrades {
+                _id
+                gunplaName
+                image
+                series
+                price
+                releaseDate
+            }
+        }
+    }
+`;
+
+export const DELETE_CONVERGE_WISHLIST = gql`
+    mutation deleteConvergeWishlist($convergeID: ID! $id: ID){
+        deleteConvergeWishlist(convergeID: $convergeID id: $id) {
+            username
+            email
+            convergesWish {
+                _id
+                gunplaName
+                image
+                series
+                price
+                releaseDate
+            }
+        }
+    }
+`;
+
+export const DELETE_HIGHGRADE_WISHLIST = gql`
+    mutation deleteHighGradeWishlist($highGradeID: ID! $id: ID){
+        deleteHighGradeWishlist(highGradeID: $highGradeID id: $id) {
+            username
+            email
+            highGradeWish {
+                _id
+                gunplaName
+                image
+                series
+                price
+                releaseDate
+            }
+        }
+    }
+`;
+
+export const DELETE_REALGRADE_WISHLIST = gql`
+    mutation deleteRealGradeWishlist($realGradeID: ID! $id: ID){
+        deleteRealGradeWishlist(realGradeID: $realGradeID id: $id) {
+            username
+            email
+            realGradeWish {
+                _id
+                gunplaName
+                image
+                series
+                price
+                releaseDate
+            }
+        }
+    }
+`;
+
+export const DELETE_MASTERGRADE_WISHLIST = gql`
+    mutation deleteMasterGradeWishlist($masterGradeID: ID! $id: ID){
+        deleteMasterGradeWishlist(masterGradeID: $masterGradeID id: $id) {
+            username
+            email
+            masterGradeWish {
+                _id
+                gunplaName
+                image
+                series
+                price
+                releaseDate
+            }
+        }
+    }
+`;
+
+export const DELETE_PERFECTGRADE_WISHLIST = gql`
+    mutation deletePerfectGradeWishlist($perfectGradeID: ID! $id: ID){
+        deletePerfectGradeWishlist(perfectGradeID: $perfectGradeID id: $id) {
+            username
+            email
+            perfectGradeWish {
+                _id
+                gunplaName
+                image
+                series
+                price
+                releaseDate
+            }
+        }
+    }
+`;
+
+export const DELETE_SDGRADE_WISHLIST = gql`
+    mutation deleteSDGradeWishlist($sdGradeID: ID! $id: ID){
+        deleteSDGradeWishlist(sdGradeID: $sdGradeID id: $id) {
+            username
+            email
+            sdGradeWish{
                 _id
                 gunplaName
                 image
