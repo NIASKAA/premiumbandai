@@ -174,7 +174,97 @@ const mgSeeds = [
         releaseDate: 11-2020,
         price: 6270
     },
-
+    {
+        gunplaName: "Gundam F90 Pack 0 & U",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675364/mg-gundam-f90-U-and-O_1_jqbfj7.jpg",
+        series: "Gundam F90",
+        releaseDate: 09-2020,
+        price: 2200
+    },
+    {
+        gunplaName: "RX-78-2 C.A. Gundam 3.0",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675364/mg-casval_s-gundam-ver-3_1_a6e9bf.jpg",
+        series: "Mobile Suit Gundam",
+        releaseDate: 09-2020,
+        price: 4950
+    },
+    {
+        gunplaName: "GM II (AEUG Colors)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675364/mg-GM-II-AEUG_1_hsf97w.jpg",
+        series: "Zeta Gundam",
+        releaseDate: 09-2020,
+        price: 3850
+    },
+    {
+        gunplaName: "Flight Unit",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675360/mg-flight-unit_1_avmi2c.jpg",
+        series: "Gundam Seed Astray",
+        releaseDate: 08-2020,
+        price: 2200
+    },
+    {
+        gunplaName: "Gundam Astray Red Frame Flight Unit",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675360/P-Bandai_MG_1100_Gundam_Astray_Red_Frame_Flight_Unit_1_z1zrfn.jpg",
+        series: "Gundam Seed Astray",
+        releaseDate: 08-2020,
+        price: 7150
+    },
+    {
+        gunplaName: "Sazabi (Special Coating Ver)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675364/mg-gundam-base-sazabi-ver-ka_1_bkvp7g.jpg",
+        series: "Char's Counterattack",
+        releaseDate: 12-2018,
+        price: 19800
+    },
+    {
+        gunplaName: 'Quabeley Amberil',
+        image: 'https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675364/mg-qubeley-amberiil_1_ygczij.jpg',
+        series: 'Gundam Build Divers',
+        releaseDate: 08-2020,
+        price: 5940
+    },
+    {
+        gunplaName: "Aile Strike Gundam (Clear Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675364/mg-aile-strike-gundam-ver-RM_2_ikipnt.jpg",
+        series: "Gundam Seed",
+        releaseDate: 07-2020,
+        price: 4620
+    },
+    {
+        gunplaName: "Freedom Gundam (Clear Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675364/mg-freedom-gundam-ver-2-clear-color_2_scxysj.jpg",
+        series: "Gundam Seed",
+        releaseDate: 07-2020,
+        price: 4950
+    },
+    {
+        gunplaName: "Jegan D Type (Initial)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675364/mg-jegan-d-type-initial-deployment_1_z9llea.jpg",
+        series: "Gundam UC MSV",
+        releaseDate: 06-2020,
+        price: 4620
+    },
+    {
+        gunplaName: "Debris Part Set",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675362/Gundam_Base_Limited_Debris_Parts_Set_1_webj2f.jpg",
+        series: "Other",
+        releaseDate: 05-2020,
+        price: 2200
+    },
+    {
+        gunplaName: "V2 Assault Buster Expansion Set",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675363/mg-v2-assault-buster-gundam-extension-parts_2_dgmibi.jpg",
+        series: "Victory Gundam",
+        releaseDate: 07-2020,
+        price: 2750
+    },
+    {
+        gunplaName: "Re-GZ (Unicorn Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675364/mg-re-gz-unicorn-ver_1_tcfzbn.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 12-2019,
+        price: 5830
+    },
 ];
 
 const mgSeed = async () => {

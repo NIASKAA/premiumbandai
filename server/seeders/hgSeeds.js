@@ -205,6 +205,13 @@ const hgSeeds = [
         price: 2420
     },
     {
+        gunplaName: "Gundam Unit 5",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630683221/hguc-gundam-g05_1_bghoig.jpg",
+        series: "Missing Link",
+        releaseDate: 03-2021,
+        price: 2475
+    },
+    {
         gunplaName: "Vayeate & Mercurius Set",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630333015/HGAC-VAYEATE-MERCURIUS_1_mb5caj.jpg",
         series: "Gundam Wing",
@@ -287,6 +294,202 @@ const hgSeeds = [
         series: "MSV",
         releaseDate: 11-2020,
         price: 2530
+    },
+    {
+        gunplaName: "Gundam Airmaster Burst",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675362/hgaw-gundam-airmaster-burst_1_djjd3d.jpg",
+        series: "Gundam X Afterwars",
+        releaseDate: 10-2020,
+        price: 2420
+    },
+    {
+        gunplaName: "Daughtress",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675362/hgaw-daughtress_1_eagirv.jpg",
+        series: "Gundam X Afterwars",
+        releaseDate: 10-2020,
+        price: 1320
+    },
+    {
+        gunplaName: "Gundam Shining Break (Before)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675364/hgbd-gundam-shining-break-BEFORE_1_xic6mw.jpg",
+        series: "Gundam Build Divers",
+        releaseDate: 10-2020,
+        price: 1980
+    },
+    {
+        gunplaName: "Gundam G-Else (Before)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675363/hgbd-break-g-else-before-ver_1_gyjzkf.jpg",
+        series: "Gundam Build Divers",
+        releaseDate: 10-2020,
+        price: 2090
+    },
+    {
+        gunplaName: "Gundam Plutone",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675365/hg-gundam-Plutone_1_or43ic.jpg",
+        series: "Gundam 00P",
+        releaseDate: 09-2020,
+        price: 2420
+    },
+    {
+        gunplaName: "Eldora Windam",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675363/hgbd-r-eldora-windam_1_ynkdfo.jpg",
+        series: "Gundam Build Divers",
+        releaseDate: 09-2020,
+        price: 1980
+    },
+    {
+        gunplaName: "High Mobility & Assault Booster Pack",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675362/hgac-gundam-geminass-01-assault-booster-high-mobility_1_k8u4ea.jpg",
+        series: "Gundam Wing G-Unit",
+        releaseDate: 09-2020,
+        price: 1760
+    },
+    {
+        gunplaName: "GM Night Seeker (MSV Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675365/hg-gm-night-seeker--msd_1_gthefl.jpg",
+        series: "MSV",
+        releaseDate: 08-2020,
+        price: 2530
+    },
+    {
+        gunplaName: "Crossbone Gundam Full Cloth",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675363/hguc-crossbone-gundam-full-cloth_1_quiq0e.jpg",
+        series: "Crossbone Gundam",
+        releaseDate: 08-2020,
+        price: 2530
+    },
+    {
+        gunplaName: "Rick Dias (Quattro Bajeena Ver)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630680630/hguc-rick-dias-quattro-bajeena-revive_1_zzhclf.jpg",
+        series: "Zeta Gundam",
+        releaseDate: 08-2020,
+        price: 2090
+    },
+    {
+        gunplaName: "Death Beast",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675363/hgfc-death-beast_2_fh89d0.jpg",
+        series: "Mobile Fighter G Gundam",
+        releaseDate: 07-2020,
+        price: 2475
+    },
+    {
+        gunplaName: "GM Ground Slave Wraith (Parachute Pack)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675363/HGUC-GM-GROUND-TYPE-PARACHUTE-PACK_1_vjbqwj.jpg",
+        series: "Missing Link",
+        releaseDate: 03-2020,
+        price: 2420
+    },
+    {
+        gunplaName: "Efreet (Doug Schneid Custom)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675365/hguc-doug-schneider-efreet_1_smglwx.jpg",
+        series: "Missing Link",
+        releaseDate: 03-2020,
+        price: 2640
+    },
+    {
+        gunplaName: "Gundam TR-1 (Haze'n-Thley)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675362/Gundam_TR-1_Haze_n-thley_1_ht4prk.jpg",
+        series: "Advance of Zeta",
+        releaseDate: 06-2020,
+        price: 3850
+    },
+    {
+        gunplaName: "R-Jarja (Twilight Axis Ver)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675363/hguc-twilight-axis-r-jarja_1_tymqql.jpg",
+        series: "Twilight Axis",
+        releaseDate: 07-2020,
+        price: 2090
+    },
+    {
+        gunplaName: "Gundam TR-6 Kehaar II Pack",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675362/6-pack-hguc-kehaar-ii_1_n0s831.jpg",
+        series: "Advance of Zeta",
+        releaseDate: 06-2020,
+        price: 16500
+    },
+    {
+        gunplaName: "Zaku Desert Type",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675363/hg-zaku-desert-type-msd_1_ufes5d.jpg",
+        series: "Mobile Suit Gundam The Origin",
+        releaseDate: 05-2020,
+        price: 2420
+    },
+    {
+        gunplaName: "Gundam Unit 4",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630683221/hguc-gundam-g04_1_dudzhz.jpg",
+        series: "Missing Link",
+        releaseDate: 05-2020,
+        price: 2475
+    },
+    {
+        gunplaName: "Zeta plus A1 (Test Image)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675363/hguc-zeta-plus-amuro-colors_1_jmfcse.jpg",
+        series: "Gundam Sentinel",
+        releaseDate: 04-2020,
+        price: 2750
+    },
+    {
+        gunplaName: "Varguil",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675360/hguc-gundam-varguil_1_cvu88y.jpg",
+        series: "Mobile Suit Gundam Moon",
+        releaseDate: 04-2020,
+        price: 2750
+    },
+    {
+        gunplaName: "Slave Wraith (Parachute Pack)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675360/hguc-slave-wraith-parachute-pack_m81yqy.jpg",
+        series: "Missing Link",
+        releaseDate: 02-2020,
+        price: 2420
+    },
+    {
+        gunplaName: "Gundam Pixy (Fred Reaver)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675365/hguc-gundam-pixy-fred-reaver-custom_1_wgae2g.jpg",
+        series: "Missing Link",
+        releaseDate: 02-2020,
+        price: 2200
+    },
+    {
+        gunplaName: "Mudrock Gundam",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675363/hguc-gundam-unit-6-mudrock_1_l3wjt4.jpg",
+        series: "Missing Link",
+        releaseDate: 11-2019,
+        price: 2200
+    },
+    {
+        gunplaName: "GN-X IV (Mass Production)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675365/hg-gn-x-iv-mass-production-type_1_msl4v6.jpg",
+        series: "Gundam 00",
+        releaseDate: 12-2019,
+        price: 2420
+    },
+    {
+        gunplaName: "Sinanju Stein (Unicorn Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675360/hguc-sinanju-stein-UC-MSV-ver_1_wejdf1.jpg",
+        series: "Gundam Unicorn NT",
+        releaseDate: 12-2019,
+        price: 2860
+    },
+    {
+        gunplaName: "GM Guard Custom (E-2 Spray Gun)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675362/1000140608_1_wsycjf.jpg",
+        series: "MSV",
+        releaseDate: 03-2020,
+        price: 2530
+    },
+    {
+        gunplaName: "Eldora Daughtress",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675362/hgbd-r-eldora-daughtress_1_fgmlgu.jpg",
+        series: "Gundam Build Divers ReRise",
+        releaseDate: 02-2020,
+        price: 1430
+    },
+    {
+        gunplaName: "",
+        image: "",
+        series: "",
+        releaseDate: 11-2021,
+        price: 4500
     },
 ];
 

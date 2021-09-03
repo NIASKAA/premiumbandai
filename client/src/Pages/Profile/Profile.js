@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import {useQuery, useMutation} from "@apollo/client"
 import {GET_SAVE_CONVERGE, 
     GET_SAVE_HIGHGRADE, 
     GET_SAVE_REALGRADE, 
@@ -11,11 +12,11 @@ import {GET_SAVE_CONVERGE,
     GET_MASTERGRADE_WISH, 
     GET_PERFECTGRADE_WISH,
     GET_SDGRADE_WISH} from '../../utils/queries'
-import {useQuery} from "@apollo/client"
+import {DELETE_CONVERGE_SAVE} from '../../utils/mutations'
 import {Accordion, Table, Button} from 'react-bootstrap'
 import './styles.css'
 
-const Profile = () => {
+const Profile = ({converge}) => {
     const {loading, data} = useQuery(GET_SAVE_CONVERGE)
     const {loading: loadHigh, data: highData} = useQuery(GET_SAVE_HIGHGRADE)
     const {loading: loadReal, data: realData} = useQuery(GET_SAVE_REALGRADE)
@@ -28,6 +29,7 @@ const Profile = () => {
     const {loading: loadMasterWish, data: masterWishData} = useQuery(GET_MASTERGRADE_WISH)
     const {loading: loadPerfectGradeWish, data: perfectGradeWishData} = useQuery(GET_PERFECTGRADE_WISH)
     const {loading: loadSDGradeWish, data: sdGradeWishData} = useQuery(GET_SDGRADE_WISH)
+    const [deleteConvergeSave] = useMutation(DELETE_CONVERGE_SAVE)
     const [loadConverge, setLoadConverge] = useState(undefined)
     const [loadHighGrade, setLoadHighGrade] = useState(undefined)
     const [loadRealGrade, setLoadRealGrade] = useState(undefined)
@@ -40,6 +42,12 @@ const Profile = () => {
     const [loadMasterList, setLoadMasterList] = useState(undefined)
     const [loadPerfectGradeList, setLoadPerfectGradeList] = useState(undefined)
     const [loadSDGradeList, setLoadSDGradeList] = useState(undefined)
+    const [ProfileData, setProfileData] = useState({
+        email: 'No email',
+        username: 'No username',
+        gotConverges: "No Converges",
+        convergeWish: 'No Converges'
+    });
 
     useEffect(() => {
         if(!loading && data) {
@@ -113,6 +121,20 @@ const Profile = () => {
         }
     }, [loadSDGradeList, sdGradeWishData])
 
+    const deleteItem = async (id) => {
+        try {
+            const response = await deleteConvergeSave({
+                variables: {
+                    convergeID: id
+                }
+            })
+            console.log(id)
+            setProfileData({...ProfileData, gotConverges: response})
+        } catch (error) {
+            console.log(error)
+        }
+    } 
+
     return (
         <>  
             <h3>Already have</h3>
@@ -137,6 +159,7 @@ const Profile = () => {
                                         <td>{converge.series}</td>
                                         <td>{converge.price}</td>
                                         <td>{converge.releaseDate}</td>
+                                        <Button onClick={() => deleteItem(converge._id)} variant="danger"></Button>
                                     </tr>
                                 ))}
                             </tbody>

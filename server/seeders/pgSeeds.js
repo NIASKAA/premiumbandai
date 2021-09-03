@@ -22,6 +22,20 @@ const pgSeeds = [
         releaseDate: 01-2021,
         price: 52800
     },
+    {
+        gunplaName: "Gundam 00 Seven Sword Inspection Color",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675360/pg-00-seven-sword-g-inspection_1_ip4f9l.jpg",
+        series: "Gundam 00V",
+        releaseDate: 03-2020,
+        price: 25300
+    },
+    {
+        gunplaName: "Perfect Strike Equipment Set",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675361/pg-perfect-strike-gundam_1_mscg7k.jpg",
+        series: "Gundam Seed",
+        releaseDate: 02-2020,
+        price: 8800
+    },
 ];
 
 const pgSeed = async () => {

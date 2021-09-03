@@ -51,25 +51,60 @@ const rgSeeds = [
         price: 3850
     },
     {
-        gunplaName: "",
-        image: "",
-        series: "",
-        releaseDate: 11-2021,
-        price: 4500
+        gunplaName: "Nu Gundam HWS",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630683221/RG-nu-gundam-HWS_1_ytjgfc.jpg",
+        series: "Char's Counterattack",
+        releaseDate: 09-2020,
+        price: 6600
     },
     {
-        gunplaName: "",
-        image: "",
-        series: "",
-        releaseDate: 11-2021,
-        price: 4500
+        gunplaName: "HWS Expansion Set",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630683221/rg-nu-gundam-hws-expansion-parts_1_f0hest.jpg",
+        series: "Char's Counterattack",
+        releaseDate: 09-2020,
+        price: 1980
     },
     {
-        gunplaName: "",
-        image: "",
-        series: "",
-        releaseDate: 11-2021,
-        price: 4500
+        gunplaName: "Destiny Gundam (Titanium Finish)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675361/rg-destiny-gundam-titanium-finish_1_cdyeyt.jpg",
+        series: "Gundam Seed Destiny",
+        releaseDate: 07-2020,
+        price: 7150
+    },
+    {
+        gunplaName: "Sinanju (Special Coating)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675361/rg-sinanju-special-coating_1_fwlmut.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 07-2020,
+        price: 11000
+    },
+    {
+        gunplaName: "Banshee Norn Destroy Mode (lighting)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675361/RG-banshee-norn-destroy-mode-lightning-model_1_ebvbgb.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 04-2020,
+        price: 11550
+    },
+    {
+        gunplaName: "Tallgeese (TV Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675361/rg-tallgeese-TV-ver_1_s0c9dq.jpg",
+        series: "Gundam Wing",
+        releaseDate: 06-2020,
+        price: 2750
+    },
+    {
+        gunplaName: "Crossbone Gundam X2",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675361/rg-crossbone-gundam-x2_1_ncejl8.jpg",
+        series: "Crossbone Gundam",
+        releaseDate: 12-2019,
+        price: 3190
+    },
+    {
+        gunplaName: "Uma Lightning Zaku II",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675361/rg-uma-lightning-zaku-II_3_on3iaj.jpg",
+        series: "MSV",
+        releaseDate: 01-2020,
+        price: 3600
     },
 ];
 

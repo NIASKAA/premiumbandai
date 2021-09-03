@@ -117,6 +117,10 @@ const typeDefs = gql`
         sdGradeWishlist(name: String! id: ID): ProfileData
         deleteConvergeSave(convergeID: ID! id: ID): ProfileData
         deleteHighGradeSave(highGradeID: ID! id: ID): ProfileData
+        deleteRealGradeSave(realGradeID: ID! id: ID): ProfileData
+        deleteMasterGradeSave(masterGradeID: ID! id: ID): ProfileData
+        deletePerfectGradeSave(perfectGradeID: ID! id: ID): ProfileData
+        deleteSDGradeSave(sdGrade: ID! id: ID): ProfileData
     }
 `;
 module.exports = typeDefs;

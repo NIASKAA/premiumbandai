@@ -363,6 +363,38 @@ const resolvers = {
             {
                 new: true
             })
+        },
+        deleteRealGradeSave: async (parent, {realGradeID, id}, context) => {
+            let userId = context.user ? context.user_id: id
+            return await ProfileData.findOneAndUpdate({
+                _id: userId
+            },
+            {
+                $pull: {
+                    'gotRealGrades': {
+                        _id: realGradeID
+                    }
+                }
+            },
+            {
+                new: true
+            })
+        },
+        deleteMasterGradeSave: async (parent, {masterGradeID, id}, context) => {
+            let userId = context.user ? context.user_id: id
+            return await ProfileData.findOneAndUpdate({
+                _id: userId
+            },
+            {
+                $pull: {
+                    'gotMasterGrades': {
+                        _id: masterGradeID
+                    }
+                }
+            },
+            {
+                new: true
+            })
         }
     }
 }
