@@ -331,21 +331,24 @@ const resolvers = {
                 new: true
             })
         },
-        deleteConvergeSave: async (parent, {convergeID, id}, context) => {
-            let userId = context.user ? context.user_id: id
-            return await ProfileData.findOneAndUpdate({
-                _id: userId
-            },
-            { $pull: 
-                {
-                    'gotConverges': {
-                        _id: convergeID
+        deleteConvergeSave: async (parent, {convergeID}, context) => {
+            try {
+                return await ProfileData.findOneAndUpdate({
+                    _id: context.user
+                },
+                { $pull: 
+                    {
+                        'gotConverges': {
+                            _id: convergeID
+                        }
                     }
-                }
-            },
-            {
-                new: true
-            })
+                },
+                {
+                    new: true
+                })
+            } catch (error) {
+                console.log(error)
+            }
             
         },
         deleteHighGradeSave: async (parent, {highGradeID, id}, context) => {

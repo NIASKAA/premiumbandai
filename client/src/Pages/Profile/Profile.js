@@ -16,7 +16,7 @@ import {DELETE_CONVERGE_SAVE} from '../../utils/mutations'
 import {Accordion, Table, Button} from 'react-bootstrap'
 import './styles.css'
 
-const Profile = ({converge}) => {
+const Profile = () => {
     const {loading, data} = useQuery(GET_SAVE_CONVERGE)
     const {loading: loadHigh, data: highData} = useQuery(GET_SAVE_HIGHGRADE)
     const {loading: loadReal, data: realData} = useQuery(GET_SAVE_REALGRADE)
@@ -42,12 +42,6 @@ const Profile = ({converge}) => {
     const [loadMasterList, setLoadMasterList] = useState(undefined)
     const [loadPerfectGradeList, setLoadPerfectGradeList] = useState(undefined)
     const [loadSDGradeList, setLoadSDGradeList] = useState(undefined)
-    const [ProfileData, setProfileData] = useState({
-        email: 'No email',
-        username: 'No username',
-        gotConverges: "No Converges",
-        convergeWish: 'No Converges'
-    });
 
     useEffect(() => {
         if(!loading && data) {
@@ -121,19 +115,18 @@ const Profile = ({converge}) => {
         }
     }, [loadSDGradeList, sdGradeWishData])
 
-    const deleteItem = async (id) => {
+    const deleteItem = (id) => {
         try {
-            const response = await deleteConvergeSave({
+            deleteConvergeSave({
                 variables: {
                     convergeID: id
                 }
             })
-            console.log(id)
-            setProfileData({...ProfileData, gotConverges: response})
         } catch (error) {
             console.log(error)
         }
-    } 
+        window.location.reload();   
+    }
 
     return (
         <>  
@@ -142,28 +135,16 @@ const Profile = ({converge}) => {
                 <Accordion.Item eventKey="0">
                     <Accordion.Header>Saved Converges</Accordion.Header>
                     <Accordion.Body>
-                        <Table>
-                            <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Series</th>
-                                    <th>Price</th>
-                                    <th>Release Date</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {!loading && loadConverge &&
+                    {!loading && loadConverge &&
                                 loadConverge.map((converge) => (
-                                    <tr key={converge.id}>
-                                        <td>{converge.gunplaName}</td>
-                                        <td>{converge.series}</td>
-                                        <td>{converge.price}</td>
-                                        <td>{converge.releaseDate}</td>
+                                    <div key={converge.id}>
+                                        <h6>{converge.gunplaName}</h6>
+                                        <p>{converge.series}</p>
+                                        <p>{converge.price}</p>
+                                        <p>{converge.releaseDate}</p>
                                         <Button onClick={() => deleteItem(converge._id)} variant="danger"></Button>
-                                    </tr>
+                                    </div>
                                 ))}
-                            </tbody>
-                        </Table>
                     </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="1">

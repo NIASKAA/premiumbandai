@@ -228,12 +228,12 @@ export const DELETE_CONVERGE_SAVE = gql`
             username
             email
             gotConverges {
-            _id
-            gunplaName
-            image
-            series
-            price
-            releaseDate
+                _id
+                gunplaName
+                image
+                series
+                price
+                releaseDate
             }
         }
     }

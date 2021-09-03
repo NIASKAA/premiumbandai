@@ -25,6 +25,7 @@ const ConvergeCard = ({converge}) => {
                 }
             })
             setProfileData({...ProfileData, gotConverges: response})
+            console.log(ProfileData)
         } catch (error) {
             console.log(error)
         }
