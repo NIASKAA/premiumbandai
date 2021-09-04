@@ -8,6 +8,13 @@ const sdSeeds = [
         releaseDate: 08-2021,
         price: 770
     },
+    {
+        gunplaName: "",
+        image: "",
+        series: "",
+        releaseDate: 11-2021,
+        price: 4500
+    },
 ];
 
 const sdSeed = async () => {

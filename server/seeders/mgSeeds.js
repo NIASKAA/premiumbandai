@@ -342,6 +342,90 @@ const mgSeeds = [
         releaseDate: 07-2019,
         price: 4104
     },
+    {
+        gunplaName: "Jegan Type D",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630725877/MG-JEGAN-TYPE-D_xewjuw.jpg",
+        series: "Gundam F91",
+        releaseDate: 04-2019,
+        price: 4536
+    },
+    {
+        gunplaName: "GM Cannon (Jaburo Defense Type)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630725877/mg-gm-cannon-red-head_iemktk.jpg",
+        series: "MSV",
+        releaseDate: 03-2019,
+        price: 4320
+    },
+    {
+        gunplaName: "Astray Red Dragon",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630725877/mg-Gundam_Astray_red_dragon_1_vhguty.jpg",
+        series: "Gundam Seed Astray",
+        releaseDate: 02-2019,
+        price: 7560
+    },
+    {
+        gunplaName: "Gundam F91 (Afterimage Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630725877/mg-gundam-f91-after-image-clear_1_xvs8f9.jpg",
+        series: "Gundam F91",
+        releaseDate: 02-2019,
+        price: 4320
+    },
+    {
+        gunplaName: "GM II Semi Striker",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630725877/mg-gm-II-semi-striker_1_w2rhah.jpg",
+        series: "MSV",
+        releaseDate: 01-2019,
+        price: 4536
+    },
+    {
+        gunplaName: "Gaz R/L",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630725876/hguc-gaz-R-L_1_ofhf7v.jpg",
+        series: "ZZ Gundam",
+        releaseDate: 01-2019,
+        price: 3780
+    },
+    {
+        gunplaName: "Hyaku Shiki Crash",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630725877/mg-hyaku-shiki-crash_1_d9sevp.jpg",
+        series: "Other",
+        releaseDate: 01-2019,
+        price: 6264
+    },
+    {
+        gunplaName: "Qubeley Damned",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630725877/mg-qubeley-damned_1_mpbbdp.jpg",
+        series: "Other",
+        releaseDate: 11-2018,
+        price: 5400
+    },
+    {
+        gunplaName: "Perfect Strike (Special Coating Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630725875/B161001_w8uq1n.jpg",
+        series: "Gundam Seed",
+        releaseDate: 01-2018,
+        price: 10800
+    },
+    {
+        gunplaName: "GM Cannon (White Dingo Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630725877/mg-gm-cannon-white-dingo_1_ytfhd1.jpg",
+        series: "MSV",
+        releaseDate: 09-2018,
+        price: 4320
+    },
+    {
+        gunplaName: "GM (White Dingo Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630725877/mg-gm-white-dingo-p-bandai_1_q3ngfs.jpg",
+        series: "MSV",
+        releaseDate: 09-2018,
+        price: 3720
+    },
+    {
+        gunplaName: "",
+        image: "",
+        series: "",
+        releaseDate: 11-2021,
+        price: 4500
+    },
 ];
 
 const mgSeed = async () => {

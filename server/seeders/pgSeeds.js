@@ -44,6 +44,13 @@ const pgSeeds = [
         price: 1599
     },
     {
+        gunplaName: "Gundam Exia (Clear Parts)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630725878/pg-gundam-exia-clear-parts_1_hmwfy7.jpg",
+        series: "Gundam 00",
+        releaseDate: 12-2018,
+        price: 3780
+    },
+    {
         gunplaName: "",
         image: "",
         series: "",

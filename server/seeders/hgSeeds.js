@@ -562,6 +562,132 @@ const hgSeeds = [
         price: 3672
     },
     {
+        gunplaName: "Hazel Custom TR-6 Hazel Custom",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630725876/hguc_hazel_custom_with_tr-6_conversion1_ey1hbg.jpg",
+        series: "Advance of Zeta",
+        releaseDate: 05-2019,
+        price: 1620
+    },
+    {
+        gunplaName: "Zaku Cannon",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630725876/hg-msd-zaku-cannon1_fsyxga.jpg",
+        series: "Mobile Suit Gundam The Origin",
+        releaseDate: 06-2019,
+        price: 2376
+    },
+    {
+        gunplaName: "Hrududu Deployment Color",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630725876/hguc_g_parts_hrududu_combat_deployment_colors2_pdkzxm.jpg",
+        series: "Advance of Zeta",
+        releaseDate: 09-2019,
+        price: 1188
+    },
+    {
+        gunplaName: "Dijeh (Narrative Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630725876/hguc_dijeh_narrative_version1_yka0ml.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 05-2019,
+        price: 2160
+    },
+    {
+        gunplaName: "Regelgu (Unicorn Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630725876/hguc_regelgu_sleeves-unicorn-ver_1_lgmafq.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 03-2019,
+        price: 2376
+    },
+    {
+        gunplaName: "Narrative Gundam B Packs",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630725876/hguc_narrative-gundam_b-packs_1_biqbrw.jpg",
+        series: "Gundam Narrative",
+        releaseDate: 04-2019,
+        price: 1404
+    },
+    {
+        gunplaName: "Neo Zeong II",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630725876/hguc-II-neo-zeong-narrative-ver_1_ysy2qx.jpg",
+        series: "Gundam Narrative",
+        releaseDate: 02-2019,
+        price: 28080
+    },
+    {
+        gunplaName: "Jegan D Type (Escort Team)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630725876/hguc-jegan-type-d-escort-type_1_gaagsp.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 01-2019,
+        price: 1944
+    },
+    {
+        gunplaName: "Leo (Flight Unit)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630725877/hguc-leo-flight-unit_1_dewzg3.jpg",
+        series: "Gundam Wing",
+        releaseDate: 01-2019,
+        price: 1836
+    },
+    {
+        gunplaName: "GN-X IV (Commander)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630725876/hg-gn-x-IV-commander_1_k55qye.jpg",
+        series: "Gundam 00",
+        releaseDate: 12-2018,
+        price: 2376
+    },
+    {
+        gunplaName: "Gundam Unicorn (Painting Model)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630725878/hg-unicorn-gundam-paintin_ncxezw.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 12-2018,
+        price: 2484
+    },
+    {
+        gunplaName: "Jesta A (Shezarr Type)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630725876/hguc-jesta-shezarr-team-a-equipment_1_limzdg.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 11-2018,
+        price: 3024
+    },
+    {
+        gunplaName: "Jesta Team A, B, C (Shezarr Type)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630725876/Screenshot_003_qsik5v.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 11-2018,
+        price: 2484
+    },
+    {
+        gunplaName: "Zaku II F2 (Kinbareid Force)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630725878/mg-zaku-ii-f2-kimbaraid-forces_1_e6ks99.jpg",
+        series: "Stardust Memory",
+        releaseDate: 11-2018,
+        price: 3888
+    },
+    {
+        gunplaName: "Zaku II F2 (Neuen Bitter)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630725877/mg-zaku-II-F2-Neuen-bitter-machine_1_exlwcs.jpg",
+        series: "Stardust Memory",
+        releaseDate: 11-2018,
+        price: 3888
+    },
+    {
+        gunplaName: "Leo (Space Type)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630725875/hgac-leo-space-type_1_brcgzl.jpg",
+        series: "Gundam Wing",
+        releaseDate: 10-2018,
+        price: 1512
+    },
+    {
+        gunplaName: "Johnny Ridden's Gelgoog",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630725877/hguc-johnny-ridden-gelgoog_1_iikf2d.jpg",
+        series: "MSV",
+        releaseDate: 09-2018,
+        price: 2160
+    },
+    {
+        gunplaName: "",
+        image: "",
+        series: "",
+        releaseDate: 11-2021,
+        price: 4500
+    },
+    {
         gunplaName: "",
         image: "",
         series: "",

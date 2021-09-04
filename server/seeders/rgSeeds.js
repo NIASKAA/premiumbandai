@@ -141,6 +141,49 @@ const rgSeeds = [
         releaseDate: 09-2019,
         price: 1836
     },
+    {
+        gunplaName: "Banshee's Armed Armor",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630725875/1000133044_1_nk5zms.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 04-2019,
+        price: 1620
+    },
+    {
+        gunplaName: "Zaku II (Eric Mansfield)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630725878/P-Bandai_RG_1144_MS-06R-1A_Zaku_II_Eric_Mansfield_Custom_fwfd59.jpg",
+        series: "MSV",
+        releaseDate: 05-2019,
+        price: 3240
+    },
+    {
+        gunplaName: "Gundam Banshee Norn Final Ver.",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630725878/rg-banshee-norn-final-battle_1_dt3kst.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 02-2019,
+        price: 4320
+    },
+    {
+        gunplaName: "High Mobility Zaku II (Gabby Hazard)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630725878/rg-gabby-hazzard-high-mobility-zaku-II_1_uui0is.jpg",
+        series: "MSV",
+        releaseDate: 10-2018,
+        price: 2800
+    },
+    {
+        gunplaName: "Tallgeese EW (Titanium Finish)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630725878/rg-tallgeese-ew-titanium-finish_1_evrdtl.jpg",
+        series: "Gundam Wing",
+        releaseDate: 10-2018,
+        price: 6696
+    },
+    {
+        gunplaName: "",
+        image: "",
+        series: "",
+        releaseDate: 11-2021,
+        price: 4500
+    },
+
 ];
 
 const rgSeed = async () => {

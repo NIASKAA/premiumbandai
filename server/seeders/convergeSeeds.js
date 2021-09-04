@@ -113,6 +113,48 @@ const convergeSeeds = [
         releaseDate: 09-2019,
         price: 4536
     },
+    {
+        gunplaName: "Pale Rider (Hades System Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630725878/p-bandai-pale-rider-hade_3_wjc15t.jpg",
+        series: "Missing Link",
+        releaseDate: 03-2019,
+        price: 2808
+    },
+    {
+        gunplaName: "Gundam Unicorn Phenex NT",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630725875/fw-converge-phenex-n_q6mcxj.jpg",
+        series: "Gundam Narrative",
+        releaseDate: 02-2019,
+        price: 2484
+    },
+    {
+        gunplaName: "Crossbone Gundam X3",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630725875/fw-gundam-converge-core-xbone-gundam-x3_1_jj24fw.jpg",
+        series: "Crossbone Gundam",
+        releaseDate: 01-2019,
+        price: 2376
+    },
+    {
+        gunplaName: "Neo Zeong (Metallic Coating)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630725875/fw-gundam-converge-core-neo-neo-zeong_1_nbureg.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 01-2019,
+        price: 7560
+    },
+    {
+        gunplaName: "Rafflesia + Heavygun Option",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630725878/rafflesia_heavygun-option-set_1_xresh1.jpg",
+        series: "Gundam F91",
+        releaseDate: 11-2018,
+        price: 2592
+    },
+    {
+        gunplaName: "",
+        image: "",
+        series: "",
+        releaseDate: 11-2021,
+        price: 4500
+    },
 ];
 
 const convergeSeed = async () => {
