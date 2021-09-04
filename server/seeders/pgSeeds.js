@@ -51,6 +51,20 @@ const pgSeeds = [
         price: 3780
     },
     {
+        gunplaName: "Banshee Norn (Final Battle Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762478/pg-banshee-norn-final-battle-ver_1_uzfw2l.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 02-2018,
+        price: 23760
+    },
+    {
+        gunplaName: "",
+        image: "",
+        series: "",
+        releaseDate: 11-2021,
+        price: 4500
+    },
+    {
         gunplaName: "",
         image: "",
         series: "",

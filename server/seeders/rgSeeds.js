@@ -177,13 +177,68 @@ const rgSeeds = [
         price: 6696
     },
     {
+        gunplaName: "Qan[T] Trans-AM Injection",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762478/rg-00-quanta-trans-am-gloss-injection_1_p11d5j.jpg",
+        series: "Gundam 00",
+        releaseDate: 12-2017,
+        price: 2700
+    },
+    {
+        gunplaName: "Black Tri-Stars Zaku II (Triple Action Set)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762479/rg-zaku-II-black-tristar-color-with-action-base-set_1_cwwwhk.jpg",
+        series: "Mobile Suit Gundam",
+        releaseDate: 03-2018,
+        price: 9720
+    },
+    {
+        gunplaName: "Zeta Gundam (Biosensor Image)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762479/rg-zeta-gundam-biosensor-image-color_1_kfcnb3.jpg",
+        series: "Zeta Gundam",
+        releaseDate: 02-2018,
+        price: 3240
+    },
+    {
+        gunplaName: "Zaku II (Shin Matsunaga)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762479/rg-shin-matsunaga-zaku-r1a_1_vei7we.jpg",
+        series: "MSV",
+        releaseDate: 01-2018,
+        price: 3240
+    },
+    {
+        gunplaName: "Wing Gundam Zero Custom EW + Drei Zwerg (Special Coating)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762478/mg-wing-gundam-zero-custom-ew-drei-zwerg-special-coating_1_qnvihk.jpg",
+        series: "Gundam Wing Endless Waltz",
+        releaseDate: 01-2018,
+        price: 10800
+    },
+    {
+        gunplaName: "Build Strike Gundam Full Package (RG Color)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762479/rg-build-strike-gundam-full-package-rg-system-image-colors_1_lldyol.jpg",
+        series: "Gundam Build Fighters",
+        releaseDate: 11-2017,
+        price: 2700
+    },
+    {
         gunplaName: "",
         image: "",
         series: "",
         releaseDate: 11-2021,
         price: 4500
     },
-
+    {
+        gunplaName: "",
+        image: "",
+        series: "",
+        releaseDate: 11-2021,
+        price: 4500
+    },
+    {
+        gunplaName: "",
+        image: "",
+        series: "",
+        releaseDate: 11-2021,
+        price: 4500
+    },
 ];
 
 const rgSeed = async () => {

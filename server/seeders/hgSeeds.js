@@ -681,6 +681,146 @@ const hgSeeds = [
         price: 2160
     },
     {
+        gunplaName: "Graze Ritter (Carta Corps)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762479/hg-graze-ritter-carta-corps_1_uva2iq.jpg",
+        series: "Iron Blood Orphan",
+        releaseDate: 09-2018,
+        price: 1296
+    },
+    {
+        gunplaName: "Graze Ritter (Mcgillis Corps)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762480/hg-graze-ritter-mcgillis_1_yo582l.jpg",
+        series: "Iron Blood Orphan",
+        releaseDate: 09-2018,
+        price: 1296
+    },
+    {
+        gunplaName: "G-Gundam (Parachute Pack Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762480/hguc-ground-type-gundam-parachute-pack-ver_1_n4z5j5.jpg",
+        series: "08th Team",
+        releaseDate: 08-2018,
+        price: 2160
+    },
+    {
+        gunplaName: "Efreet",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762480/hguc-efreet_1_k68lr6.jpg",
+        series: "MSV",
+        releaseDate: 07-2018,
+        price: 2160
+    },
+    {
+        gunplaName: "Regelgu",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762480/hguc-regelgoog_1_nrey8l.jpg",
+        series: "ZZ Gundam",
+        releaseDate: 07-2018,
+        price: 2160
+    },
+    {
+        gunplaName: "Gouf Flight Type",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762480/hguc-gouf-flight-type_1_vjxpix.jpg",
+        series: "08th Team",
+        releaseDate: 05-2018,
+        price: 2268
+    },
+    {
+        gunplaName: "IO Frame Shiden (Teiwaz Corps)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762480/hg-io-frame-shiden-teiwaz_1_cyhv44.jpg",
+        series: "Iron Blood Orphan",
+        releaseDate: 06-2018,
+        price: 1296
+    },
+    {
+        gunplaName: "Graze Schild & Graze (Araianhod Set)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762480/hg-grze-schild-and-graze-arianrhod-custom-set1_xzmnl9.jpg",
+        series: "Iron Blood Orphan",
+        releaseDate: 04-2018,
+        price: 3240
+    },
+    {
+        gunplaName: "Crossbone Gundam X0",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762480/hguc-crossbone-gundam-x-0_1_h7xh9u.jpg",
+        series: "Crossbone Gundam",
+        releaseDate: 04-2018,
+        price: 2484
+    },
+    {
+        gunplaName: "Tall Strike Gundam",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762480/hgbf-tall-strike-gundam-glitter_1_zs0ou2.jpg",
+        series: "Gundam Build Fighters",
+        releaseDate: 03-2018,
+        price: 1944
+    },
+    {
+        gunplaName: "Gundam M91",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762479/hgbf-gundam-m91_1_enzy9h.jpg",
+        series: "Gundam Build Fighters",
+        releaseDate: 03-2018,
+        price: 1944
+    },
+    {
+        gunplaName: "Psycho GM",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762479/hgbf-psycho-gm_1_ziur9r.jpg",
+        series: "Gundam Build Fighters",
+        releaseDate: 12-2017,
+        price: 6264
+    },
+    {
+        gunplaName: "Atlas Gundam (Thunderbolt Bandit Flower Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762479/hg-atlas-gundam-bandit-flower-ver_1_t0emsh.jpg",
+        series: "Thunderbolt",
+        releaseDate: 01-2018,
+        price: 2592
+    },
+    {
+        gunplaName: "Gundam Fenice Liberta",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762479/hgbf-gundam-fenice-liberta_1_c7ghfw.jpg",
+        series: "Gundam Build Fighters",
+        releaseDate: 11-2017,
+        price: 2160
+    },
+    {
+        gunplaName: "Gundam X Jumaoh",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762479/hgbf-gundam-x-jumaoh_1_oldvw6.jpg",
+        series: "Gundam Build Fighters",
+        releaseDate: 11-2017,
+        price: 1944
+    },
+    {
+        gunplaName: "Graze (Ground Type Set)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762478/p-banda-hg-graze-ground-type-twin-set_1_nua43x.jpg",
+        series: "Iron Blood Orphan",
+        releaseDate: 11-2017,
+        price: 3465
+    },
+    {
+        gunplaName: "Zeta Gundam (Wave Shooter)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762480/hguc-zeta-gundam-wave-shooter-type_1_wbnatm.jpg",
+        series: "Gundam Sentinel",
+        releaseDate: 10-2017,
+        price: 2160
+    },
+    {
+        gunplaName: "Chinyagguy (Gunpla's Cos Heroines)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762479/hgbf-chinyagguy_1_zlmkvz.jpg",
+        series: "Gundam Build Fighters",
+        releaseDate: 10-2017,
+        price: 2592
+    },
+    {
+        gunplaName: "Amazing Z'Gok",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762479/hgbf-amazing-z_gok_1_cwdb6w.jpg",
+        series: "Gundam Build Fighters",
+        releaseDate: 09-2017,
+        price: 1620
+    },
+    {
+        gunplaName: "Byarlant Isolde",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762480/hguc-byarlant-isolde_1_zxelso.jpg",
+        series: "Twilight Axis",
+        releaseDate: 08-2017,
+        price: 3024
+    },
+    {
         gunplaName: "",
         image: "",
         series: "",

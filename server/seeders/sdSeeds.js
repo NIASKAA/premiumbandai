@@ -9,11 +9,18 @@ const sdSeeds = [
         price: 770
     },
     {
-        gunplaName: "",
-        image: "",
-        series: "",
-        releaseDate: 11-2021,
-        price: 4500
+        gunplaName: "MK-III Daishogun (Super Steel Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762479/sd-legend-bb-mk-iii-daishogun-super-steel-ver_1_s2hesp.jpg",
+        series: "SD Legend",
+        releaseDate: 12-2017,
+        price: 4968
+    },
+    {
+        gunplaName: "BB Versal Knight (Metallic)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762479/sd-legend-bb-versal-knight-gundam-metallic_1_h9hmfy.jpg",
+        series: "SD Legend",
+        releaseDate: 09-2017,
+        price: 3240
     },
 ];
 

@@ -420,6 +420,125 @@ const mgSeeds = [
         price: 3720
     },
     {
+        gunplaName: "Gelgoog (Anavel Gato)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762481/mg-gelgoog-anavel-gato_1_bpffnn.jpg",
+        series: "Stardust Memory",
+        releaseDate: 08-2018,
+        price: 4500
+    },
+    {
+        gunplaName: "Exia Gundam Avalanche Dash",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762478/mg-gundam-avalanche-exia-dash_1_vwfobb.jpg",
+        series: "Gundam 00",
+        releaseDate: 08-2018,
+        price: 7236
+    },
+    {
+        gunplaName: "Hrududu (Deployment colors)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762478/mg-g-parts-hrududu-actual-deployment-colors_2_ck5kqx.jpg",
+        series: "Advance of Zeta",
+        releaseDate: 07-2018,
+        price: 2376
+    },
+    {
+        gunplaName: "Hazel Shield Booster Parts",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762478/mg-hazel-shield-booster-pack_2_nazerp.jpg",
+        series: "Advance of Zeta",
+        releaseDate: 07-2018,
+        price: 1620
+    },
+    {
+        gunplaName: "Hrududu",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762478/mg-g-parts-hrududu_2_xzdhrd.jpg",
+        series: "Advance of Zeta",
+        releaseDate: 07-2018,
+        price: 2376
+    },
+    {
+        gunplaName: "Zaku Cannon (Ian Graden)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762478/mg-zaku-cannon-ian-graden_1_q4vqzy.jpg",
+        series: "MSV",
+        releaseDate: 07-2018,
+        price: 5400
+    },
+    {
+        gunplaName: "GM Dominance",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762481/mg-gm-dominance_1_psoxqt.jpg",
+        series: "Missing Link",
+        releaseDate: 06-2018,
+        price: 4860
+    },
+    {
+        gunplaName: "Advanced Hazel TR-1",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762480/mg-advanced-hazel_1_exbajl.jpg",
+        series: "Advance of Zeta",
+        releaseDate: 05-2018,
+        price: 5940
+    },
+    {
+        gunplaName: "Qan[T] (Trans-Am Coating)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762480/mg-00-quanta-trans-am-mode_1_vx1m7m.jpg",
+        series: "Gundam 00",
+        releaseDate: 04-2018,
+        price: 10800
+    },
+    {
+        gunplaName: "Turn Red Astray",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762478/mg-gundam-astray-turn-red_1_xtddm9.jpg",
+        series: "Gundam Seed Astray MSV",
+        releaseDate: 02-2018,
+        price: 7560
+    },
+    {
+        gunplaName: "Advanced GN-X (Deborah)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762480/mg-deborah_s-advanced-gn-x_1_xpwbt0.jpg",
+        series: "Gundam 00",
+        releaseDate: 11-2017,
+        price: 4536
+    },
+    {
+        gunplaName: "Hazel Custom TR-1 (Titan Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762478/mg-gundam-hazel-custom-titans-color_1_q7jko4.jpg",
+        series: "Advance of Zeta",
+        releaseDate: 02-2018,
+        price: 4860
+    },
+    {
+        gunplaName: "Uma's Lightning Gelgoog High Mobility",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762481/mg-gelgoog-uma-lightning_wpnkxa.jpg",
+        series: "MSV",
+        releaseDate: 01-2018,
+        price: 5940
+    },
+    {
+        gunplaName: "Gundam Sandrock Custom EW",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762479/mg-gundam-sandrock-custom-ew_2_pqsg9z.jpg",
+        series: "Gundam Wing Endless Waltz",
+        releaseDate: 10-2017,
+        price: 5184
+    },
+    {
+        gunplaName: "GM II (Unicorn Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762478/mg-gundam-II-unicorn-ver_1_uixrfx.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 01-2017,
+        price: 3996
+    },
+    {
+        gunplaName: "Zaku II High Mobility Test (Breniss Ox)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762478/mg-zaku-II-breniff-oguz-custom_1_oqmx57.jpg",
+        series: "MSV",
+        releaseDate: 10-2017,
+        price: 4860
+    },
+    {
+        gunplaName: "",
+        image: "",
+        series: "",
+        releaseDate: 11-2021,
+        price: 4500
+    },
+    {
         gunplaName: "",
         image: "",
         series: "",

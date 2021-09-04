@@ -149,6 +149,20 @@ const convergeSeeds = [
         price: 2592
     },
     {
+        gunplaName: "White Base",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762479/fw-gundam-converge-white-base_1_l3oamp.jpg",
+        series: "Mobile Suit Gundam",
+        releaseDate: 03-2018,
+        price: 24840
+    },
+    {
+        gunplaName: "",
+        image: "",
+        series: "",
+        releaseDate: 11-2021,
+        price: 4500
+    },
+    {
         gunplaName: "",
         image: "",
         series: "",
