@@ -8,7 +8,8 @@
 
 .infoContent {
     --padding: 1.5em;
-    max-height: 20ch !important;
+    max-height: 22ch !important;
+    font-size: 11px !important;
     padding: var(--padding);
     background: linear-gradient(
         hsl( 0 0% 0% / 0),
@@ -26,7 +27,7 @@
 
 .infoText {
     position: relative;
-    font-size: 14px;
+    font-size: 13px !important;
 }
 
 .infoCard:hover .infoText::after {

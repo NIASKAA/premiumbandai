@@ -55,11 +55,13 @@ const PerfectGradeCard = ({perfectGrade}) => {
                             <p className="infoBody">Release Date: {perfectGrade.releaseDate}</p>
                             <p className="infoBody">Price: {perfectGrade.price} Yen</p>
                         </Card.Body>
-                        {Auth.loggedIn ? (
-                            <ButtonGroup>
-                                <Button onClick={saveToList}>Save</Button>
-                                <Button onClick={saveToWishlist}>Add to Wishlist</Button>
-                            </ButtonGroup>
+                        {Auth.loggedIn() ? (
+                            <>
+                                <ButtonGroup>
+                                    <Button onClick={saveToList}>Save</Button>
+                                    <Button onClick={saveToWishlist}>Add to Wishlist</Button>
+                                </ButtonGroup>
+                            </>
                         ) : (
                             <>
                             </>
