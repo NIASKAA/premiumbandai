@@ -265,6 +265,83 @@ const mgSeeds = [
         releaseDate: 12-2019,
         price: 5830
     },
+    {
+        gunplaName: "Blast Impulse Gundam",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630717563/mg-blast-impulse-gundam_1_teargd.jpg",
+        series: "Gundam Seed Destiny",
+        releaseDate: 01-2020,
+        price: 5500
+    },
+    {
+        gunplaName: "Dwadge Custom",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630717563/MG-DWADGE-CUSTOM_1_meemm5.jpg",
+        series: "ZZ Gundam",
+        releaseDate: 11-2019,
+        price: 6050
+    },
+    {
+        gunplaName: "Gundam Dynames (Trans-Am Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630717564/MG-GUNDAM-DYNAMES-TRANS-AM-MODE_1_pb503s.jpg",
+        series: "Gundam 00",
+        releaseDate: 11-2019,
+        price: 4950
+    },
+    {
+        gunplaName: "F91 Gundam (Harrison Madin)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630717564/mg-gundam-f91-ver-2-harisson-maddin_1_czofuv.jpg",
+        series: "Crossbone Gundam",
+        releaseDate: 10-2019,
+        price: 4620
+    },
+    {
+        gunplaName: "GM Dominance (Philip Hughes)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630721929/mg-gm-dominance-phillip-hughes-custom_1_lmgd1u.jpg",
+        series: "Missing Link",
+        releaseDate: 10-2019,
+        price: 6050
+    },
+    {
+        gunplaName: "Gundam Hazel Set",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630717564/MG-hazel-II-reserve-unit-quel_1_iuhzci.jpg",
+        series: "Advance of Zeta",
+        releaseDate: 09-2019,
+        price: 4860
+    },
+    {
+        gunplaName: "Crossbone Gundam X0",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630717563/mg-crossbone-gundam-x0-ghost_2_tfjsft.jpg",
+        series: "Crossbone Gundam",
+        releaseDate: 08-2019,
+        price: 4725
+    },
+    {
+        gunplaName: "Turn X & A (Nano Skin Image)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630717564/mg-turn-x-turn-a-gundam-nano-skin-image_2_fmaeyq.jpg",
+        series: "Turn A Gundam",
+        releaseDate: 08-2019,
+        price: 12420
+    },
+    {
+        gunplaName: "Gundam F90 Pack E & S",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630717562/gundam-f90-type-e-and-s-pack_4_szs95j.jpg",
+        series: "Gundam F90",
+        releaseDate: 08-2019,
+        price: 2160
+    },
+    {
+        gunplaName: "GM Cold Climate Type",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630721929/mg-gm-cold-type1_t0sjx8.jpg",
+        series: "War in Pocket",
+        releaseDate: 06-2019,
+        price: 4212
+    },
+    {
+        gunplaName: "GM Sniper II (Lydo Wolf)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630717564/mg-gm-sniper-II-lido-wolf1_qjhkgd.jpg",
+        series: "MSV",
+        releaseDate: 07-2019,
+        price: 4104
+    },
 ];
 
 const mgSeed = async () => {

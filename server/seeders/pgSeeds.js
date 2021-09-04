@@ -36,6 +36,20 @@ const pgSeeds = [
         releaseDate: 02-2020,
         price: 8800
     },
+    {
+        gunplaName: "Unicorn Bande Dessinee (China Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630717564/pg-unicorn-bande-dessinee-china-red-ver-p-bandai_4_mciwhy.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 02-2020,
+        price: 1599
+    },
+    {
+        gunplaName: "",
+        image: "",
+        series: "",
+        releaseDate: 11-2021,
+        price: 4500
+    },
 ];
 
 const pgSeed = async () => {

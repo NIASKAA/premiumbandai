@@ -84,7 +84,35 @@ const convergeSeeds = [
         series: "Char's CounterAttack",
         releaseDate: 04-2020,
         price: 4800
-    }
+    },
+    {
+        gunplaName: "Gundam Real Type Set Core Ver.",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630723172/fw-gundam-converge-real-type_1_doiccy.jpg",
+        series: "MSV",
+        releaseDate: 11-2019,
+        price: 5280
+    },
+    {
+        gunplaName: "Narrative Gundam A Pack",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630717562/FW-GUNDAM-CONVERGE-NARRATIVE-A-PACKS_1_us85mg.jpg",
+        series: "Gundam Unicorn NT",
+        releaseDate: 10-2019,
+        price: 6600
+    },
+    {
+        gunplaName: "Neo Zeong Option Set",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630717561/fw-gundam-converge-ii-neo-zeong-extension-parts_1_gopcwe.jpg",
+        series: "Gundam Unicorn NT",
+        releaseDate: 09-2019,
+        price: 3024
+    },
+    {
+        gunplaName: "Neo Zeong",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630717561/fw-converge-ii-neo-zeong_1_r919fw.jpg",
+        series: "Gundam Unicorn NT",
+        releaseDate: 09-2019,
+        price: 4536
+    },
 ];
 
 const convergeSeed = async () => {

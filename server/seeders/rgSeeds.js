@@ -106,6 +106,41 @@ const rgSeeds = [
         releaseDate: 01-2020,
         price: 3600
     },
+    {
+        gunplaName: "Double Fin Funnel Set",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630717565/rg-nu-gundam-double-fin-funnel_1_aqhbde.jpg",
+        series: "Char's Counterattack",
+        releaseDate: 09-2019,
+        price: 1836
+    },
+    {
+        gunplaName: "Tallgeese III",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630717565/rg-tallgeese-III_1_berdgz.jpg",
+        series: "Gundam Wing Endless Waltz",
+        releaseDate: 07-2019,
+        price: 3024
+    },
+    {
+        gunplaName: "Sazabi (Special Coating)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630717565/rg-sazabi-special-coating_1_g8x0aw.jpg",
+        series: "Char's Counterattack",
+        releaseDate: 08-2019,
+        price: 10800
+    },
+    {
+        gunplaName: "Gundam Exia Repair III",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630717565/rg-gundam-exia-repair-III1_r4k5kf.jpg",
+        series: "Gundam 00",
+        releaseDate: 06-2019,
+        price: 3024
+    },
+    {
+        gunplaName: "Advance Hazel Gundam TR-6",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630717562/hguc_hazel_rah_second_form_and_gaplant_II1_qx838g.jpg",
+        series: "Advance of Zeta",
+        releaseDate: 09-2019,
+        price: 1836
+    },
 ];
 
 const rgSeed = async () => {

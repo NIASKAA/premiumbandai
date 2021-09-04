@@ -485,6 +485,83 @@ const hgSeeds = [
         price: 1430
     },
     {
+        gunplaName: "Gamma Gundam",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630717562/hgbd-b-build-gamma-gundam_e5dfo8.jpg",
+        series: "Gundam Build Divers",
+        releaseDate: 01-2020,
+        price: 2090
+    },
+    {
+        gunplaName: "Gundam AgeII Magnum SV (Fx Plosion)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630717562/hgbd-age-fx-plosion_1_gw7raf.jpg",
+        series: "Gundam Build Divers",
+        releaseDate: 11-2019,
+        price: 3300
+    },
+    {
+        gunplaName: "GM Intercept Custom (Fellow Booster)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630717562/hg-gm-intercept-custom-fellow-booster_1_nn1d0a.jpg",
+        series: "MSV",
+        releaseDate: 09-2019,
+        price: 3240
+    },
+    {
+        gunplaName: "GM Sniper Custom (Missile Launcher)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630717562/hg-gm-sniper-custom-missile-launcher_1_px8a7v.jpg",
+        series: "MSV",
+        releaseDate: 11-2019,
+        price: 2530
+    },
+    {
+        gunplaName: "Hrududu II Set",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630717563/hguc-hrududu-II_2_qkcief.jpg",
+        series: "Advance of Zeta",
+        releaseDate: 10-2019,
+        price: 1650
+    },
+    {
+        gunplaName: "Gustav Karl (Gihren's Greed)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630717563/hguc-gustav-karl-ghirens-greed-ver_1_ohmmty.jpg",
+        series: "Gihren's Greed",
+        releaseDate: 07-2019,
+        price: 2592
+    },
+    {
+        gunplaName: "White Base Catapult Deck (Renewal Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630717564/REALISTIC-MODEL-SERIES-WHITE-BASE-CATAPULT-DECK_1_wnmpnt.jpg",
+        series: "Mobile Suit Gundam",
+        releaseDate: 10-2019,
+        price: 14080
+    },
+    {
+        gunplaName: "Hyaku Shiki Revive (Gold Coating)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630717563/hguc-hyaku-shiki-gold-coating_1_w7fxci.jpg",
+        series: "Zeta Gundam",
+        releaseDate: 08-2019,
+        price: 4320
+    },
+    {
+        gunplaName: "Dodai Kai",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630717563/hguc-dodai-kai_1_vrcjtk.jpg",
+        series: "Zeta Gundam",
+        releaseDate: 08-2019,
+        price: 1296
+    },
+    {
+        gunplaName: "Mega Bazooka Launcher",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630717561/conroy_s-mega-bazooka-launcher_1_n7h84k.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 08-2019,
+        price: 1620
+    },
+    {
+        gunplaName: "Gundam Unicorn Perfectibility Destory Mode",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630717563/hguc-unicorn-perfectibility-best-selections_1_jfydtb.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 07-2019,
+        price: 3672
+    },
+    {
         gunplaName: "",
         image: "",
         series: "",
