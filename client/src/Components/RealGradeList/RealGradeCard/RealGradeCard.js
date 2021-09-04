@@ -3,6 +3,7 @@ import {useMutation} from '@apollo/client'
 import {SAVE_REALGRADE} from '../../../utils/mutations'
 import {REALGRADE_WISHLIST} from '../../../utils/mutations'
 import {Col, Card, CardGroup, ButtonGroup, Button} from 'react-bootstrap'
+import Auth from '../../../utils/auth'
 import './styles.css'
 
 const RealGradeCard = ({realGrade}) => {
@@ -54,10 +55,15 @@ const RealGradeCard = ({realGrade}) => {
                             <p className="infoBody">Release Date: {realGrade.releaseDate}</p>
                             <p className="infoBody">Price: {realGrade.price} Yen</p>
                         </Card.Body>
-                        <ButtonGroup>
-                            <Button onClick={saveToList}>Save</Button>
-                            <Button onClick={saveToWishlist}>Add to Wishlist</Button>
-                        </ButtonGroup>
+                        {Auth.loggedIn() ? (
+                            <ButtonGroup>
+                                <Button onClick={saveToList}>Save</Button>
+                                <Button onClick={saveToWishlist}>Add to Wishlist</Button>
+                            </ButtonGroup>
+                        ) : (
+                            <>
+                            </>
+                        )}
                     </Card>
                 </CardGroup>
             </Col>
