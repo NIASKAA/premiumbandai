@@ -156,6 +156,41 @@ const convergeSeeds = [
         price: 24840
     },
     {
+        gunplaName: "Shamblo",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812855/p-bandai-converge-shamblo_1_ecoozy.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 06-2017,
+        price: 3456
+    },
+    {
+        gunplaName: "Perfect Strike Gundam Core",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812853/1000103776_1_xbvhqt.jpg",
+        series: "Gundam Seed",
+        releaseDate: 08-2016,
+        price: 2160
+    },
+    {
+        gunplaName: "Strike Rouge Gundam Core",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812852/1000_4_xvw9yv.jpg",
+        series: "Gundam Seed",
+        releaseDate: 08-2016,
+        price: 2356
+    },
+    {
+        gunplaName: "Gundam Converge Vol. 3",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812852/converge_3_p-bandai_1_uh6dp0.jpg",
+        series: "All",
+        releaseDate: 06-2016,
+        price: 5400
+    },
+    {
+        gunplaName: "Neue Ziel",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812851/BANC160601_yprnnd.jpg",
+        series: "Stardust Memory",
+        releaseDate: 06-2016,
+        price: 5076
+    },
+    {
         gunplaName: "",
         image: "",
         series: "",
@@ -169,6 +204,7 @@ const convergeSeeds = [
         releaseDate: 11-2021,
         price: 4500
     },
+    
 ];
 
 const convergeSeed = async () => {

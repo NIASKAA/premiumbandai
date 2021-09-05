@@ -532,6 +532,104 @@ const mgSeeds = [
         price: 4860
     },
     {
+        gunplaName: "Zaku II High Mobility (Masaya Nakagawa)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812851/1000115034_1_kde0jl.jpg",
+        series: "MSV",
+        releaseDate: 08-2017,
+        price: 4860
+    },
+    {
+        gunplaName: "Zaku II High Mobility (Shin Matsunaga)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812855/mg-shin-matsunaga-zaku-II-p-bandai-double-spike-shoulder-armor_1_maynmv.jpg",
+        series: "MSV",
+        releaseDate: 06-2017,
+        price: 4860
+    },
+    {
+        gunplaName: "Crossbone Gundam X2 Kai",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812854/mg-crossbone-gundam-x2-kai-ver-ka_1_ywey69.jpg",
+        series: "Crossbone Gundam",
+        releaseDate: 06-2017,
+        price: 4752
+    },
+    {
+        gunplaName: "GM Sniper II (White Dingo)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812855/mg-gm-sniper-II-white-dingo-colors_1_wkpdmm.jpg",
+        series: "MSV",
+        releaseDate: 03-2017,
+        price: 4104
+    },
+    {
+        gunplaName: "Prototype Gouf",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812851/p-bandai-mg-prototype-gouf_1_panysu.jpg",
+        series: "MSV",
+        releaseDate: 01-2017,
+        price: 4860
+    },
+    {
+        gunplaName: "GM II",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812852/p-bandai-mg-gm-ii_1_acxkor.jpg",
+        series: "Zeta Gundam",
+        releaseDate: 01-2017,
+        price: 3780
+    },
+    {
+        gunplaName: "Astray Blue Frame Formation Base",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812853/gundamkitscollectionSS014_mr8jed.jpg",
+        series: "Gundam Seed Astray",
+        releaseDate: 02-2017,
+        price: 1512
+    },
+    {
+        gunplaName: "FA Gundam Thunderbolt Ver. KA Hanger",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812853/gundam_thunderbolt_p-bandai_1_z8slss.jpg",
+        series: "Thunderbolt",
+        releaseDate: 11-2016,
+        price: 2800
+    },
+    {
+        gunplaName: "Banshee Norn Final Battle Ver.",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812852/banshee_norn_green_1_d56c3x.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 12-2016,
+        price: 6480
+    },
+    {
+        gunplaName: "Powered GM",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812853/banm160701_kz8tkt.jpg",
+        series: "Stardust Memory",
+        releaseDate: 07-2016,
+        price: 3240
+    },
+    {
+        gunplaName: "Zeta Plus (Unicorn Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812853/gundam_kits_collection013_g8zxab.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 06-2016,
+        price: 3456
+    },
+    {
+        gunplaName: "Freedom Gundam Ver. 2.0 Effect Parts",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812853/1000103483_1_iqqlot.jpg",
+        series: "Gundam Seed",
+        releaseDate: 05-2016,
+        price: 2160
+    },
+    {
+        gunplaName: "Star Build Strike Gundam RG System",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812851/banm160441_rivt18.jpg",
+        series: "Gundam Build Fighters",
+        releaseDate: 04-2016,
+        price: 6480
+    },
+    {
+        gunplaName: "V2 Gundam Ver Ka. Light Wings",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812853/gundam_kits_collection006_ufcbg4.jpg",
+        series: "Victory Gundam",
+        releaseDate: 01-2016,
+        price: 2160
+    },
+    {
         gunplaName: "",
         image: "",
         series: "",
@@ -545,6 +643,7 @@ const mgSeeds = [
         releaseDate: 11-2021,
         price: 4500
     },
+    
 ];
 
 const mgSeed = async () => {

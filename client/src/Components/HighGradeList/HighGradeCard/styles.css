@@ -18,11 +18,15 @@
     );
     transform: translateY(65%);
     transition: transform 500ms ease;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .infoCard:hover .infoContent {
     transform: translateY(0);
     margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .infoText {

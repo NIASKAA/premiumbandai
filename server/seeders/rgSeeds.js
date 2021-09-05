@@ -219,11 +219,46 @@ const rgSeeds = [
         price: 2700
     },
     {
-        gunplaName: "",
-        image: "",
-        series: "",
-        releaseDate: 11-2021,
-        price: 4500
+        gunplaName: "Gundam MK II (Amuro Ray Color)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812852/RG-GUNDAM-MK-II-AMURO-RAY_1_ej0kna.jpg",
+        series: "Zeta Gundam",
+        releaseDate: 08-2017,
+        price: 2700
+    },
+    {
+        gunplaName: "Zeta Gundam (Amuro Ray Color)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812852/rg-zeta-gundam-rg-limited-color-ver_1_gcx5uo.jpg",
+        series: "Zeta Gundam",
+        releaseDate: 08-2017,
+        price: 3456
+    },
+    {
+        gunplaName: "Qant[T] Full Saber",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812851/1000113021_1_dnfuz5.jpg",
+        series: "Gundam 00",
+        releaseDate: 04-2017,
+        price: 3456 
+    },
+    {
+        gunplaName: "Gundam Flauros (Calamity War Type)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812853/1000112649_2_rxnhrz.jpg",
+        series: "Iron Blood Orphan",
+        releaseDate: 04-2017,
+        price: 1836
+    },
+    {
+        gunplaName: "CM Cannon (North American Colors)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812854/mg-gm-cannon-north-american-campaign-colors_1_ybuf3v.jpg",
+        series: "MSV",
+        releaseDate: 04-2017,
+        price: 4320
+    },
+    {
+        gunplaName: "Gundam 00 Seven Sword",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812852/RG-00-gundam-seven-sword_3_s5cx84.jpg",
+        series: "Gundam 00",
+        releaseDate: 12-2016,
+        price: 3240
     },
     {
         gunplaName: "",

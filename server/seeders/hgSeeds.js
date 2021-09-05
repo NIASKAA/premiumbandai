@@ -821,11 +821,158 @@ const hgSeeds = [
         price: 3024
     },
     {
-        gunplaName: "",
-        image: "",
-        series: "",
-        releaseDate: 11-2021,
+        gunplaName: "Jegan D Type (Camouflage Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812854/hguc-type-d-jegan-camouflage_1_ehv90f.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 07-2019,
+        price: 1944
+    },
+    {
+        gunplaName: "Io Frame Shiden Custom (Riden-Go)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812854/hg-shiden-custom-riden-go_1_ja22ec.jpg",
+        series: "Iron Blood Orphan",
+        releaseDate: 07-2017,
+        price: 1296
+    },
+    {
+        gunplaName: "Io Frame Shiden Custom (Orga Custom)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812854/hg-shiden-orga-custom_1_lhtv6m.jpg",
+        series: "Iron Blood Orphan",
+        releaseDate: 07-2017,
+        price: 1296
+    },
+    {
+        gunplaName: "Pluma Set (INvasion of Chryse)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812854/hg-pluma-set-invasion-chryse_1_jhrqma.jpg",
+        series: "Iron Blood Orphan",
+        releaseDate: 06-2017,
+        price: 1944
+    },
+    {
+        gunplaName: "Gelgoog (Unicorn Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812854/hguc-gelgoog-unicorn-ver_1_vcxt7i.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 05-2017,
+        price: 1836
+    },
+    {
+        gunplaName: "Zaku II Kai B Type",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812854/hguc-zaku-ii-kai-unicorn-ver_1_zveazs.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 05-2017,
+        price: 1512
+    },
+    {
+        gunplaName: "Reginlaze (Standard Type)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812851/p-bandai-hg-reginlaze-general-equipment-ver_1_a8qgoy.jpg",
+        series: "Iron Blood Orphan",
+        releaseDate: 05-2017,
+        price: 1296
+    },
+    {
+        gunplaName: "Dom Tropen (Unicorn Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812854/hguc-dom-tropen-unicorn-ver_1_ybyvor.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 04-2017,
+        price: 1836
+    },
+    {
+        gunplaName: "Byarlant Custom 02 (Bande Dessinee)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812852/1000085053_1_yqeowm.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 02-2017,
+        price: 3360
+    },
+    {
+        gunplaName: "Reginlaze (Iok Kujan)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630846769/hg-reginlaze-ioku-custom_1_xwoglr.jpg",
+        series: "Iron Blood Orphan",
+        releaseDate: 03-2017,
         price: 4500
+    },
+    {
+        gunplaName: "Hugo (Dawn Horizon Corps Twin)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812853/hg-ibo-hugo-twin-set_1_xawsj3.jpg",
+        series: "Iron Blood Orphan",
+        releaseDate: 01-2017,
+        price: 3240
+    },
+    {
+        gunplaName: "Io Frame Shiden Custom (Ryusei Go)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812854/io-frame-shiden-ryusei-go_1_vb5meq.jpg",
+        series: "Iron Blood Orphan",
+        releaseDate: 12-2016,
+        price: 1296
+    },
+    {
+        gunplaName: "Mega Launcher (Hyaku Shiki Revive)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812853/1000105597_3_sqfnfi.jpg",
+        series: "Zeta Gundam",
+        releaseDate: 09-2016,
+        price: 1296
+    },
+    {
+        gunplaName: "Crossbone Gundam X1 Kai (Skull Heart)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812854/hguc_crossbone_gundam_kai_kai_skull_heart_1_v39c4t.jpg",
+        series: "Crossbone Gundam",
+        releaseDate: 10-2016,
+        price: 2376
+    },
+    {
+        gunplaName: "GM Sniper II (Lydo Wolf)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812853/gm_sniper_ii_lydo_wolf_1_vnhwum.jpg",
+        series: "Missing Link",
+        releaseDate: 09-2016,
+        price: 1620
+    },
+    {
+        gunplaName: "Prototype Stark Jegan",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812852/banm160901-1_dnirpr.jpg",
+        series: "Char's Counterattack",
+        releaseDate: 09-2016,
+        price: 2700
+    },
+    {
+        gunplaName: "Gerbera Tetra (Kirara Custom)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812851/b160831_kmf2sq.jpg",
+        series: "Stardust Memory",
+        releaseDate: 08-2016,
+        price: 1944
+    },
+    {
+        gunplaName: "Dra-C Kai",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812853/dra_c_kai_3_jvaesn.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 05-2016,
+        price: 2376
+    },
+    {
+        gunplaName: "Gerberta Terra (Roll Out Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812853/gundam_kits_collection002_lvj83b.jpg",
+        series: "Stardust Memory",
+        releaseDate: 05-2016,
+        price: 2160
+    },
+    {
+        gunplaName: "Lightning Zeta Gundam Aspros",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812852/banm160601_n2ds9o.jpg",
+        series: "Gundam Build Fighters",
+        releaseDate: 06-2016,
+        price: 2376
+    },
+    {
+        gunplaName: "Gilla Shiki",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812853/gundam_kits_collection017_x9olfe.jpg",
+        series: "Gundam Build Fighters",
+        releaseDate: 02-2016,
+        price: 4644
+    },
+    {
+        gunplaName: "Schwalbe Graze (Gaelio)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630848454/Ca08uRGUsAAT_Jv_xkwtwb.jpg",
+        series: "Iron Blood Orphan",
+        releaseDate: 01-2016,
+        price: 1400
     },
     {
         gunplaName: "",

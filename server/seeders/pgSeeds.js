@@ -58,6 +58,13 @@ const pgSeeds = [
         price: 23760
     },
     {
+        gunplaName: "Gundam 00 Raiser Trans-Am Clear Conversion",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812852/pg-trans-am-raiser-clear-ver_1_hpkopk.jpg",
+        series: "Gundam 00",
+        releaseDate: 06-2017,
+        price: 4104
+    },
+    {
         gunplaName: "",
         image: "",
         series: "",
