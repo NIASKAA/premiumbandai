@@ -975,6 +975,132 @@ const hgSeeds = [
         price: 1400
     },
     {
+        gunplaName: "Graze Commander Type (Ares Color)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630850841/graze_aresu_1_lyeqzt.jpg",
+        series: "Iron Blood Orphan",
+        releaseDate: 02-2016,
+        price: 4500
+    },
+    {
+        gunplaName: "White Base Catapult Deck",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630850843/04-11_sslk6m.jpg",
+        series: "Mobile Suit Gundam",
+        releaseDate: 01-2016,
+        price: 11232
+    },
+    {
+        gunplaName: "Turn A Gundam Shin",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630863367/turn-a-gundam-shin_1_rtpfld.jpg",
+        series: "Gundam Build Fighters",
+        releaseDate: 11-2015,
+        price: 1944
+    },
+    {
+        gunplaName: "RX-78-2 Gundam Cake Special Mission",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630850841/gundam_cake_5_q8njfr.jpg",
+        series: "Mobile Suit Gundam",
+        releaseDate: 12-2015,
+        price: 3980
+    },
+    {
+        gunplaName: "GM II Semi Striker",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630850840/1000098879_1_lnqq49.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 10-2015,
+        price: 1728
+    },
+    {
+        gunplaName: "Gundam G-Self Reflector Pack",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630850841/gundam-g-self-reflector_pack_hg_1_ztuctk.jpg",
+        series: "Gundam Reconguista in G",
+        releaseDate: 09-2015,
+        price: 2367
+    },
+    {
+        gunplaName: "Jegan A2 Type (General Revil)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630850840/1000098304_1_btjseo.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 09-2015,
+        price: 1836
+    },
+    {
+        gunplaName: "Silver Bullet (Gael Chan)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630850843/1000098174_1_lredxr.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 09-2015,
+        price: 2484
+    },
+    {
+        gunplaName: "Elf Bulllock & Mac Knife Type",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630850843/1000097211_2_iah1oe.jpg",
+        series: "Gundam Reconguista in G",
+        releaseDate: 06-2015,
+        price: 1512
+    },
+    {
+        gunplaName: "Elf Bulllock",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630850843/1000097210_2_rcstgi.jpg",
+        series: "Gundam Reconguista in G",
+        releaseDate: 06-2015,
+        price: 1944
+    },
+    {
+        gunplaName: "Zssa",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630850842/hguc_zssa_yellow_2_ksl5kx.jpg",
+        series: "ZZ Gundam",
+        releaseDate: 07-2015,
+        price: 2592
+    },
+    {
+        gunplaName: "Crossbone Gundam X2 Kai",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630850843/1000097151_1_a5cilq.jpg",
+        series: "Crossbone Gundam",
+        releaseDate: 06-2015,
+        price: 2160
+    },
+    {
+        gunplaName: "Victory Gundam Wings of Light Set",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630850843/1000096903_1_xov779.jpg",
+        series: "Victory Gundam",
+        releaseDate: 05-2015,
+        price: 1620
+    },
+    {
+        gunplaName: "Stark Jegan CCA-MSV Ver.",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630850843/1000096885_2_vv2ydd.jpg",
+        series: "Char's Counterattack",
+        releaseDate: 06-2015,
+        price: 2484
+    },
+    {
+        gunplaName: "Crossbone Gundam X1 Kai",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630865348/519tqzfL2ZL._AC__kjwj2a.jpg",
+        series: "Crossbone Gundam",
+        releaseDate: 05-2015,
+        price: 2160
+    },
+    {
+        gunplaName: "Jegan Type A (F91 Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630865345/6f86cda0-6dae-4b2f-a339-0ce729ecdd21_ww8hgb.jpg",
+        series: "Gundam F91",
+        releaseDate: 05-2015,
+        price: 4500
+    },
+    {
+        gunplaName: "Z II (Travis Kirkland)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630850842/travis_kirkland_custom_z_ii_1_nrflae.jpg",
+        series: "Missing Link",
+        releaseDate: 04-2015,
+        price: 2500
+    },
+    {
+        gunplaName: "Pale Rider (Land Heavy Equip)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630865585/N2262100001006_013_qz825n.jpg",
+        series: "Missing Link",
+        releaseDate: 04-2015,
+        price: 1944
+    },
+    {
         gunplaName: "",
         image: "",
         series: "",

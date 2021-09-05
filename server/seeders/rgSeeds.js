@@ -261,18 +261,39 @@ const rgSeeds = [
         price: 3240
     },
     {
-        gunplaName: "",
-        image: "",
-        series: "",
-        releaseDate: 11-2021,
+        gunplaName: "Gundam Astray Blue Frame",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630850842/RG_Gundam_Astray_Blue_Frame_2_ysu6t9.jpg",
+        series: "Gundam Seed",
+        releaseDate: 12-2015,
+        price: 3000
+    },
+    {
+        gunplaName: "Z'Gok",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630850840/1000098265_1_qadirk.jpg",
+        series: "Mobile Suit Gundam",
+        releaseDate: 08-2015,
+        price: 2700
+    },
+    {
+        gunplaName: "Gundam 00 Raiser Trans-Am Injection",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630850842/ui01_t6arls.jpg",
+        series: "Gundam 00",
+        releaseDate: 06-2015,
+        price: 3240
+    },
+    {
+        gunplaName: "RX-78-2 Gundam Clear Ver.",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630850843/6df77980gw1eqgytu4qjaj20el0eldhz_q7pzsy.jpg",
+        series: "Mobile Suit Gundam",
+        releaseDate: 047-2015,
         price: 4500
     },
     {
-        gunplaName: "",
-        image: "",
-        series: "",
-        releaseDate: 11-2021,
-        price: 4500
+        gunplaName: "G-3 Gundam",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630850842/gundamkitscollectionSS013_jxqh83.jpg",
+        series: "Mobile Suit Gundam",
+        releaseDate: 04-2015,
+        price: 2500
     },
 ];
 

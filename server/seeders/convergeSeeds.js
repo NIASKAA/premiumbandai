@@ -191,6 +191,41 @@ const convergeSeeds = [
         price: 5076
     },
     {
+        gunplaName: "Nu Gundam HWS",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630850841/BANC160112_bv8npe.jpg",
+        series: "Char's Counterattack",
+        releaseDate: 06-2016,
+        price: 2000
+    },
+    {
+        gunplaName: "Qan[T] Full Saber Core",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630850840/banc150812_vk7uwp.jpg",
+        series: "Gundam 00",
+        releaseDate: 01-2016,
+        price: 1800
+    },
+    {
+        gunplaName: "Gundam GP03D Dendrobium",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630850841/banc151041_a0rkhf.jpg",
+        series: "Stardust Memory",
+        releaseDate: 11-2015,
+        price: 3200
+    },
+    {
+        gunplaName: "Gundam 00 Raiser Core Special Color Ver.",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630850840/banc150812_vk7uwp.jpg",
+        series: "Gundam 00",
+        releaseDate: 08-2015,
+        price: 2160
+    },
+    {
+        gunplaName: "S Gundam Core Special Color Ver.",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630850841/banc150818_qjr7p2.jpg",
+        series: "Sentinel Gundam",
+        releaseDate: 08-2015,
+        price: 1512
+    },
+    {
         gunplaName: "",
         image: "",
         series: "",

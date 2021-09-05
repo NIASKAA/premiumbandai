@@ -630,6 +630,97 @@ const mgSeeds = [
         price: 2160
     },
     {
+        gunplaName: "Gundam Amazing Exia",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630850841/gundam_amazing_exia_1_dlzv6p.jpg",
+        series: "Gundam Build Fighters",
+        releaseDate: 12-2015,
+        price: 5400
+    },
+    {
+        gunplaName: "Hyaku Shiki Kai Mass Production",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630850841/BANML151201_xpabso.jpg",
+        series: "Gundam Sentinel",
+        releaseDate: 12-2015,
+        price: 5940
+    },
+    {
+        gunplaName: "Altron Gundam EW",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630850840/1000099146_1_dtewqc.jpg",
+        series: "Gundam Wing Endless Waltz",
+        releaseDate: 12-2015,
+        price: 4500
+    },
+    {
+        gunplaName: "Gundam Fenice Rinascita Alba",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630850841/gundam_fenice_rinascita_alba_1_txvolb.jpg",
+        series: "Gundam Build Fighters",
+        releaseDate: 10-2015,
+        price: 5184
+    },
+    {
+        gunplaName: "Heavy Gundam FA",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630850842/MG_Heavy_Gundam_1_umwrcs.jpg",
+        series: "MSV",
+        releaseDate: 09-2015,
+        price: 4860
+    },
+    {
+        gunplaName: "Sazabi Ver Ka/NightingGale Effect Part",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630850842/mg_sazabi_effect_parts_4_sais94.jpg",
+        series: "Char's Counterattack",
+        releaseDate: 07-2015,
+        price: 1836
+    },
+    {
+        gunplaName: "GM Cannon",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630850842/mg_gm_cannon_1_ii8lea.jpg",
+        series: "MSV",
+        releaseDate: 08-2015,
+        price: 4320
+    },
+    {
+        gunplaName: "Mega Bazooka Launcher",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630850842/mg_mega-bazooka-launcher_1_gaxrhi.jpg",
+        series: "Zeta Gundam",
+        releaseDate: 07-2015,
+        price: 3024
+    },
+    {
+        gunplaName: "Moonlight Butterfly Effect",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630850842/mg-turn-x-turn-a-gundam-nano-skin-image_7_ndr6sd.jpg",
+        series: "Turn A Gundam",
+        releaseDate: 07-2015,
+        price: 1944
+    },
+    {
+        gunplaName: "Gearga Doga",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630850841/BANML150713_bwhrlh.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 07-2015,
+        price: 5940
+    },
+    {
+        gunplaName: "High Mobility Zaku II (Gabby Hazard)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630850841/gabby_hazard_zaku_ii_high_mobility_type_MG_1_oe4pee.jpg",
+        series: "MSV",
+        releaseDate: 06-2015,
+        price: 5000
+    },
+    {
+        gunplaName: "Red Snake's Zeta",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630865123/157_3443_o_1diujl95u1ed1mfk1uvu1s583mu2n_debdf7ba-ee38-44f0-89f0-dcf5368deb23_1512x_os0mtm.jpg",
+        series: "Gundam Evolve",
+        releaseDate: 06-2015,
+        price: 7020
+    },
+    {
+        gunplaName: "Rick Dom (Dozle Zabi)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630865698/ab1d7f07-3496-4e70-bd69-1330ce7668cd_czurob.jpg",
+        series: "Mobile Suit Gundam",
+        releaseDate: 03-2015,
+        price: 5400
+    },
+    {
         gunplaName: "",
         image: "",
         series: "",
@@ -643,7 +734,13 @@ const mgSeeds = [
         releaseDate: 11-2021,
         price: 4500
     },
-    
+    {
+        gunplaName: "",
+        image: "",
+        series: "",
+        releaseDate: 11-2021,
+        price: 4500
+    },
 ];
 
 const mgSeed = async () => {
