@@ -55,6 +55,7 @@ const PerfectGrade = () => {
                 itemsPerPage={itemsPerPage}
                 totalItems={AllPerfectGrade.length}
                 paginate={paginate}
+                currentPage={currentPage}
             />
         </>
     )

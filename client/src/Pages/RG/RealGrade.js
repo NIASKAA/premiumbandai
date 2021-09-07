@@ -54,6 +54,7 @@ const RealGrade = () => {
                 itemsPerPage={itemsPerPage}
                 totalItems={AllRealGrade.length}
                 paginate={paginate}
+                currentPage={currentPage}
             />
         </>
     )

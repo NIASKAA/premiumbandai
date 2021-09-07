@@ -55,6 +55,7 @@ const SDGrade = () => {
                 itemsPerPage={itemsPerPage}
                 totalItems={currentItems.length}
                 paginate={paginate}
+                currentPage={currentPage}
             />
         </>
     )

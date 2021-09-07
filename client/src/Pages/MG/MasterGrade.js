@@ -54,6 +54,9 @@ const MasterGrade = () => {
                 itemsPerPage={itemsPerPage}
                 totalItems={AllMasterGrade.length}
                 paginate={paginate}
+                currentPage={currentPage}
+                currentPage={currentPage}
+                currentPage={currentPage}
             />
         </>
     )

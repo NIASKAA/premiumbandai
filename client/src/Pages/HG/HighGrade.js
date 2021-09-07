@@ -55,6 +55,7 @@ const HighGrade = () => {
                 itemsPerPage={itemsPerPage}
                 totalItems={AllHighGrade.length}
                 paginate={paginate}
+                currentPage={currentPage}
             />
         </>
     )

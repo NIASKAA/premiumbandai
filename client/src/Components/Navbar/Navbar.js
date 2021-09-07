@@ -24,7 +24,7 @@ const Navigation = () => {
                                     <NavDropdown.Divider />
                                     <NavDropdown.Item as={Link} to={'/pg'}>Perfect Grade</NavDropdown.Item>
                                     <NavDropdown.Divider />
-                                    <NavDropdown.Item as={Link} to={'/converges/:id'}>Converges</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to={'/converges'}>Converges</NavDropdown.Item>
                                 </NavDropdown>
                                 {Auth.loggedIn() ? (
                                     <>
