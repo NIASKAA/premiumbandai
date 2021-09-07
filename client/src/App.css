@@ -12,3 +12,7 @@ body {
   flex-direction: column;
   line-height: 1.6;
 }
+
+.error {
+  color: rgb(228, 46, 1)
+}

@@ -55,7 +55,7 @@
         background-size: cover;
         transition: transform 500ms ease;
         overflow: hidden;
-        margin-left: 23% !important;
+        margin-left: 20% !important;
     }
 
     .infoContent {
