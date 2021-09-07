@@ -4,7 +4,7 @@ const sdGrade = new mongoose.Schema({
     gunplaName: {type: String},
     image: {type: String},
     series: {type: String},
-    releaseDate: {type: Number},
+    releaseDate: {type: String},
     price: {type: Number}
 });
 

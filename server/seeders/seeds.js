@@ -16,6 +16,8 @@ db.once("open", async () => {
         await rgSeed();
         await sdSeed();
         await re100Seed();
+        console.log("All data seeded");
+      process.exit(0);
     } catch (error) {
         console.log(error);
         process.exit(1);
