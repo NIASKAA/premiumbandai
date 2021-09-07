@@ -5,7 +5,7 @@ import {useQuery} from "@apollo/client"
 import {GET_ALL_RG} from '../../utils/queries'
 import {GET_RGS} from '../../utils/state/actions'
 import RealGradeList from '../../Components/RealGradeList/RealGradeList'
-import Pagination from '../../Components/Pagination/Pagination'
+import Paginate from '../../Components/Pagination/Pagination'
 
 const RealGrade = () => {
     const dispatch = useDispatch()
@@ -50,7 +50,7 @@ const RealGrade = () => {
                   {!loadRealGrade && !loading && <RealGradeList realGrades={currentItems} />}
                 </Row>
             </Container>
-            <Pagination
+            <Paginate
                 itemsPerPage={itemsPerPage}
                 totalItems={AllRealGrade.length}
                 paginate={paginate}

@@ -5,7 +5,7 @@ import {useQuery} from "@apollo/client"
 import {GET_ALL_PG} from '../../utils/queries'
 import {GET_PGS} from '../../utils/state/actions'
 import PerfectGradeList from '../../Components/PerfectGradeList/PerfectGradeList'
-import Pagination from '../../Components/Pagination/Pagination'
+import Paginate from '../../Components/Pagination/Pagination'
 
 
 const PerfectGrade = () => {
@@ -51,7 +51,7 @@ const PerfectGrade = () => {
                   {!loadPerfectGrades && !loading && <PerfectGradeList perfectGrades={currentItems} />}
                 </Row>
           </Container>
-          <Pagination  
+          <Paginate
                 itemsPerPage={itemsPerPage}
                 totalItems={AllPerfectGrade.length}
                 paginate={paginate}

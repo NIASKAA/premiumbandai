@@ -1,11 +1,12 @@
 import React, {useState, useEffect} from 'react'
+import {Link} from 'react-router-dom'
 import {useDispatch, useSelector} from "react-redux"
 import {Container, Spinner} from "react-bootstrap"
 import {useQuery} from "@apollo/client"
 import {GET_ALL_CONVERGES} from '../../utils/queries'
 import {GET_CONVERGES} from '../../utils/state/actions'
 import ConvergeList from '../../Components/ConvergeList/ConvergeList'
-import Pagination from '../../Components/Pagination/Pagination'
+import Paginate from '../../Components/Pagination/Pagination'
 import './styles.css'
 
 const Converges = () => {
@@ -52,11 +53,12 @@ const Converges = () => {
                   {!loadingConverge && !loading && <ConvergeList converges={currentItems} />}
                 </div>
           </Container>
-          <Pagination
+          
+          <Paginate
             itemsPerPage={itemsPerPage}
             totalItems={AllConverge.length}
             paginate={paginate}
-          />
+          />  
         </>
     )
 }

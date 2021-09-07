@@ -5,7 +5,7 @@ import {useQuery} from "@apollo/client"
 import {GET_ALL_SD} from '../../utils/queries'
 import {GET_SDS} from '../../utils/state/actions'
 import SDGradeList from '../../Components/SDGradeList/SDGradeList'
-import Pagination from '../../Components/Pagination/Pagination' 
+import Paginate from '../../Components/Pagination/Pagination' 
 
 const SDGrade = () => {
     const dispatch = useDispatch()
@@ -51,7 +51,7 @@ const SDGrade = () => {
                   {!loadSDGrade && !loading && <SDGradeList sdGrades={currentItems} />}
                 </Row>
             </Container>
-            <Pagination
+            <Paginate
                 itemsPerPage={itemsPerPage}
                 totalItems={currentItems.length}
                 paginate={paginate}

@@ -55,11 +55,7 @@
         background-size: cover;
         transition: transform 500ms ease;
         overflow: hidden;
-        padding-left: 0% !important;
-        padding-right: 0% !important;
-        margin-bottom: 6% !important;
-        justify-content: center;
-        align-items: center;
+        margin-left: 23% !important;
     }
 
     .infoContent {
@@ -73,5 +69,10 @@
         );
         transform: translateY(65%);
         transition: transform 500ms ease;
+    }
+
+    .infoCard:hover .infoContent {
+        transform: translateY(0);
+        margin: 0;
     }
 }

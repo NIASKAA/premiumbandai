@@ -5,7 +5,7 @@ import {useQuery} from "@apollo/client"
 import {GET_ALL_MG} from '../../utils/queries'
 import {GET_MGS} from '../../utils/state/actions'
 import MasterGradeList from '../../Components/MasterGradeList/MasterGradeList'
-import Pagination from '../../Components/Pagination/Pagination'
+import Paginate from '../../Components/Pagination/Pagination'
 
 const MasterGrade = () => {
     const dispatch = useDispatch()
@@ -50,7 +50,7 @@ const MasterGrade = () => {
                     {!loadMasterGrade && !loading && <MasterGradeList masterGrades={currentItems}/>}
                 </Row> 
             </Container>
-            <Pagination 
+            <Paginate 
                 itemsPerPage={itemsPerPage}
                 totalItems={AllMasterGrade.length}
                 paginate={paginate}

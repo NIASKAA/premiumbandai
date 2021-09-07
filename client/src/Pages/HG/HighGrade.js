@@ -5,7 +5,7 @@ import {Row, Container, Spinner} from 'react-bootstrap'
 import {GET_ALL_HG} from '../../utils/queries'
 import {GET_HGS} from '../../utils/state/actions'
 import HighGradeList from '../../Components/HighGradeList/HighGradeList'
-import Pagination from '../../Components/Pagination/Pagination'
+import Paginate from '../../Components/Pagination/Pagination'
 
 const HighGrade = () => {
     const dispatch = useDispatch()
@@ -51,7 +51,7 @@ const HighGrade = () => {
                     {!loadHighGrades && !loading && <HighGradeList highGrades={currentItems}/>}
                 </Row>
             </Container>
-            <Pagination
+            <Paginate
                 itemsPerPage={itemsPerPage}
                 totalItems={AllHighGrade.length}
                 paginate={paginate}

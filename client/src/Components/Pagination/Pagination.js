@@ -1,25 +1,25 @@
 import React from 'react'
+import { Pagination } from 'react-bootstrap'
 import './styles.css'
 
-const Pagination = ({itemsPerPage, totalItems, paginate}) => {
+const Paginate = ({itemsPerPage, totalItems, paginate}) => {
     const pageNumbers = []
-
-    for (let i = 1; i <= Math.ceil(totalItems / itemsPerPage); i++) {
-        pageNumbers.push(i)
+    for (let number = 1; number <= Math.ceil(totalItems / itemsPerPage); number++) {
+        pageNumbers.push(number)
+        let currentPage = number
     }
+
     return (
         <nav>
             <ul className="pagination">
                 {pageNumbers.map(number => (
-                    <li key={number} className="page-item">
-                        <a onClick={() => paginate(number)} className="page-link">
-                            {number}
-                        </a>
-                    </li>
+                    <Pagination.Item key={number} onClick={() => paginate(number)} className="page-item">
+                       {number}
+                    </Pagination.Item>
                 ))}
             </ul>
         </nav>
     )
 }
 
-export default Pagination
+export default Paginate
