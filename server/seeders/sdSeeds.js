@@ -9,6 +9,13 @@ const sdSeeds = [
         price: 770
     },
     {
+        gunplaName: "Victory Daishogun",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630995581/sd-legend-bb-victory-daishogun_1_nty760.jpg",
+        series: "SD Legend",
+        releaseDate: 09-2018,
+        price: 4860
+    },
+    {
         gunplaName: "MK-III Daishogun (Super Steel Ver.)",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762479/sd-legend-bb-mk-iii-daishogun-super-steel-ver_1_s2hesp.jpg",
         series: "SD Legend",
@@ -21,6 +28,13 @@ const sdSeeds = [
         series: "SD Legend",
         releaseDate: 09-2017,
         price: 3240
+    },
+    {
+        gunplaName: "Musha Victory Gundam (Super Steel Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630995581/sd-legend-bb-musha-victory-gundam-super-steel-ver_1_rbqn7m.jpg",
+        series: "SD Legend",
+        releaseDate: 12-2016,
+        price: 2700
     },
     {
         gunplaName: "Nidaime Gundam Daishogun (White Steel Ver.)",
@@ -65,6 +79,13 @@ const sdSeeds = [
         price: 2700
     },
     {
+        gunplaName: "Musha Godmaru Final Battle Ver.",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630995581/sd-legend-bb-musha-godmaru-final-battle-ver_1_kdktoq.jpg",
+        series: "SD Legend",
+        releaseDate: 01-2014,
+        price: 1500
+    },
+    {
         gunplaName: "Strike Liu Bei (Deactive Mode)",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630962218/N2217996001001_001_r1kg6i.jpg",
         series: "SD Legend",
@@ -77,6 +98,13 @@ const sdSeeds = [
         series: "SD Legend",
         releaseDate: 07-2013,
         price: 2635
+    },
+    {
+        gunplaName: "",
+        image: "",
+        series: "",
+        releaseDate: 11-2021,
+        price: 4500
     },
     {
         gunplaName: "",

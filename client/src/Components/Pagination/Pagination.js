@@ -7,7 +7,7 @@ const Paginate = ({itemsPerPage, totalItems, paginate}) => {
     for (let number = 1; number <= Math.ceil(totalItems / itemsPerPage); number++) {
         pageNumbers.push(number)
     }
-
+    window.scrollTo(0, 0)
     return (
         <nav>
             <ul className="pagination">

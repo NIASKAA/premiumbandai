@@ -413,6 +413,13 @@ const mgSeeds = [
         price: 4860
     },
     {
+        gunplaName: "Dwadge (ZZ Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630995582/MG_Dwadge1_shotr4.jpg",
+        series: "ZZ Gundam",
+        releaseDate: 04-2019,
+        price: 5400
+    },
+    {
         gunplaName: "Re-GZ Custom",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988350/MG-re-gz-custom1_a7rrs5.jpg",
         series: "Char's Counterattack",
@@ -635,6 +642,13 @@ const mgSeeds = [
         series: "Gundam Unicorn",
         releaseDate: 01-2017,
         price: 3996
+    },
+    {
+        gunplaName: "GM Command Space Type",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630995580/mg-gm-command-space-type_1_rrbjbz.jpg",
+        series: "War In Pocket",
+        releaseDate: 11-2017,
+        price: 3780
     },
     {
         gunplaName: "Zaku II High Mobility Test (Breniss Ox)",
@@ -957,6 +971,13 @@ const mgSeeds = [
         series: "MSV",
         releaseDate: 07-2014,
         price: 5184
+    },
+    {
+        gunplaName: "FA Gundam Blue Color Ver.",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630995581/banml001_zoqxbl.jpg",
+        series: "MSV",
+        releaseDate: 04-2014,
+        price: 5400
     },
     {
         gunplaName: "Gundam Astray Red Frame",

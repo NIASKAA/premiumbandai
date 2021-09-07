@@ -51,6 +51,13 @@ const pgSeeds = [
         price: 3780
     },
     {
+        gunplaName: "PG Exia Repair Parts",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630995581/pg-160-gundam-exia-repair_1_rn2k24.jpg",
+        series: "Gundam 00",
+        releaseDate: 03-2018,
+        price: 4320
+    },
+    {
         gunplaName: "Banshee Norn (Final Battle Ver.)",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762478/pg-banshee-norn-final-battle-ver_1_uzfw2l.jpg",
         series: "Gundam Unicorn",
@@ -63,6 +70,13 @@ const pgSeeds = [
         series: "Gundam 00",
         releaseDate: 06-2017,
         price: 4104
+    },
+    {
+        gunplaName: "Gundam Unicorn Phenex",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630995581/pg-phenex_dhpmlu.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 02-2017,
+        price: 43000
     },
     {
         gunplaName: "Gundam Unicorn Final Battle Ver.",
