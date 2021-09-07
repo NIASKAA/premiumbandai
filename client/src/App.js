@@ -4,7 +4,7 @@ import { ApolloClient, InMemoryCache, ApolloProvider, createHttpLink} from "@apo
 import { Provider } from "react-redux";
 import { setContext } from '@apollo/client/link/context';
 import {Navigation, Footer} from './Components';
-import {Home, HighGrade, RealGrade, MasterGrade, PerfectGrade, SDGrade, Converges, Login, SignUp, Profile} from './Pages'
+import {Home, HighGrade, RealGrade, MasterGrade, PerfectGrade, SDGrade, Converges, Login, SignUp, Profile, FAQ} from './Pages'
 import store from './utils/state/store';
 
 const httpLink = createHttpLink({
@@ -35,6 +35,7 @@ function App() {
             <Navigation />
               <Switch>
                 <Route exact path="/" component={Home}/>
+                <Route exact path="/faq" component={FAQ}/>
                 <Route exact path="/login" component={Login}/>
                 <Route exact path="/signup" component={SignUp}/>
                 <Route exact path='/profile' component={Profile}/>

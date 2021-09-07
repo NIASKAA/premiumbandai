@@ -6,6 +6,7 @@ const {realGrade} = require('./realGrade')
 const {masterGrade} = require('./masterGrade')
 const {perfectGrade} = require('./perfectGrade')
 const {sdGrade} = require('./sdGrade')
+const {re100} = require('./RE100')
 
 const profileSchema = new mongoose.Schema({
     username: {type: String, require: true, unique: true},
@@ -17,12 +18,14 @@ const profileSchema = new mongoose.Schema({
     gotMasterGrades: [masterGrade],
     gotPerfectGrades: [perfectGrade],
     gotSDGrades: [sdGrade],
+    gotRE100s: [re100],
     convergeWish: [converge],
     highGradeWish: [highGrade],
     realGradeWish: [realGrade],
     masterGradeWish: [masterGrade],
     perfectGradeWish: [perfectGrade],
-    sdGradeWish: [sdGrade]
+    sdGradeWish: [sdGrade],
+    re100Wish: [re100]
 });
 
 profileSchema.pre('save', async function(next) {

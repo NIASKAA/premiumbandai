@@ -34,6 +34,7 @@ const Navigation = () => {
                                 ) : (
                                     <Nav.Link exact activeClassName="active" className="navBtns" as={Link} to={'/login'}>Login</Nav.Link>
                                 )}
+                                <Nav.Link as={Link} to={'/faq'}>FAQ</Nav.Link>
                             </Nav>
                     </Navbar.Collapse>
                 </Container>

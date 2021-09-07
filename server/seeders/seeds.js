@@ -5,6 +5,7 @@ const {mgSeed} = require('./mgSeeds')
 const {pgSeed} = require('./pgSeeds')
 const {rgSeed} = require('./rgSeeds')
 const {sdSeed} = require('./sdSeeds')
+const {re100} = require('./re100Seeds');
 
 db.once("open", async () => {
     try {
@@ -14,6 +15,7 @@ db.once("open", async () => {
         await pgSeed();
         await rgSeed();
         await sdSeed();
+        await re100();
     } catch (error) {
         console.log(error);
         process.exit(1);
