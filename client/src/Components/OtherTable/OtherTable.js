@@ -2,6 +2,7 @@ import React from 'react'
 import {useMutation} from "@apollo/client"
 import {DELETE_OTHER_SAVE} from '../../utils/mutations'
 import {Table, Button} from 'react-bootstrap'
+import { BsFillTrashFill } from "react-icons/bs";  
 
 const OtherTable = ({others}) => {
     const [deleteOtherSave] = useMutation(DELETE_OTHER_SAVE)
@@ -36,7 +37,7 @@ const OtherTable = ({others}) => {
                             <td>{other.series}</td>
                             <td>{other.price}</td>
                             <td>{other.releaseDate}</td>
-                            <Button onClick={() => deleteItem(other._id)} variant="danger"></Button>
+                            <Button onClick={() => deleteItem(other._id)} variant="danger"><BsFillTrashFill/></Button>
                         </tr>
                     ))}
                 </tbody>

@@ -47,32 +47,3 @@
     margin-left: 0 !important;
     margin-right: 0% !important;
 }
-
-@media only screen and (max-width: 600px) {
-    .infoCard {
-        max-width: 28.5ch;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        background-size: cover;
-        transition: transform 500ms ease;
-        overflow: hidden;
-        margin-left: 20% !important;
-    }
-
-    .infoContent {
-        --padding: 1.5em;
-        max-height: 20ch !important;
-        padding: var(--padding);
-        background: linear-gradient(
-            hsl( 0 0% 0% / 0),
-            hsl(0 0% 0% / 0.2),
-            hsl(0 0% 0% / 0.1)
-        );
-        transform: translateY(65%);
-        transition: transform 500ms ease;
-    }
-
-    .infoCard:hover .infoContent {
-        transform: translateY(0);
-        margin: 0;
-    }
-}
