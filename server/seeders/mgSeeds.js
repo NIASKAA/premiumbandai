@@ -721,11 +721,200 @@ const mgSeeds = [
         price: 5400
     },
     {
-        gunplaName: "",
-        image: "",
-        series: "",
-        releaseDate: 11-2021,
-        price: 4500
+        gunplaName: "Z III Gray Wolf's Buster Zeta",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630957121/s-l500_szosgr.jpg",
+        series: "Gundam Evolve",
+        releaseDate: 02-2015,
+        price: 7020
+    },
+    {
+        gunplaName: "Tallgeese III",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630957120/ec723c38-095e-450f-a382-56ee5d7da4b2_xvrv0d.jpg",
+        series: "Gundam Wing Endless Waltz",
+        releaseDate: 01-2015,
+        price: 4860
+    },
+    {
+        gunplaName: "Gundam Astray Noir",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630957125/N2242119001005_005_ugwlhj.jpg",
+        series: "Gundam Seed Astray MSV",
+        releaseDate: 01-2014,
+        price: 5250
+    },
+    {
+        gunplaName: "Hi-Nu Gundam HWS Parts",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630957120/gundamkitscollectionSS002_ko5do6.jpg",
+        series: "Char's Counterattack",
+        releaseDate: 09-2014,
+        price: 3024
+    },
+    {
+        gunplaName: "Zaku II (Garma Zabi)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630957125/gundamkitscollectionSS016_c4ky5c.jpg",
+        series: "MSV",
+        releaseDate: 12-2014,
+        price: 4100
+    },
+    {
+        gunplaName: "Gundam 00 Seven Sword Inspection Color",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630957120/1000090185_2_kelncd.jpg",
+        series: "Gundam 00V",
+        releaseDate: 09-2014,
+        price: 5940
+    },
+    {
+        gunplaName: "Banshee Norn",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630958793/s-l500_qijkdt.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 06-2014,
+        price: 6480
+    },
+    {
+        gunplaName: "Gouf M'Quve Custom",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630957130/26e10ec5-09f4-4526-a7f8-a2a79c1ca147_is3bgb.jpg",
+        series: "MSV",
+        releaseDate: 08-2014,
+        price: 4725
+    },
+    {
+        gunplaName: "S Gundam Booster Unit",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630957120/banml139_coewpw.jpg",
+        series: "Gundam Sentinel",
+        releaseDate: 08-2014,
+        price: 10584
+    },
+    {
+        gunplaName: "FA Unicorn Gundam (Red Psycho Frame)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630957125/gundamkitscollectionSS005_qrzhau.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 08-2014,
+        price: 8400
+    },
+    {
+        gunplaName: "Gelgoog Cannon (MSV Colors)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630960140/gundamkitscollectionSS001_xk46uj.jpg",
+        series: "MSV",
+        releaseDate: 07-2014,
+        price: 5184
+    },
+    {
+        gunplaName: "Gundam Astray Red Frame",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630960140/unnamed_scexvu.jpg",
+        series: "Gundam Seed Astray",
+        releaseDate: 01-2014,
+        price: 4725
+    },
+    {
+        gunplaName: "Zaku II (Dozle Zabi Custom)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630969583/51X_Q6pE0RL._AC__jsv3pp.jpg",
+        series: "MSV",
+        releaseDate: 06-2014,
+        price: 4860
+    },
+    {
+        gunplaName: "Destiny Impluse R",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630960139/51tzgSRIsLL._AC_SY580__n4zuvj.jpg",
+        series: "Gundam Seed Destiny MSV",
+        releaseDate: 02-2014,
+        price: 5460
+    },
+    {
+        gunplaName: "Gundam Exia Repair II",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630960139/51tzgSRIsLL._AC_SY580__n4zuvj.jpg",
+        series: "Gundam 00",
+        releaseDate: 02-2014,
+        price: 4410
+    },
+    {
+        gunplaName: "Gundam 00 Raiser Trans-AM Mode",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630960140/s-l600_v2qmze.jpg",
+        series: "Gundam 00",
+        releaseDate: 12-2013,
+        price: 6825
+    },
+    {
+        gunplaName: "Crossbone Gundam X3",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630962218/41xvMgo04xL._AC__lnokbp.jpg",
+        series: "Crossbone Gundam",
+        releaseDate: 12-2013,
+        price: 4620
+    },
+    {
+        gunplaName: "Crossbone Gundam X2",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630962218/N2208641001007_003_ozwwzs.jpg",
+        series: "Crossbone Gundam",
+        releaseDate: 06-2013,
+        price: 4620
+    },
+    {
+        gunplaName: "Z'Gok Unicorn Ver.",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630962218/N2238167001002_001_taunse.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 11-2013,
+        price: 3150
+    },
+    {
+        gunplaName: "Zaku Cannon (Unicorn Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630962219/1000083368_1_iejmeq.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 11-2013,
+        price: 4725
+    },
+    {
+        gunplaName: "Gundam 3.0 Accessory Set",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630970928/VzNo3HEZ3XDD725HKmhiZw_i6sfd8.jpg",
+        series: "Mobile Suit Gundam",
+        releaseDate: 09-2013,
+        price: 1575
+    },
+    {
+        gunplaName: "Gundam Age-1 Normal",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630962218/41nWBw1RHZL._AC__rm8kla.jpg",
+        series: "Gundam Age",
+        releaseDate: 09-2013,
+        price: 3675
+    },
+    {
+        gunplaName: "Gundam Age-2 (Special Forces Unit)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630962219/GUNDAM-AGE-2-NORMAL-SP-COLORS_2_iabows.jpg",
+        series: "Gundam Age",
+        releaseDate: 08-2013,
+        price: 4410
+    },
+    {
+        gunplaName: "Nu Gundam Ver Ka. Double Fin Funnel Set",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630962218/N2203074001001_003_sr8a4p.jpg",
+        series: "Char's Counterattack",
+        releaseDate: 01-2013,
+        price: 2100
+    },
+    {
+        gunplaName: "Zaku II 2.0 (Black Tri-Star)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630962729/1000076778_1_ouwgmi.jpg",
+        series: "Mobile Suit Gundam MSV",
+        releaseDate: 09-2012,
+        price: 3675
+    },
+    {
+        gunplaName: "Ballute System",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630962729/_2mLqhRJNp_B57koRApC9w_hbibnz.jpg",
+        series: "Zeta Gundam",
+        releaseDate: 06-2012,
+        price: 1470
+    },
+    {
+        gunplaName: "RX-78-2 Gundam (Real Type)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630962728/1000015614_1_efvlyj.jpg",
+        series: "Mobile Suit Gundam",
+        releaseDate: 06-2012,
+        price: 3990
+    },
+    {
+        gunplaName: "Zaku II (Real Type)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630962728/1000015614_7_gx8ixd.jpg",
+        series: "Mobile Suit Gundam",
+        releaseDate: 06-2012,
+        price: 3990
     },
     {
         gunplaName: "",

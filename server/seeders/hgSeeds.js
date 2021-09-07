@@ -1101,11 +1101,329 @@ const hgSeeds = [
         price: 1944
     },
     {
-        gunplaName: "",
-        image: "",
-        series: "",
-        releaseDate: 11-2021,
-        price: 4500
+        gunplaName: "Jegan Type B (F91 Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630957120/e620aafc-30fd-43e6-b67f-fdc213d66fe6_fo4zts.jpg",
+        series: "Gundam F91",
+        releaseDate: 05-2015,
+        price: 1836
+    },
+    {
+        gunplaName: "Gundam Astray Gold Frame",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630957130/1000084120_1_ldb6gs.jpg",
+        series: "Gundam Seed Astray",
+        releaseDate: 01-2014,
+        price: 1680
+    },
+    {
+        gunplaName: "Jegan Normal Type (F91 Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630957120/d991be41-ecfc-41a8-abfe-4c2edffe609b_btqskm.jpg",
+        series: "Gundam F91",
+        releaseDate: 05-2015,
+        price: 1836
+    },
+    {
+        gunplaName: "Neo Zeong Psycho Shard",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630957125/N2255542001001_005_yknaze.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 06-2014,
+        price: 2500
+    },
+    {
+        gunplaName: "GM Kai + Ball",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630957120/s-l500_1_fezzje.jpg",
+        series: "Stardust Memory",
+        releaseDate: 11-2014,
+        price: 2100
+    },
+    {
+        gunplaName: "Star Build Strike Gundam Ver RG. System",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630957120/N2279789001001_004_wvp8nc.jpg",
+        series: "Gundam Build Fighters",
+        releaseDate: 10-2014,
+        price: 1800
+    },
+    {
+        gunplaName: "Jegan D Type (F91 Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630957120/p_bandai_hg_1144_rgm89d_jegan_d_type_1529078478_cc3c8f790_progressive_fwlykw.jpg",
+        series: "Gundam F91",
+        releaseDate: 06-2014,
+        price: 1725
+    },
+    {
+        gunplaName: "Rick Dom Anavel Gato",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630957130/0_1_itnqmo.jpg",
+        series: "Stardust Memory",
+        releaseDate: 04-2014,
+        price: 1836
+    },
+    {
+        gunplaName: "Asshimar (Green Divers Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630957121/unnamed_mkjwfr.jpg",
+        series: "Gundam Evolve",
+        releaseDate: 04-2014,
+        price: 2000
+    },
+    {
+        gunplaName: "God Gundam Vs Master Gundam Hyper Mode",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630957120/gundamkitscollectionSS004_ejp4h3.jpg",
+        series: "Mobile Fighter God Gundam",
+        releaseDate: 08-2014,
+        price: 6480
+    },
+    {
+        gunplaName: "Gundam Unicorn Banshee Destory Mode (Clear Color)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630960140/gundamkitscollectionSS029_dguf4k.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 02-2013,
+        price: 1955
+    },
+    {
+        gunplaName: "Gundam Unicorn Banshee Unicorn Mode (Clear Color)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630960140/gundamkitscollectionSS034_ocxud5.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 02-2013,
+        price: 1680
+    },
+    {
+        gunplaName: "Rozen Zulu (Guard Rose Clear Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630960140/gundamkitscollectionSS011_cz1adg.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 06-2014,
+        price: 2983
+    },
+    {
+        gunplaName: "Jesta Cannon (Tristar Clear Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630960140/gundamkitscollectionSS016_ii5six.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 06-2014,
+        price: 2160
+    },
+    {
+        gunplaName: "Geara Zulu (Cureon Custom)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630960140/s-l500_l1tfhe.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 06-2014,
+        price: 2160
+    },
+    {
+        gunplaName: "Geara Zulu (Gilboa Sant Use)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630960140/s-l1600_zxhovi.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 06-2014,
+        price: 2376
+    },
+    {
+        gunplaName: "GN Arms Type E (Real Grade Color Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630960139/7c1076cc-2f24-40e7-b0f0-3cfda6d3f242_tex4li.jpg",
+        series: "Gundam 00",
+        releaseDate: 04-2014,
+        price: 4644
+    },
+    {
+        gunplaName: "Sumo Gold and Silver Plated Ver.",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630960139/banml018_kzd3bm.jpg",
+        series: "Turn A Gundam",
+        releaseDate: 04-2014,
+        price: 2592
+    },
+    {
+        gunplaName: "Turn A Butterfly Effect Wings",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630960139/banml010_pkfxfp.jpg",
+        series: "Turn A Gundam",
+        releaseDate: 04-2014,
+        price: 1728
+    },
+
+    {
+        gunplaName: "Rebawoo",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630960139/1000083472_2_acxt4s.jpg",
+        series: "Gundam Unicorn MSV",
+        releaseDate: 02-2014,
+        price: 2520
+    },
+
+    {
+        gunplaName: "Silver Bullet + Fin Funnel Ver.",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630960140/1d0e552b-0c39-414f-96db-5038aabc81db_tfuoxp.jpg",
+        series: "Gundam Unicorn MSV",
+        releaseDate: 04-2014,
+        price: 2520
+    },
+    {
+        gunplaName: "Ewac-Zack, Eye-Zack, Gaza-C Unicorn Ver. Set",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630962218/oZuMCndHRHXvaJEaLVC1ew_qzhuhp.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 11-2013,
+        price: 5145
+    },
+    {
+        gunplaName: "GM III (Unicorn Desert Color Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630962219/1000016305_1_iau4fm.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 09-2013,
+        price: 1575
+    },
+    {
+        gunplaName: "Rezel Type C (GR)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630962219/416Tf0uLfrL._AC__hqrobx.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 09-2013,
+        price: 2310
+    },
+
+    {
+        gunplaName: "Dra-C Unicorn Version",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630962218/N2151512001001_003_oxukva.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 09-2013,
+        price: 2100
+    },
+    {
+        gunplaName: "Gundam Legilis (Memory of Eden)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630962218/41Is1Tob9-L._AC_UL600_SR600_600__arww4l.jpg",
+        series: "Gundam Age",
+        releaseDate: 09-2013,
+        price: 1575
+    },
+    {
+        gunplaName: "Gundam Age-2 (Special Force Unit Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630962729/N2188281001001_001_lnnydm.jpg",
+        series: "Gundam Age",
+        releaseDate: 09-2013,
+        price: 1575
+    },
+    {
+        gunplaName: "Zogok (Operation Capture Jaburo Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630962219/51_FXD0C3rL._AC__pn03uv.jpg",
+        series: "MSV",
+        releaseDate: 10-2013,
+        price: 1995
+    },
+    {
+        gunplaName: "Base Jabber (Zeta Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630962218/41CUvb1yv1L._AC__m5z44j.jpg",
+        series: "Zeta Gundam",
+        releaseDate: 06-2013,
+        price: 1050
+    },
+    {
+        gunplaName: "Gelgoog & Gouf (Visch Donahue Set)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630962219/hguc-gouf-gelgoog-visch-donahue-custom-01_bmaqyo.jpg",
+        series: "MSV",
+        releaseDate: 02-2013,
+        price: 2500
+    },
+    {
+        gunplaName: "Guncannon Mass Production & GM (White Dingo)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630962219/412vMZUUg-L._AC_UL600_SR600_600__rdlqmy.jpg",
+        series: "MSV",
+        releaseDate: 02-2013,
+        price: 2100
+    },
+    {
+        gunplaName: "GM Sniper II (White Dingo)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630962218/N2180533001004_002_o5pose.jpg",
+        series: "MSV",
+        releaseDate: 02-2012,
+        price: 1980
+    },
+    {
+        gunplaName: "Meteor Unit",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630962219/1000077001_2_bi0qpi.jpg",
+        series: "Gundam Seed",
+        releaseDate: 10-2012,
+        price: 6825
+    },
+    {
+        gunplaName: "Rezel Type C Defensor (B-Unit)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630962219/1000077982_1_encqk9.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 10-2012,
+        price: 2600
+    },
+    {
+        gunplaName: "GM II (AEUG Colors)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630962218/7cf18e23-b9b2-4cb8-aec4-65072dfeb77d_nzfr7q.jpg",
+        series: "Zeta Gundam",
+        releaseDate: 11-2012,
+        price: 1470
+    },
+    {
+        gunplaName: "Base Jabber (Zeon Remnants)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630962218/41GoJYtBs6L._AC__xpcd62.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 11-2012,
+        price: 1050
+    },
+    {
+        gunplaName: "Hyaku Shiki (GPB Color)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630962728/1000007518_2_iohkhn.jpg",
+        series: "Other",
+        releaseDate: 12-2012,
+        price: 1260
+    },
+    {
+        gunplaName: "Sazabi (GPB Color)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630962729/1000007933_1_ctbecg.jpg",
+        series: "Other",
+        releaseDate: 12-2012,
+        price: 2940
+    },
+    {
+        gunplaName: "Bawoo & Zaku Sniper (GPB Color)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630962728/1000010237_1_iq2g0o.jpg",
+        series: "Other",
+        releaseDate: 12-2012,
+        price: 2730
+    },
+    {
+        gunplaName: "Danazine (Purple Color)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630962729/1000076743_3_hzin4z.jpg",
+        series: "Gundam Age",
+        releaseDate: 09-2012,
+        price: 1575
+    },
+    {
+        gunplaName: "Gundam Astray Gold Frame Amatsu",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630962729/P-Bandai_Online_Hobby_Shop_Exclusive_HG_1144_Gundam_Astray_Gold_Frame_Amatsu_2_syzvkd.jpg",
+        series: "Gundam Seed Astray",
+        releaseDate: 10-2012,
+        price: 1890
+    },
+    {
+        gunplaName: "Blue Destiny Gundam 03 (Omega)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630962729/N2188016001001_001_vlrjgi.jpg",
+        series: "Other",
+        releaseDate: 07-2013,
+        price: 1575
+    },
+    {
+        gunplaName: "Jesta (Clear Color)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630973476/1000015815_1_1_u5ne7i.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 06-2012,
+        price: 1575
+    },
+    {
+        gunplaName: "Delta Plus Gundam (Clear Color)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630962729/1000015822_1_fhhaxp.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 06-2012,
+        price: 2400
+    },
+    {
+        gunplaName: "G-Flying Armor Set",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630962728/11_myvif3.jpg",
+        series: "Zeta Gundam",
+        releaseDate: 05-2015,
+        price: 1890
+    },
+    {
+        gunplaName: "Juaggu (MSV Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630962728/425187_161557900631969_100003332809462_222592_52403622_n_mykd1c.jpg",
+        series: "MSV",
+        releaseDate: 05-2012,
+        price: 1700
     },
 ];
 

@@ -43,7 +43,48 @@ const sdSeeds = [
         releaseDate: 04-2015,
         price: 4104
     },
-
+    {
+        gunplaName: "Zakuto Yamishogun (Metallic Finish)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630957125/gundamkitscollectionSS028_e8u4zx.jpg",
+        series: "SD Legend",
+        releaseDate: 09-2014,
+        price: 2700
+    },
+    {
+        gunplaName: "Gundam Next Sengoku (Illusion of the Great General)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630960140/s-l400_hgf2l2.jpg",
+        series: "SD Legend",
+        releaseDate: 06-2014,
+        price: 2200
+    },
+    {
+        gunplaName: "Unicorn Gundam Knight (Ultimate Battle Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630960140/gundamkitscollectionSS029_1_ablpaz.jpg",
+        series: "SD Legend",
+        releaseDate: 06-2014,
+        price: 2700
+    },
+    {
+        gunplaName: "Strike Liu Bei (Deactive Mode)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630962218/N2217996001001_001_r1kg6i.jpg",
+        series: "SD Legend",
+        releaseDate: 07-2013,
+        price: 4200
+    },
+    {
+        gunplaName: "Musha Gundam (Ultra Steel Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630962218/pDOGLuzq5_rVJk3VdoKmWw_ljir8v.jpg",
+        series: "SD Legend",
+        releaseDate: 07-2013,
+        price: 2635
+    },
+    {
+        gunplaName: "",
+        image: "",
+        series: "",
+        releaseDate: 11-2021,
+        price: 4500
+    },
 ];
 
 const sdSeed = async () => {

@@ -295,6 +295,104 @@ const rgSeeds = [
         releaseDate: 04-2015,
         price: 2500
     },
+    {
+        gunplaName: "Wing Zero Custom EW Feather Effect Parts",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630957121/N2279764001009_011_gzhjvb.jpg",
+        series: "Gundam Wing Endless Waltz",
+        releaseDate: 02-2015,
+        price: 1620
+    },
+    {
+        gunplaName: "Gundam Astraea Parts",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630957120/rg-1-144-gundam-exia-for-gundam-astraea-parts-set-p-bandai-hobby-online-shop-exclusive-pre-order-5_800x_gwecne.gif",
+        series: "Gundam 00F",
+        releaseDate: 10-2014,
+        price: 1994
+    },
+    {
+        gunplaName: "Gundam Astraea Type F",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630957125/gundamkitscollectionSS019_900x900_fcc137.jpg",
+        series: "Gundam 00F",
+        releaseDate: 10-2014,
+        price: 4320
+    },
+    {
+        gunplaName: "Gundam Exia Trans-Am Injection",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630957130/51K5jlcqucL._AC_SX425__aues8k.jpg",
+        series: "Gundam 00",
+        releaseDate: 06-2014,
+        price: 2500
+    },
+    {
+        gunplaName: "Casval's Gundam",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630957120/N2273903001001_001_p8j47k.jpg",
+        series: "Mobile Suit Gundam",
+        releaseDate: 09-2014,
+        price: 2500
+    },
+    {
+        gunplaName: "Exia Repair Add-On",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630957125/N2255387001001_001_lpqkgg.jpg",
+        series: "Gundam 00",
+        releaseDate: 05-2014,
+        price: 1500
+    },
+    {
+        gunplaName: "GN Arms Type E (Real Grade Color Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630960139/7c1076cc-2f24-40e7-b0f0-3cfda6d3f242_tex4li.jpg",
+        series: "Gundam 00",
+        releaseDate: 04-2014,
+        price: 4644
+    },
+    {
+        gunplaName: "Wings of the Sky Effect Part",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630971498/b1ca7de4-e6b5-44a0-9183-93cc5374eb3d_bq61we.jpg",
+        series: "Gundam Seed Destiny",
+        releaseDate: 11-2013,
+        price: 1980
+    },
+    {
+        gunplaName: "Wings of Light Effect Part",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630971501/wing_of_light_Destiny_Gundam_1_gohyh2.jpg",
+        series: "Gundam Seed Destiny",
+        releaseDate: 05-2013,
+        price: 1500
+    },
+    {
+        gunplaName: "Strike Rouge Gundam (I.W.S.P)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630962218/N2200140001001_002_jvaa6t.jpg",
+        series: "Gundam Seed MSV",
+        releaseDate: 01-2013,
+        price: 2500
+    },
+    {
+        gunplaName: "Strike Freedom Gundam (Deactive Mode)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630962729/N2256565001001_001_mgrerh.jpg",
+        series: "Gundam Seed Destiny",
+        releaseDate: 02-2014,
+        price: 3240
+    },
+    {
+        gunplaName: "Destiny Gundam (Deactive Mode)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630962729/N2220165001001_001_gntuku.jpg",
+        series: "Gundam Seed Destiny",
+        releaseDate: 09-2013,
+        price: 2700
+    },
+    {
+        gunplaName: "Justice Gundam (Deactive Mode)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630962729/N2188018001003_003_zhkavd.jpg",
+        series: "Gundam Seed",
+        releaseDate: 09-2012,
+        price: 2500
+    },
+    {
+        gunplaName: "Freedom Gundam (Deactive Mode)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630962729/N2173942001001_001_xbjmtw.jpg",
+        series: "Gundam Seed",
+        releaseDate: 05-2021,
+        price: 2700
+    },
 ];
 
 const rgSeed = async () => {

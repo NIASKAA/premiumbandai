@@ -226,18 +226,18 @@ const convergeSeeds = [
         price: 1512
     },
     {
-        gunplaName: "",
-        image: "",
-        series: "",
-        releaseDate: 11-2021,
-        price: 4500
+        gunplaName: "Stardust Memory SP05",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630958217/71LQLRzovWL._AC_SX425__hw7fza.jpg",
+        series: "Stardust Memory",
+        releaseDate: 11-2014,
+        price: 1876
     },
     {
-        gunplaName: "",
-        image: "",
-        series: "",
-        releaseDate: 11-2021,
-        price: 4500
+        gunplaName: "Operation Revive Set",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630960140/s-l1600_1_ymgouh.jpg",
+        series: "All",
+        releaseDate: 02-2014,
+        price: 3150
     },
     
 ];

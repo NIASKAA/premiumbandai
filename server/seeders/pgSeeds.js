@@ -65,11 +65,11 @@ const pgSeeds = [
         price: 4104
     },
     {
-        gunplaName: "",
-        image: "",
-        series: "",
-        releaseDate: 11-2021,
-        price: 4500
+        gunplaName: "Unicorn Gundam Full Armor Equipment Set",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630957120/N2266772001007_012_drvhot.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 01-2015,
+        price: 7029
     },
     {
         gunplaName: "",
