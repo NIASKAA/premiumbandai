@@ -149,13 +149,6 @@ const rgSeeds = [
         price: 3024
     },
     {
-        gunplaName: "Advance Hazel Gundam TR-6",
-        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630717562/hguc_hazel_rah_second_form_and_gaplant_II1_qx838g.jpg",
-        series: "Advance of Zeta",
-        releaseDate: 09-2019,
-        price: 1836
-    },
-    {
         gunplaName: "Banshee's Armed Armor",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630725875/1000133044_1_nk5zms.jpg",
         series: "Gundam Unicorn",
@@ -205,11 +198,11 @@ const rgSeeds = [
         price: 6696
     },
     {
-        gunplaName: "Qan[T] Trans-AM Injection",
-        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762478/rg-00-quanta-trans-am-gloss-injection_1_p11d5j.jpg",
-        series: "Gundam 00",
-        releaseDate: 12-2017,
-        price: 2700
+        gunplaName: "Zaku Mine Layer",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631020889/rg-zaku_mine-layer_1_irlyql.jpg",
+        series: "MSV",
+        releaseDate: 05-2018,
+        price: 3240
     },
     {
         gunplaName: "Black Tri-Stars Zaku II (Triple Action Set)",
@@ -217,6 +210,13 @@ const rgSeeds = [
         series: "Mobile Suit Gundam",
         releaseDate: 03-2018,
         price: 9720
+    },
+    {
+        gunplaName: "Zaku II Black Tri-Star",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631020889/rg-black-tristar-zaku-ii_1_tuff9j.jpg",
+        series: "Mobile Suit Gundam",
+        releaseDate: 03-2018,
+        price: 3440
     },
     {
         gunplaName: "Zeta Gundam (Biosensor Image)",
@@ -240,11 +240,32 @@ const rgSeeds = [
         price: 10800
     },
     {
+        gunplaName: "Gundam 00 Seven Sword Inspection Color",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631020889/rg-00-gundam-seven-sword-g_1_ww1lt6.jpg",
+        series: "Gundam 00",
+        releaseDate: 12-2017,
+        price: 3780
+    },
+    {
+        gunplaName: "Qan[T] Trans-AM Injection",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762478/rg-00-quanta-trans-am-gloss-injection_1_p11d5j.jpg",
+        series: "Gundam 00",
+        releaseDate: 12-2017,
+        price: 2700
+    },
+    {
         gunplaName: "Build Strike Gundam Full Package (RG Color)",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762479/rg-build-strike-gundam-full-package-rg-system-image-colors_1_lldyol.jpg",
         series: "Gundam Build Fighters",
         releaseDate: 11-2017,
         price: 2700
+    },
+    {
+        gunplaName: "Gundam Astray Gold Frame Amatsu",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631020889/rg-gundam-astray-gold-frame-amatsu_1_ux4ft6.jpg",
+        series: "Gundam Seed Astray",
+        releaseDate: 09-2017,
+        price: 3465
     },
     {
         gunplaName: "Gundam MK II (Amuro Ray Color)",
@@ -282,11 +303,32 @@ const rgSeeds = [
         price: 4320
     },
     {
+        gunplaName: "Zeta Gundam 3",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631026015/rg-zeta-gundam-3-karaba-assault-ver_1_irge2k.jpg",
+        series: "Gundam Evolve",
+        releaseDate: 03-2017,
+        price: 3000
+    },
+    {
+        gunplaName: "Strike Gundam (Deactive Mode)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631026015/p-bandai-rg-strike-gundam-deactive-mode_1_wtusnt.jpg",
+        series: "Gundam Seed",
+        releaseDate: 02-2017,
+        price: 2160
+    },
+    {
         gunplaName: "Gundam 00 Seven Sword",
-        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812852/RG-00-gundam-seven-sword_3_s5cx84.jpg",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631024017/rg-00-gundam-seven-sword_1_smoy1b.jpg",
         series: "Gundam 00",
         releaseDate: 12-2016,
         price: 3240
+    },
+    {
+        gunplaName: "Sinanju Special Effect Expansion Set",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631024501/rg_sinanju_2_p4bp7m.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 09-2016,
+        price: 1944
     },
     {
         gunplaName: "Gundam Astray Gold Frame",
@@ -427,6 +469,13 @@ const rgSeeds = [
         series: "Gundam Seed",
         releaseDate: 05-2021,
         price: 2700
+    },
+    {
+        gunplaName: "",
+        image: "",
+        series: "",
+        releaseDate: 0,
+        price: 0
     },
 ];
 

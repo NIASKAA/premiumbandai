@@ -518,11 +518,25 @@ const mgSeeds = [
         price: 3720
     },
     {
+        gunplaName: "Gundam Storm Bringer",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631020888/mg-gundam-storm-bringer_1_ndxkwc.jpg",
+        series: "Other",
+        releaseDate: 09-2018,
+        price: 5400
+    },
+    {
         gunplaName: "Gelgoog (Anavel Gato)",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762481/mg-gelgoog-anavel-gato_1_bpffnn.jpg",
         series: "Stardust Memory",
         releaseDate: 08-2018,
         price: 4500
+    },
+    {
+        gunplaName: "Polypod Ball",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631020888/mg-polypod-ball_1_jhkg2v.jpg",
+        series: "Gundam Build Divers",
+        releaseDate: 08-2018,
+        price: 3240
     },
     {
         gunplaName: "Exia Gundam Avalanche Dash",
@@ -574,6 +588,20 @@ const mgSeeds = [
         price: 5940
     },
     {
+        gunplaName: "GN-X III (A-Laws Type)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631020888/mg-gn-x-III-a-laws-type_1_uxvrvc.jpg",
+        series: "Gundam 00",
+        releaseDate: 05-2018,
+        price: 4644
+    },
+    {
+        gunplaName: "Gundam 00 Seven Sword Trans-Am (Special Coating)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631020888/mg-trans-am-00-gundam-seven-sword-g_1_hjpor5.jpg",
+        series: "Gundam 00",
+        releaseDate: 04-2018,
+        price: 12960
+    },
+    {
         gunplaName: "Qan[T] (Trans-Am Coating)",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762480/mg-00-quanta-trans-am-mode_1_vx1m7m.jpg",
         series: "Gundam 00",
@@ -607,6 +635,13 @@ const mgSeeds = [
         series: "Advance of Zeta",
         releaseDate: 02-2018,
         price: 4860
+    },
+    {
+        gunplaName: "Providence Gundam Special Coating",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631020888/mg-providence-gundam-special-coating-ver_1_yww38r.jpg",
+        series: "Gundam Seed",
+        releaseDate: 01-2018,
+        price: 12960
     },
     {
         gunplaName: "Uma's Lightning Gelgoog High Mobility",
@@ -651,11 +686,25 @@ const mgSeeds = [
         price: 3780
     },
     {
+        gunplaName: "Justice Gundam (Special Coating)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631020888/mg-justice-gundam-special-coating-ver_1_gzwzql.jpg",
+        series: "Gundam Seed",
+        releaseDate: 11-2017,
+        price: 9720
+    },
+    {
         gunplaName: "Zaku II High Mobility Test (Breniss Ox)",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762478/mg-zaku-II-breniff-oguz-custom_1_oqmx57.jpg",
         series: "MSV",
         releaseDate: 10-2017,
         price: 4860
+    },
+    {
+        gunplaName: "Gundam TR-1 Hazel Custom",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631022704/1000115790_1_tlmivg.jpg",
+        series: "Advance of Zeta",
+        releaseDate: 09-2017,
+        price: 4500
     },
     {
         gunplaName: "Psycho Zaku Thunderbolt Ver.Ka (Final Battle)",
@@ -684,6 +733,27 @@ const mgSeeds = [
         series: "Gundam 00",
         releaseDate: 07-2017,
         price: 4536
+    },
+    {
+        gunplaName: "Dom (Gravity Front Color)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631024500/mg-ms-09-dom-gravity-front-ms-igloo-colors_1_ng1xdf.jpg",
+        series: "MS Igloo",
+        releaseDate: 07-2017,
+        price: 4320
+    },
+    {
+        gunplaName: "Gouf Custom (Gravity Front Color)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631024500/mg-gouf-custom-gravity-front-color-ver_1_gaoy3j.jpg",
+        series: "MS Igloo",
+        releaseDate: 07-2017,
+        price: 3240
+    },
+    {
+        gunplaName: "Zaku II (Gravity Front Color)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631024501/mg-ms-06j-zaku-II-gravity-front-colors-ms-igloo_1_xcgxdw.jpg",
+        series: "MS Igloo",
+        releaseDate: 07-2017,
+        price: 3780
     },
     {
         gunplaName: "Gundam 00 XN Raiser",
@@ -742,11 +812,18 @@ const mgSeeds = [
         price: 1512
     },
     {
-        gunplaName: "FA Gundam Thunderbolt Ver. KA Hanger",
-        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812853/gundam_thunderbolt_p-bandai_1_z8slss.jpg",
-        series: "Thunderbolt",
-        releaseDate: 11-2016,
-        price: 2800
+        gunplaName: "Nu Gundam HWS Ver.Ka Full Set",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631020888/MG-nu-gundam-hws-ver-ka_-full-set_1_heyoyg.jpg",
+        series: "Char's Counterattack",
+        releaseDate: 12-2016,
+        price: 4500
+    },
+    {
+        gunplaName: "HWS Extension Parts",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631020888/MG-nu-gundam-verka_1_un8hsx.jpg",
+        series: "Char's Counterattack",
+        releaseDate: 12-2016,
+        price: 3024
     },
     {
         gunplaName: "Banshee Norn Final Battle Ver.",
@@ -756,11 +833,32 @@ const mgSeeds = [
         price: 6480
     },
     {
+        gunplaName: "FA Gundam Thunderbolt Ver. KA Hanger",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812853/gundam_thunderbolt_p-bandai_1_z8slss.jpg",
+        series: "Thunderbolt",
+        releaseDate: 11-2016,
+        price: 2800
+    },
+    {
+        gunplaName: "Zaku II High Mobility (Robert Gilliam)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631024501/MG-ROBERT0GILLIAM-ZAKU-HM-P-BANDAI_1_j1r96w.jpg",
+        series: "MSV",
+        releaseDate: 11-2016,
+        price: 4860
+    },
+    {
         gunplaName: "Gundam Heavyarms Custom EW",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988346/gundam_heavyarms_custom_ew_1_h9dgv0.jpg",
         series: "Gundam Wing Endless Waltz",
         releaseDate: 10-2016,
         price: 5184
+    },
+    {
+        gunplaName: "Impulse Gundam Blanche",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631020888/l160901_r0qfcy.jpg",
+        series: "Gundam Seed Destiny MSV",
+        releaseDate: 09-2016,
+        price: 5616
     },
     {
         gunplaName: "Powered GM",
@@ -784,11 +882,32 @@ const mgSeeds = [
         price: 3456
     },
     {
+        gunplaName: "Geara Doga (Unicorn Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631020888/gundam_kits_collection002_f2hbz9.jpg",
+        series: "Unicorn Gundam",
+        releaseDate: 06-2016,
+        price: 5400
+    },
+    {
+        gunplaName: "Zaku II High Mobility (Eric Mansfield)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631025152/gundam_kits_collection001_eyuzqm.jpg",
+        series: "MSV",
+        releaseDate: 05-2016,
+        price: 4860
+    },
+    {
         gunplaName: "Freedom Gundam Ver. 2.0 Effect Parts",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812853/1000103483_1_iqqlot.jpg",
         series: "Gundam Seed",
         releaseDate: 05-2016,
         price: 2160
+    },
+    {
+        gunplaName: "Freedom Gundam 2.0 Full Burst Mode Special Coating",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631020889/banm160540_zwqd8u.jpg",
+        series: "Gundam Seed",
+        releaseDate: 05-2016,
+        price: 10800
     },
     {
         gunplaName: "Star Build Strike Gundam RG System",
@@ -824,6 +943,13 @@ const mgSeeds = [
         series: "Gundam Wing Endless Waltz",
         releaseDate: 12-2015,
         price: 4500
+    },
+    {
+        gunplaName: "Jesta Cannon",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631020888/mg_jesta_cannon_5_pk0yrx.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 11-2015,
+        price: 5400
     },
     {
         gunplaName: "Gundam Fenice Rinascita Alba",
@@ -973,6 +1099,13 @@ const mgSeeds = [
         price: 5184
     },
     {
+        gunplaName: "Prototype Gundam",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631026015/1000086345_3_ron7ja.jpg",
+        series: "MSV",
+        releaseDate: 04-2014,
+        price: 4536
+    },
+    {
         gunplaName: "FA Gundam Blue Color Ver.",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630995581/banml001_zoqxbl.jpg",
         series: "MSV",
@@ -1002,7 +1135,7 @@ const mgSeeds = [
     },
     {
         gunplaName: "Gundam Exia Repair II",
-        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630960139/51tzgSRIsLL._AC_SY580__n4zuvj.jpg",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630960139/5152MHhaOVL._AC_SX425__mn8blt.jpg",
         series: "Gundam 00",
         releaseDate: 02-2014,
         price: 4410
@@ -1050,6 +1183,13 @@ const mgSeeds = [
         price: 4725
     },
     {
+        gunplaName: "Geara Doga Rezin Schnyder",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631022705/P-Bandai_MG_1100_AMS-119_Geara_Doga_Rezin_Schnyder_Use_2_qlv9xv.jpg",
+        series: "Char's Counterattack",
+        releaseDate: 10-2013,
+        price: 5040
+    },
+    {
         gunplaName: "Gundam 3.0 Accessory Set",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630970928/VzNo3HEZ3XDD725HKmhiZw_i6sfd8.jpg",
         series: "Mobile Suit Gundam",
@@ -1069,6 +1209,41 @@ const mgSeeds = [
         series: "Gundam Age",
         releaseDate: 08-2013,
         price: 4410
+    },
+    {
+        gunplaName: "Zaku II High Mobility 2.0 (Anavel Gato)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631024501/HrQqESmCtEbUpnnRXddlEA_xl256k.jpg",
+        series: "Stardust Memory",
+        releaseDate: 07-2013,
+        price: 4410
+    },
+    {
+        gunplaName: "Marasai (Unicorn Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631026014/4KozXBrGagh.9TxWmFJ2LA_hblxgc.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 07-2013,
+        price: 3310
+    },
+    {
+        gunplaName: "Johnny Ridden Custom Zaku II",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631022704/1000080314_1_n9ehce.jpg",
+        series: "MSV",
+        releaseDate: 05-2013,
+        price: 4725
+    },
+    {
+        gunplaName: "High Mobility Zaku II Uma Lightning Custom",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631024501/uma_lightning_zaku_ii_1_ctuvjt.jpg",
+        series: "MSV",
+        releaseDate: 04-2013,
+        price: 4725
+    },
+    {
+        gunplaName: "Tallgeese II",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631024500/1000000374_2_nfu1lt.jpg",
+        series: "Gundam Wing",
+        releaseDate: 03-2013,
+        price: 3800
     },
     {
         gunplaName: "Nu Gundam Ver Ka. Double Fin Funnel Set",
@@ -1109,15 +1284,8 @@ const mgSeeds = [
         gunplaName: "",
         image: "",
         series: "",
-        releaseDate: 11-2021,
-        price: 4500
-    },
-    {
-        gunplaName: "",
-        image: "",
-        series: "",
-        releaseDate: 11-2021,
-        price: 4500
+        releaseDate: 0,
+        price: 0
     },
 ];
 

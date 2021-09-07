@@ -239,7 +239,20 @@ const convergeSeeds = [
         releaseDate: 02-2014,
         price: 3150
     },
-    
+    {
+        gunplaName: "",
+        image: "",
+        series: "",
+        releaseDate: 0,
+        price: 0
+    },
+    {
+        gunplaName: "",
+        image: "",
+        series: "",
+        releaseDate: 0,
+        price: 0
+    },
 ];
 
 const convergeSeed = async () => {

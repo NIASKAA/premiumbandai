@@ -51,6 +51,13 @@ const pgSeeds = [
         price: 3780
     },
     {
+        gunplaName: "Gundam Astray Red Frame Kai",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630725878/pg-gundam-astray-red-frame-kai_1_n6f6ad.jpg",
+        series: "Gundam Seed Astray",
+        releaseDate: 06-2018,
+        price: 24480
+    },
+    {
         gunplaName: "PG Exia Repair Parts",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630995581/pg-160-gundam-exia-repair_1_rn2k24.jpg",
         series: "Gundam 00",
@@ -63,6 +70,13 @@ const pgSeeds = [
         series: "Gundam Unicorn",
         releaseDate: 02-2018,
         price: 23760
+    },
+    {
+        gunplaName: "Gundam 00 Raiser Trans-Am Mode",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631020889/pg-00-raiser-trans-am-release_u7dtcn.jpg",
+        series: "Gundam 00",
+        releaseDate: 06-2017,
+        price: 29700
     },
     {
         gunplaName: "Gundam 00 Raiser Trans-Am Clear Conversion",
@@ -98,13 +112,6 @@ const pgSeeds = [
         series: "Gundam Unicorn",
         releaseDate: 12-2015,
         price: 4320
-    },
-    {
-        gunplaName: "",
-        image: "",
-        series: "",
-        releaseDate: 11-2021,
-        price: 4500
     },
 ];
 
