@@ -7,7 +7,8 @@ const initialState = {
     getRG: [],
     getMG: [],
     getPG: [],
-    getSD: []
+    getSD: [],
+    getOthers: []
 }
 
 export default createStore(reducers, initialState);

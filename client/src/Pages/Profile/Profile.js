@@ -6,15 +6,17 @@ import {GET_SAVE_CONVERGE,
     GET_SAVE_MASTERGRADE, 
     GET_SAVE_PERFECTGRADE, 
     GET_SAVE_SDGRADE, 
+    GET_SAVE_OTHER,
     GET_CONVERGE_WISH, 
     GET_HIGHGRADE_WISH, 
     GET_REALGRADE_WISH, 
     GET_MASTERGRADE_WISH, 
     GET_PERFECTGRADE_WISH,
-    GET_SDGRADE_WISH} from '../../utils/queries'
+    GET_SDGRADE_WISH,
+    GET_OTHER_WISH} from '../../utils/queries'
 import {Accordion} from 'react-bootstrap'
-import {ConvergeTable, HighGradeTable, RealGradeTable, MasterGradeTable, PerfectGradeTable, SDGradeTable, RealGradeWishlistTable} from '../../Components'
-import {ConvergeWishlistTable, HighGradeWishlistTable,  MasterGradeWishlistTable, PerfectGradeWishlistTable, SDGradeWishlistTable} from '../../Components'
+import {ConvergeTable, HighGradeTable, RealGradeTable, MasterGradeTable, PerfectGradeTable, SDGradeTable, RealGradeWishlistTable, OtherTable} from '../../Components'
+import {ConvergeWishlistTable, HighGradeWishlistTable,  MasterGradeWishlistTable, PerfectGradeWishlistTable, SDGradeWishlistTable, OtherWishlistTable} from '../../Components'
 import './styles.css'
 
 const Profile = () => {
@@ -24,24 +26,28 @@ const Profile = () => {
     const {loading: loadMaster, data: masterData} = useQuery(GET_SAVE_MASTERGRADE)
     const {loading: loadPerfect, data: perfectData} = useQuery(GET_SAVE_PERFECTGRADE)
     const {loading: loadSD, data: sdData} = useQuery(GET_SAVE_SDGRADE)
+    const {loading: loadOther, data: otherData} = useQuery(GET_SAVE_OTHER)
     const {loading: loadConvergeWish, data: convergeWishData} = useQuery(GET_CONVERGE_WISH)
     const {loading: loadHighWish, data: highWishData} = useQuery(GET_HIGHGRADE_WISH)
     const {loading: loadRealWish, data: realWishData} = useQuery(GET_REALGRADE_WISH)
     const {loading: loadMasterWish, data: masterWishData} = useQuery(GET_MASTERGRADE_WISH)
     const {loading: loadPerfectGradeWish, data: perfectGradeWishData} = useQuery(GET_PERFECTGRADE_WISH)
     const {loading: loadSDWish, data: SDWishData} = useQuery(GET_SDGRADE_WISH)
+    const {loading: loadOtherWish, data: otherWishData} = useQuery(GET_OTHER_WISH)
     const [loadConverge, setLoadConverge] = useState(undefined)
     const [loadHighGrade, setLoadHighGrade] = useState(undefined)
     const [loadRealGrade, setLoadRealGrade] = useState(undefined)
     const [loadMasterGrade, setLoadMasterGrade] = useState(undefined)
     const [loadPerfectGrade, setLoadPerfectGrade] = useState(undefined)
     const [loadSDGrade, setLoadSDGrade] = useState(undefined)
+    const [loadOtherGrade, setLoadOtherGrade] = useState(undefined)
     const [loadConvergeList, setLoadConvergeList] = useState(undefined)
     const [loadHighList, setLoadHighList] = useState(undefined)
     const [loadRealList, setLoadRealList] = useState(undefined)
     const [loadMasterList, setLoadMasterList] = useState(undefined)
     const [loadPerfectGradeList, setLoadPerfectGradeList] = useState(undefined)
     const [loadSDList, setLoadSDList] = useState(undefined)
+    const [loadOtherList, setLoadOtherList] = useState(undefined)
 
     useEffect(() => {
         if(!loading && data) {
@@ -80,6 +86,12 @@ const Profile = () => {
     }, [loadSD, sdData])
 
     useEffect(() => {
+        if(!loadOther && otherData) {
+            setLoadOtherGrade(otherData.getUserOther.gotRE100s)
+        }
+    }, [loadOther, otherData])
+
+    useEffect(() => {
         if(!loadConvergeList && convergeWishData) {
             setLoadConvergeList(convergeWishData.getUserConvergeWishlist.convergeWish)
         }
@@ -115,7 +127,11 @@ const Profile = () => {
         }
     }, [loadSDList, SDWishData])
 
-  
+    useEffect(() => {
+        if(!loadOtherList && otherWishData) {
+            setLoadOtherList(otherWishData.getUserOtherWishlist.re100Wish)
+        }
+    }, [loadOtherList, otherWishData])
 
     return (
         <>  
@@ -140,18 +156,24 @@ const Profile = () => {
                     </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="3">
+                    <Accordion.Header>Saved Others</Accordion.Header>
+                    <Accordion.Body>
+                        {loadOtherGrade && !loadOther && <OtherTable others={loadOtherGrade} />}
+                    </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="4">
                     <Accordion.Header>Saved Master Grades</Accordion.Header>
                     <Accordion.Body>
                         {loadMasterGrade && !loadMaster && <MasterGradeTable masterGrades={loadMasterGrade} />}
                     </Accordion.Body>
                 </Accordion.Item>
-                <Accordion.Item eventKey="4">
+                <Accordion.Item eventKey="5">
                     <Accordion.Header>Saved Perfect Grades</Accordion.Header>
                     <Accordion.Body>
                         {loadPerfectGrade && !loadPerfect && <PerfectGradeTable perfectGrades={loadPerfectGrade} />}
                     </Accordion.Body>
                 </Accordion.Item>
-                <Accordion.Item eventKey="5">
+                <Accordion.Item eventKey="6">
                     <Accordion.Header>Saved SD</Accordion.Header>
                     <Accordion.Body>
                         {loadSDGrade && !loadSD && <SDGradeTable sdGrades={loadSDGrade}/>}
@@ -182,18 +204,24 @@ const Profile = () => {
                     </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="3">
+                    <Accordion.Header>Other Wishlist</Accordion.Header>
+                    <Accordion.Body>
+                        {loadOtherList && !loadOtherWish && <OtherWishlistTable others={loadOtherList} />}
+                    </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="4">
                     <Accordion.Header>Master Grades Wishlist</Accordion.Header>
                     <Accordion.Body>
                         {loadMasterList && !loadMasterWish && <MasterGradeWishlistTable masterGrades={loadMasterList} />}
                     </Accordion.Body>
                 </Accordion.Item>
-                <Accordion.Item eventKey="4">
+                <Accordion.Item eventKey="5">
                     <Accordion.Header>Perfect Grade Wishlist</Accordion.Header>
                     <Accordion.Body>
                         {loadPerfectGradeList && !loadPerfectGradeWish && <PerfectGradeWishlistTable perfectGrades={loadPerfectGradeList} />}
                     </Accordion.Body>
                 </Accordion.Item>
-                <Accordion.Item eventKey="5">
+                <Accordion.Item eventKey="6">
                     <Accordion.Header>SD Wishlist</Accordion.Header>
                     <Accordion.Body>
                        {loadSDList && !loadSDWish && <SDGradeWishlistTable SDGrades={loadSDList} />}

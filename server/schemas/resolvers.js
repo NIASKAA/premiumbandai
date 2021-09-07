@@ -1,5 +1,5 @@
 const { AuthenticationError } = require("apollo-server-express")
-const {HighGrade, RealGrade, MasterGrade, PerfectGrade, Converge, SDGrade, ProfileData} = require('../models')
+const {HighGrade, RealGrade, MasterGrade, PerfectGrade, Converge, SDGrade, ProfileData, RE100} = require('../models')
 const {signToken} = require('../utils/auth')
 
 const resolvers = {
@@ -21,6 +21,9 @@ const resolvers = {
         },
         getConverges: async () => {
             return await Converge.find({});
+        },
+        getOthers: async () => {
+            return await RE100.find({})
         },
         user: async (parent, args, context) => {
             if(context.user) {
@@ -71,6 +74,13 @@ const resolvers = {
             }
             throw new AuthenticationError("Not logged in");
         },
+        getUserOther: async (parent, args, context) => {
+            if(context.user) {
+                const userOther = await ProfileData.findById(context.user._id).populate('gotRE100s').populate('gunplaName')
+                return userOther
+            }
+            throw new AuthenticationError("Not logged in");
+        },
         getUserConvergeWishlist: async (parent, args, context) => {
             if(context.user) {
                 const userConvergeWish = await ProfileData.findById(context.user._id).populate('convergeWish').populate('gunplaName')
@@ -110,6 +120,13 @@ const resolvers = {
             if(context.user) {
                 const userSDWish = await ProfileData.findById(context.user._id).populate('sdGradeWish').populate('gunplaName')
                 return userSDWish
+            }
+            throw new AuthenticationError("Not logged in");
+        },
+        getUserOtherWishlist: async (parent, args, context) => {
+            if(context.user) {
+                const userOther = await ProfileData.findById(context.user._id).populate('re100Wish').populate('gunplaName')
+                return userOther
             }
             throw new AuthenticationError("Not logged in");
         }
@@ -235,6 +252,22 @@ const resolvers = {
                 new: true
             })
         },
+        saveOther: async (parent, {name, id}, context) => {
+            let userId = context.user ? context.user._id: id
+            const findOther = await RE100.findOne({gunplaName: name})
+            if(!findOther) {
+                return 'Other does not exist'
+            }
+            return await ProfileData.findByIdAndUpdate({
+                _id: userId
+            },
+            {
+                $push: {gotRE100s: findOther}
+            },
+            {
+                new: true
+            })
+        },
         convergeWishlist: async (parent, {name, id}, context) => {
             let userId = context.user ? context.user._id: id
             const fetchConverge = await Converge.findOne({gunplaName: name})
@@ -326,6 +359,22 @@ const resolvers = {
             },
             {
                 $push: {sdGradeWish: fetchSDGrade}
+            },
+            {
+                new: true
+            })
+        },
+        otherWishlist: async (parent, {name, id}, context) => {
+            let userId = context.user ? context.user._id: id
+            const fetchOther = await RE100.findOne({gunplaName: name})
+            if(!fetchOther) {
+                return 'Other does not exist'
+            }
+            return await ProfileData.findByIdAndUpdate({
+                _id: userId
+            },
+            {
+                $push: {re100Wish: fetchOther}
             },
             {
                 new: true
@@ -434,6 +483,21 @@ const resolvers = {
                 new: true
             })
         },
+        deleteOtherSave: async (parent, {otherID}, context) => {
+            return await ProfileData.findOneAndUpdate({
+                _id: context.user
+            },
+            {
+                $pull: {
+                    'gotRE100s': {
+                        _id: otherID
+                    }
+                }
+            },
+            {
+                new: true
+            })
+        },
         deleteConvergeWishlist: async (parent, {convergeID}, context) => {
             try {
                 return await ProfileData.findOneAndUpdate({
@@ -534,6 +598,21 @@ const resolvers = {
                 $pull: {
                     'sdGradeWish': {
                         _id: sdGradeID
+                    }
+                }
+            },
+            {
+                new: true
+            })
+        },
+        deleteOtherWishlist: async (parent, {otherID}, context) => {
+            return await ProfileData.findOneAndUpdate({
+                _id: context.user
+            },
+            {
+                $pull: {
+                    're100Wish': {
+                        _id: otherID
                     }
                 }
             },

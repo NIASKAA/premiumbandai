@@ -120,6 +120,22 @@ export const SAVE_SDGRADE = gql`
     }
 `;
 
+export const SAVE_OTHERS = gql`
+    mutation saveOthers($name: String!, $id: ID) {
+        saveOthers(name: $name id: $id) {
+            username
+            email
+            gotRE100s {
+                _id
+                gunplaName
+                series
+                releaseDate
+                price
+            }
+        }
+    }
+`;
+
 export const CONVERGE_WISHLIST = gql`
     mutation convergeWishlist($name: String! $id: ID) {
         convergeWishlist(name: $name id: $id) {
@@ -217,6 +233,23 @@ export const SDGRADE_WISHLIST = gql`
             series
             releaseDate
             price
+            }
+        }
+    }
+`;
+
+export const OTHER_WISHLIST = gql`
+    mutation otherWishlist($name: String! $id: ID) {
+        otherWishlist(name: $name id: $id) {
+            username
+            email
+            re100Wish {
+                _id
+                gunplaName
+                image
+                series
+                releaseDate
+                price
             }
         }
     }
@@ -324,6 +357,23 @@ export const DELETE_SDGRADE_SAVE = gql`
     }
 `;
 
+export const DELETE_OTHER_SAVE = gql`
+    mutation deleteOtherSave($otherID: ID! $id: ID) {
+        deleteOtherSave(otherID: $otherID id: $id) {
+            username
+            email
+            gotRE100s {
+                _id
+                gunplaName
+                image
+                series
+                releaseDate
+                price
+            }
+        }
+    }
+`;
+
 export const DELETE_CONVERGE_WISHLIST = gql`
     mutation deleteConvergeWishlist($convergeID: ID! $id: ID){
         deleteConvergeWishlist(convergeID: $convergeID id: $id) {
@@ -421,6 +471,23 @@ export const DELETE_SDGRADE_WISHLIST = gql`
                 series
                 price
                 releaseDate
+            }
+        }
+    }
+`;
+
+export const DELETE_OTHER_WISHLIST = gql`
+    mutation deleteOtherWishlist($otherID: ID! $id: ID) {
+        deleteOtherWishlist(otherID: $otherID id: $id) {
+            username
+            email
+            re100Wish {
+                _id
+                gunplaName
+                image
+                series
+                releaseDate
+                price
             }
         }
     }

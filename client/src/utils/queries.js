@@ -78,6 +78,19 @@ export const GET_ALL_CONVERGES = gql`
 }
 `;
 
+export const GET_ALL_OTHERS = gql`
+{
+    getOthers {
+        _id
+        gunplaName
+        image
+        series
+        releaseDate
+        price
+    }
+}
+`;
+
 export const QUERY_USER = gql`
     query {
         user {
@@ -95,12 +108,12 @@ export const GET_SAVE_CONVERGE = gql`
             username
             email
             gotConverges {
-            _id
-            gunplaName
-            series
-            image
-            releaseDate
-            price
+                _id
+                gunplaName
+                series
+                image
+                releaseDate
+                price
             }
         }
     }
@@ -112,12 +125,12 @@ export const GET_SAVE_HIGHGRADE = gql`
             username
             email
             gotHighGrades {
-            _id
-            gunplaName
-            series
-            image
-            releaseDate
-            price
+                _id
+                gunplaName
+                series
+                image
+                releaseDate
+                price
             }
         }
     }
@@ -129,12 +142,12 @@ export const GET_SAVE_REALGRADE = gql`
             username
             email
             gotRealGrades {
-            _id
-            gunplaName
-            series
-            image
-            releaseDate
-            price
+                _id
+                gunplaName
+                series
+                image
+                releaseDate
+                price
             }
         }
     }
@@ -146,12 +159,12 @@ export const GET_SAVE_MASTERGRADE = gql`
             username
             email
             gotMasterGrades {
-            _id
-            gunplaName
-            series
-            image
-            releaseDate
-            price
+                _id
+                gunplaName
+                series
+                image
+                releaseDate
+                price
             }
         }
     }
@@ -163,12 +176,12 @@ export const GET_SAVE_PERFECTGRADE = gql`
             username
             email
             gotPerfectGrades {
-            _id
-            gunplaName
-            series
-            image
-            releaseDate
-            price
+                _id
+                gunplaName
+                series
+                image
+                releaseDate
+                price
             }
         }
     }
@@ -180,12 +193,29 @@ export const GET_SAVE_SDGRADE = gql`
             username
             email
             gotSDGrades {
-            _id
-            gunplaName
-            series
-            image
-            releaseDate
-            price
+                _id
+                gunplaName
+                series
+                image
+                releaseDate
+                price
+            }
+        }
+    }
+`;
+
+export const GET_SAVE_OTHER = gql`
+    query {
+        getOther {
+            username
+            email
+            gotRE100s {
+                _id
+                gunplaName
+                image
+                series
+                releaseDate
+                price
             }
         }
     }
@@ -286,6 +316,23 @@ export const GET_SDGRADE_WISH = gql`
                 gunplaName
                 series
                 image
+                releaseDate
+                price
+            }
+        }
+    }
+`;
+
+export const GET_OTHER_WISH = gql`
+    query {
+        getOtherWishlist {
+            username
+            email
+            re100Wish {
+                _id
+                gunplaName
+                image
+                series
                 releaseDate
                 price
             }

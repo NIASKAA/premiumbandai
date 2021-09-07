@@ -14,15 +14,17 @@ const Navigation = () => {
                             <Nav className="mx-auto">
                                <Nav.Link exact activeClassName="active" className="navBtns" as={Link} to={'/'}>Home</Nav.Link>
                                <NavDropdown title="Models" id="basic-nav-dropdown">
-                                    <NavDropdown.Item as={Link} to={'/sd'}>SD Grade</NavDropdown.Item>
-                                    <NavDropdown.Divider />
                                     <NavDropdown.Item as={Link} to={'/hg'}>High Grade</NavDropdown.Item>
                                     <NavDropdown.Divider />
                                     <NavDropdown.Item as={Link} to={'/rg'}>Real Grade</NavDropdown.Item>
                                     <NavDropdown.Divider />
+                                    <NavDropdown.Item as={Link} to={'/others'}>Hi-Res & RE/100</NavDropdown.Item>
+                                    <NavDropdown.Divider />
                                     <NavDropdown.Item as={Link} to={'/mg'}>Master Grade</NavDropdown.Item>
                                     <NavDropdown.Divider />
                                     <NavDropdown.Item as={Link} to={'/pg'}>Perfect Grade</NavDropdown.Item>
+                                    <NavDropdown.Divider />
+                                    <NavDropdown.Item as={Link} to={'/sd'}>SD Grade</NavDropdown.Item>
                                     <NavDropdown.Divider />
                                     <NavDropdown.Item as={Link} to={'/converges'}>Converges</NavDropdown.Item>
                                 </NavDropdown>
