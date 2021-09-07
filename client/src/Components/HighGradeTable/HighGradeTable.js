@@ -2,6 +2,7 @@ import React from 'react'
 import {useMutation} from "@apollo/client"
 import {DELETE_HIGHGRADE_SAVE} from '../../utils/mutations'
 import {Table, Button} from 'react-bootstrap'
+import { BsFillTrashFill } from "react-icons/bs";  
 
 const HighGradeTable = ({highGrades}) => {
     const [deleteHighGradeSave] = useMutation(DELETE_HIGHGRADE_SAVE)
@@ -37,7 +38,7 @@ const HighGradeTable = ({highGrades}) => {
                             <td>{highGrade.series}</td>
                             <td>{highGrade.price}</td>
                             <td>{highGrade.releaseDate}</td>
-                            <Button onClick={() => deleteItem(highGrade._id)} variant="danger"></Button>
+                            <Button onClick={() => deleteItem(highGrade._id)} variant="danger"><BsFillTrashFill/></Button>
                         </tr>
                     ))}
                 </tbody>

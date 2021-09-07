@@ -2,6 +2,7 @@ import React from 'react'
 import {useMutation} from "@apollo/client"
 import {DELETE_MASTERGRADE_SAVE} from '../../utils/mutations'
 import {Table, Button} from 'react-bootstrap'
+import { BsFillTrashFill } from "react-icons/bs";  
 
 const MasterGradeTable = ({masterGrades}) => {
     const [deleteMasterGradeSave] = useMutation(DELETE_MASTERGRADE_SAVE)
@@ -37,7 +38,7 @@ const MasterGradeTable = ({masterGrades}) => {
                             <td>{masterGrade.series}</td>
                             <td>{masterGrade.price}</td>
                             <td>{masterGrade.releaseDate}</td>
-                            <Button onClick={() => deleteItem(masterGrade._id)} variant="danger"></Button>
+                            <Button onClick={() => deleteItem(masterGrade._id)} variant="danger"><BsFillTrashFill/></Button>
                         </tr>
                         
                     ))}

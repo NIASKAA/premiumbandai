@@ -7,7 +7,7 @@ import './styles.css'
 const Navigation = () => {
     return (
         <>
-            <Navbar>
+            <Navbar className="navbar">
                 <Container>
                     <Navbar.Toggle className='navbar-header' aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">

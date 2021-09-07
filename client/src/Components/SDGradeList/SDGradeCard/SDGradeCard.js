@@ -59,8 +59,8 @@ const SDGradeCard = ({sdGrade}) => {
                         {Auth.loggedIn() ? (
                             <>
                                 <ButtonGroup>
-                                    <Button onClick={saveToList}>Save</Button>
-                                    <Button onClick={saveToWishlist}>Add to Wishlist</Button>
+                                    <Button onClick={saveToList} variant="light" className="saveBtns">Save</Button>
+                                    <Button onClick={saveToWishlist} variant="light" className="wishBtns">Add to Wishlist</Button>
                                 </ButtonGroup>
                             </>
                         ) : (

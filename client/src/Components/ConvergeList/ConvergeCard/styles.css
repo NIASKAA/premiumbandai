@@ -47,3 +47,13 @@
     margin-left: 0 !important;
     margin-right: 0% !important;
 }
+
+.saveBtns:hover {
+    background: black !important;
+    color: white !important; 
+}
+
+.wishBtns:hover {
+    background: black !important;
+    color: white !important; 
+}

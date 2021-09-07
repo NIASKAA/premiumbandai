@@ -2,6 +2,7 @@ import React from 'react'
 import {useMutation} from "@apollo/client"
 import {DELETE_CONVERGE_WISHLIST} from "../../../utils/mutations"
 import {Table, Button} from 'react-bootstrap'
+import { BsFillTrashFill } from "react-icons/bs";  
 
 const ConvergeWishlistTable = ({converges}) => {
     const [deleteConvergeWishlist] = useMutation(DELETE_CONVERGE_WISHLIST)
@@ -37,7 +38,7 @@ const ConvergeWishlistTable = ({converges}) => {
                             <td>{converge.series}</td>
                             <td>{converge.price}</td>
                             <td>{converge.releaseDate}</td>
-                            <Button onClick={() => deleteItem(converge._id)} variant="danger"></Button>
+                            <Button onClick={() => deleteItem(converge._id)} variant="danger"><BsFillTrashFill/></Button>
                         </tr>
                     ))}
                 </tbody>

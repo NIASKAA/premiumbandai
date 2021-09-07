@@ -2,6 +2,7 @@ import React from 'react'
 import {useMutation} from "@apollo/client"
 import {DELETE_HIGHGRADE_WISHLIST} from '../../../utils/mutations'
 import {Table, Button} from 'react-bootstrap'
+import { BsFillTrashFill } from "react-icons/bs";  
 
 const HighGradeWishlistTable = ({highGrades}) => {
     const [deleteHighGradeWishlist] = useMutation(DELETE_HIGHGRADE_WISHLIST)
@@ -37,7 +38,7 @@ const HighGradeWishlistTable = ({highGrades}) => {
                             <td>{highGrade.series}</td>
                             <td>{highGrade.price}</td>
                             <td>{highGrade.releaseDate}</td>
-                            <Button onClick={() => deleteItem(highGrade._id)} variant="danger"></Button>
+                            <Button onClick={() => deleteItem(highGrade._id)} variant="danger"><BsFillTrashFill/></Button>
                         </tr>
                     ))}
                 </tbody>

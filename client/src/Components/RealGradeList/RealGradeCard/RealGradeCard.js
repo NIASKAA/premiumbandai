@@ -56,10 +56,12 @@ const RealGradeCard = ({realGrade}) => {
                             <p className="infoBody">Price: {realGrade.price} Yen</p>
                         </Card.Body>
                         {Auth.loggedIn() ? (
-                            <ButtonGroup>
-                                <Button onClick={saveToList}>Save</Button>
-                                <Button onClick={saveToWishlist}>Add to Wishlist</Button>
-                            </ButtonGroup>
+                            <>
+                                <ButtonGroup>
+                                    <Button onClick={saveToList} variant="light" className="saveBtns">Save</Button>
+                                    <Button onClick={saveToWishlist} variant="light" className="wishBtns">Add to Wishlist</Button>
+                                </ButtonGroup>
+                            </>
                         ) : (
                             <>
                             </>

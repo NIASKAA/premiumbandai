@@ -135,8 +135,8 @@ const Profile = () => {
 
     return (
         <>  
-            <h3>Already have</h3>
-            <Accordion>
+            <h3 className="mainTitle">Owned</h3>
+            <Accordion className="owned">
                 <Accordion.Item eventKey="0">
                     <Accordion.Header>Saved Converges</Accordion.Header>
                     <Accordion.Body>
@@ -183,8 +183,8 @@ const Profile = () => {
 
             <br/>
 
-            <h3>Wishlist</h3>
-            <Accordion>
+            <h3 className="mainTitle">Wishlist</h3>
+            <Accordion className="wishlist">
                 <Accordion.Item eventKey="0">
                     <Accordion.Header>Converge Wishlist</Accordion.Header>
                     <Accordion.Body>
