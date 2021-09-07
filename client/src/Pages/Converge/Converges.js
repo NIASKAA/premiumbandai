@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import {Link} from 'react-router-dom'
+import {Link, useParams} from 'react-router-dom'
 import {useDispatch, useSelector} from "react-redux"
 import {Container, Spinner} from "react-bootstrap"
 import {useQuery} from "@apollo/client"
@@ -18,6 +18,7 @@ const Converges = () => {
   const [AllConverge, setAllConverge] = useState(() => [])
   const [currentPage, setCurrentPage] = useState(1)
   const [itemsPerPage] = useState(16)
+ 
 
   useEffect(() => {
     if(loading === false && data) {
@@ -37,6 +38,8 @@ const Converges = () => {
 
   const paginate = pageNumber => setCurrentPage(pageNumber)
 
+  console.log(currentPage)
+
   useEffect(() => {
     setTimeout(() => {
       setLoadingConverge(false);
@@ -53,12 +56,14 @@ const Converges = () => {
                   {!loadingConverge && !loading && <ConvergeList converges={currentItems} />}
                 </div>
           </Container>
-          
-          <Paginate
-            itemsPerPage={itemsPerPage}
-            totalItems={AllConverge.length}
-            paginate={paginate}
-          />  
+
+          <Link to={`/converges/${currentPage}`}>
+            <Paginate
+              itemsPerPage={itemsPerPage}
+              totalItems={AllConverge.length}
+              paginate={paginate}
+            />  
+          </Link>
         </>
     )
 }

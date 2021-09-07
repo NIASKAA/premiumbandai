@@ -93,6 +93,13 @@ const rgSeeds = [
         price: 2750
     },
     {
+        gunplaName: "Gundam Phenex NT Ver.",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988350/rg-phenex-gundam-ver-nt_1_uqd36v.jpg",
+        series: "Gundam Narrative",
+        releaseDate: 02-2020,
+        price: 12760
+    },
+    {
         gunplaName: "Crossbone Gundam X2",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675361/rg-crossbone-gundam-x2_1_ncejl8.jpg",
         series: "Crossbone Gundam",
@@ -112,6 +119,13 @@ const rgSeeds = [
         series: "Char's Counterattack",
         releaseDate: 09-2019,
         price: 1836
+    },
+    {
+        gunplaName: "Perfect Strike Gundam",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988493/rg-perfect-strike-gundam_1_aiuyh9.jpg",
+        series: "Gundam Seed",
+        releaseDate: 09-2019,
+        price: 4320
     },
     {
         gunplaName: "Tallgeese III",
@@ -149,6 +163,13 @@ const rgSeeds = [
         price: 1620
     },
     {
+        gunplaName: "Gundam Astray Gold Frame Amatsu Hana",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988350/rg-gundam-astray-gold-frame-amatsu-hana1_pj3rri.jpg",
+        series: "Gundam Seed Astray MSV",
+        releaseDate: 06-2019,
+        price: 3240
+    },
+    {
         gunplaName: "Zaku II (Eric Mansfield)",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630725878/P-Bandai_RG_1144_MS-06R-1A_Zaku_II_Eric_Mansfield_Custom_fwfd59.jpg",
         series: "MSV",
@@ -161,6 +182,13 @@ const rgSeeds = [
         series: "Gundam Unicorn",
         releaseDate: 02-2019,
         price: 4320
+    },
+    {
+        gunplaName: "Tallgeese II",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988350/rg-tallgeese_II_1_tu8ash.jpg",
+        series: "Gundam Wing",
+        releaseDate: 12-2018,
+        price: 2700
     },
     {
         gunplaName: "High Mobility Zaku II (Gabby Hazard)",
@@ -259,6 +287,13 @@ const rgSeeds = [
         series: "Gundam 00",
         releaseDate: 12-2016,
         price: 3240
+    },
+    {
+        gunplaName: "Gundam Astray Gold Frame",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988346/A01_pwtxxu.jpg",
+        series: "Gundam Seed Astray",
+        releaseDate: 08-2016,
+        price: 3024
     },
     {
         gunplaName: "Gundam Astray Blue Frame",

@@ -43,7 +43,7 @@ function App() {
                 <Route exact path="/rg" component={RealGrade}/>
                 <Route exact path="/pg" component={PerfectGrade}/>
                 <Route exact path="/sd" component={SDGrade}/>
-                <Route exact path="/converges" component={Converges}/>
+                <Route path="/converges/:id" component={Converges}/>
               </Switch>
             <Footer/>
           </Router>

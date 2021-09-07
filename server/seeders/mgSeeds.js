@@ -175,6 +175,20 @@ const mgSeeds = [
         price: 6270
     },
     {
+        gunplaName: "Testament Gundam",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988349/MG-testament-gundam_1_o1t2tg.jpg",
+        series: "Gundam Seed Astray MSV",
+        releaseDate: 10-2020,
+        price: 6270
+    },
+    {
+        gunplaName: "Gundam Sandrock Armadillo",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988349/mg-gundam-sandrock-armadillo_1_cbmflh.jpg",
+        series: "Gundam Wing",
+        releaseDate: 10-2020,
+        price: 6380
+    },
+    {
         gunplaName: "Gundam F90 Pack 0 & U",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675364/mg-gundam-f90-U-and-O_1_jqbfj7.jpg",
         series: "Gundam F90",
@@ -238,11 +252,25 @@ const mgSeeds = [
         price: 4950
     },
     {
+        gunplaName: "V2 Assault Buster Expansion Set",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675363/mg-v2-assault-buster-gundam-extension-parts_2_dgmibi.jpg",
+        series: "Victory Gundam",
+        releaseDate: 07-2020,
+        price: 2750
+    },
+    {
         gunplaName: "Jegan D Type (Initial)",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675364/mg-jegan-d-type-initial-deployment_1_z9llea.jpg",
         series: "Gundam UC MSV",
         releaseDate: 06-2020,
         price: 4620
+    },
+    {
+        gunplaName: "MS Cage",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630992197/mg-ms-cage_2_ddle8b.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 05-2020,
+        price: 2200
     },
     {
         gunplaName: "Debris Part Set",
@@ -252,18 +280,18 @@ const mgSeeds = [
         price: 2200
     },
     {
-        gunplaName: "V2 Assault Buster Expansion Set",
-        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675363/mg-v2-assault-buster-gundam-extension-parts_2_dgmibi.jpg",
-        series: "Victory Gundam",
-        releaseDate: 07-2020,
-        price: 2750
+        gunplaName: "Gundam Deathscythe EW (Rouesette)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988348/mg-gundam-deathscythe-ew-rousette_1_drb9ta.jpg",
+        series: "Gundam Wing Endless Waltz",
+        releaseDate: 04-2020,
+        price: 4950
     },
     {
-        gunplaName: "Re-GZ (Unicorn Ver.)",
-        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675364/mg-re-gz-unicorn-ver_1_tcfzbn.jpg",
-        series: "Gundam Unicorn",
-        releaseDate: 12-2019,
-        price: 5830
+        gunplaName: "Gundam F90 B & K Type Pack",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988348/mg-f90-mission-pack-type-B-and-K_1_ykjymd.jpg",
+        series: "Gundam F90",
+        releaseDate: 03-2020,
+        price: 2200
     },
     {
         gunplaName: "Blast Impulse Gundam",
@@ -273,11 +301,32 @@ const mgSeeds = [
         price: 5500
     },
     {
+        gunplaName: "Re-GZ (Unicorn Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675364/mg-re-gz-unicorn-ver_1_tcfzbn.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 12-2019,
+        price: 5830
+    },
+    {
+        gunplaName: "Gundam Heavyarms EW",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988349/mg-gundam-heavy-arms-ew-igel-equipment_1_i1g8cf.jpg",
+        series: "Gundam Wing Endless Waltz",
+        releaseDate: 11-2019,
+        price: 6050
+    },
+    {
         gunplaName: "Dwadge Custom",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630717563/MG-DWADGE-CUSTOM_1_meemm5.jpg",
         series: "ZZ Gundam",
         releaseDate: 11-2019,
         price: 6050
+    },
+    {
+        gunplaName: "Gundam F90 F & M Type Pack",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988349/mg-gundam-f90-mission-pack-Type-M-Type-F_1_ylmggj.jpg",
+        series: "Gundam F90",
+        releaseDate: 11-2019,
+        price: 2200
     },
     {
         gunplaName: "Gundam Dynames (Trans-Am Ver.)",
@@ -308,6 +357,13 @@ const mgSeeds = [
         price: 4860
     },
     {
+        gunplaName: "Gundam F90",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988349/mg-gundam-f90_1_sb6psb.jpg",
+        series: "Gundam F90",
+        releaseDate: 08-2019,
+        price: 4320
+    },
+    {
         gunplaName: "Crossbone Gundam X0",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630717563/mg-crossbone-gundam-x0-ghost_2_tfjsft.jpg",
         series: "Crossbone Gundam",
@@ -336,11 +392,32 @@ const mgSeeds = [
         price: 4212
     },
     {
+        gunplaName: "Qan[T] Full Saber (Special Coating)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988348/mg_00_quanta_full-saber_special_coating_1_wykkx2.jpg",
+        series: "Gundam 00V",
+        releaseDate: 07-2019,
+        price: 11880
+    },
+    {
         gunplaName: "GM Sniper II (Lydo Wolf)",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630717564/mg-gm-sniper-II-lido-wolf1_qjhkgd.jpg",
         series: "MSV",
         releaseDate: 07-2019,
         price: 4104
+    },
+    {
+        gunplaName: "Shenlong Gundam EW",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988348/mg_shenlong_EW_liaoya1_rhjihq.jpg",
+        series: "Gundam Wing Endless Waltz",
+        releaseDate: 05-2019,
+        price: 4860
+    },
+    {
+        gunplaName: "Re-GZ Custom",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988350/MG-re-gz-custom1_a7rrs5.jpg",
+        series: "Char's Counterattack",
+        releaseDate: 05-2019,
+        price: 5940
     },
     {
         gunplaName: "Jegan Type D",
@@ -389,6 +466,20 @@ const mgSeeds = [
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630725877/mg-hyaku-shiki-crash_1_d9sevp.jpg",
         series: "Other",
         releaseDate: 01-2019,
+        price: 6264
+    },
+    {
+        gunplaName: "V2 Assault Buster Gundam Ver.Ka",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988349/mg-v2-assault-buster-gundam-ver-ka-full-kit_2_mkca7h.jpg",
+        series: "Victory Gundam",
+        releaseDate: 12-2018,
+        price: 7560
+    },
+    {
+        gunplaName: "Gundam F91 Back Cannon & Twin VSBR",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988349/mg-gundam-f91-ver2-vsbr_1_lpsrqb.jpg",
+        series: "Gundam F91",
+        releaseDate: 11-2018,
         price: 6264
     },
     {
@@ -490,6 +581,13 @@ const mgSeeds = [
         price: 7560
     },
     {
+        gunplaName: "Gm Sniper Custom (Tenneth A.Jung)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988348/mg-gm-sniper-custom-tenneth_1_pd9thg.jpg",
+        series: "MSV",
+        releaseDate: 01-2018,
+        price: 4320
+    },
+    {
         gunplaName: "Advanced GN-X (Deborah)",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762480/mg-deborah_s-advanced-gn-x_1_xpwbt0.jpg",
         series: "Gundam 00",
@@ -509,6 +607,20 @@ const mgSeeds = [
         series: "MSV",
         releaseDate: 01-2018,
         price: 5940
+    },
+    {
+        gunplaName: "Enhanced ZZ Gundam Ver.Ka",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988350/mg-zz-gundam-ver-ka_1_gbirmh.jpg",
+        series: "ZZ Gundam",
+        releaseDate: 12-2017,
+        price: 8640
+    },
+    {
+        gunplaName: "Enhanced ZZ Gundam Ver.Ka Extension Parts",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988350/p-banda-mg-enhanced-zz-gundam-ver-ka_2_emje8y.jpg",
+        series: "ZZ Gundam",
+        releaseDate: 12-2017,
+        price: 2160
     },
     {
         gunplaName: "Gundam Sandrock Custom EW",
@@ -532,11 +644,46 @@ const mgSeeds = [
         price: 4860
     },
     {
+        gunplaName: "Psycho Zaku Thunderbolt Ver.Ka (Final Battle)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988349/mg-psycho-zaku-ver-ka-final-battle-ver_1_ycz0yz.jpg",
+        series: "Thunderbolt",
+        releaseDate: 09-2017,
+        price: 9180
+    },
+    {
+        gunplaName: "FA Gundam Thunderbolt Ver.Ka (Final Battle)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988349/mg-gundam-thunderbolt-last-battle-ver_4_vtvxrt.jpg",
+        series: "Thunderbolt",
+        releaseDate: 08-2017,
+        price: 7344
+    },
+    {
         gunplaName: "Zaku II High Mobility (Masaya Nakagawa)",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812851/1000115034_1_kde0jl.jpg",
         series: "MSV",
         releaseDate: 08-2017,
         price: 4860
+    },
+    {
+        gunplaName: "Advanced GN-X",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988348/MG-ADVANCED-GN-X_1_laobnm.jpg",
+        series: "Gundam 00",
+        releaseDate: 07-2017,
+        price: 4536
+    },
+    {
+        gunplaName: "Gundam 00 XN Raiser",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988349/mg-00-xn-raiser_1_gmio7f.jpg",
+        series: "Gundam 00V",
+        releaseDate: 07-2017,
+        price: 8000
+    },
+    {
+        gunplaName: "Providence Gundam Dragoon Effect Parts",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988346/1000113716_1_x9ywtq.jpg",
+        series: "Gundam Seed Destiny",
+        releaseDate: 06-2017,
+        price: 2376
     },
     {
         gunplaName: "Zaku II High Mobility (Shin Matsunaga)",
@@ -595,11 +742,25 @@ const mgSeeds = [
         price: 6480
     },
     {
+        gunplaName: "Gundam Heavyarms Custom EW",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988346/gundam_heavyarms_custom_ew_1_h9dgv0.jpg",
+        series: "Gundam Wing Endless Waltz",
+        releaseDate: 10-2016,
+        price: 5184
+    },
+    {
         gunplaName: "Powered GM",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812853/banm160701_kz8tkt.jpg",
         series: "Stardust Memory",
         releaseDate: 07-2016,
         price: 3240
+    },
+    {
+        gunplaName: "Hyaku Shiki Kai",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630993334/mg-hyaku-shiki-kai_arlwne.jpg",
+        series: "MSV",
+        releaseDate: 07-2016,
+        price: 10000
     },
     {
         gunplaName: "Zeta Plus (Unicorn Ver.)",
@@ -838,6 +999,13 @@ const mgSeeds = [
         series: "Crossbone Gundam",
         releaseDate: 12-2013,
         price: 4620
+    },
+    {
+        gunplaName: "Aile, Sword, RM Launcher Pack",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988350/ver_RM_launcher_and_sword_striker_pack_2_ltwa9d.jpg",
+        series: "Gundam Seed",
+        releaseDate: 07-2013,
+        price: 2300
     },
     {
         gunplaName: "Crossbone Gundam X2",

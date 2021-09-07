@@ -65,6 +65,13 @@ const hgSeeds = [
         price: 3190
     },
     {
+        gunplaName: "Messer F02",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988347/hguc-messer-f02-type_1_lb8tcl.jpg",
+        series: "Hathaway Flash",
+        releaseDate: 09-2021,
+        price: 3190
+    },
+    {
         gunplaName: "Baund Doc(Gates Capa)",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630333020/HGUC-BAUND-DOC-GATES-CAPA_1_qucd5r.jpg",
         series: "Zeta Gundam",
@@ -289,6 +296,13 @@ const hgSeeds = [
         price: 2970
     },
     {
+        gunplaName: "Gundam TR-1 Hazenthley Rah II",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988347/hguc-gundam-tr-1-hazenthley-rah-ii_1_n8txl7.jpg",
+        series: "Advance of Zeta",
+        releaseDate: 11-2020,
+        price: 5940
+    },
+    {
         gunplaName: "GM Cannon (Rocket Bazooka)",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630333018/hg-gm-cannon-rocket-bazooka_1_ah4stp.jpg",
         series: "MSV",
@@ -345,6 +359,13 @@ const hgSeeds = [
         price: 1760
     },
     {
+        gunplaName: "Dictus (Callisto's Light)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988346/hguc-dictus_1_qaevzw.jpg",
+        series: "Crossbone Gundam",
+        releaseDate: 08-2020,
+        price: 3960
+    },
+    {
         gunplaName: "GM Night Seeker (MSV Ver.)",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675365/hg-gm-night-seeker--msd_1_gthefl.jpg",
         series: "MSV",
@@ -371,6 +392,13 @@ const hgSeeds = [
         series: "Mobile Fighter G Gundam",
         releaseDate: 07-2020,
         price: 2475
+    },
+    {
+        gunplaName: "Gundam Geminass 01",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988346/hgac-gundam-geminass-01_1_unpgxp.jpg",
+        series: "Gundam Wing G-Unit",
+        releaseDate: 05-2020,
+        price: 2200
     },
     {
         gunplaName: "GM Ground Slave Wraith (Parachute Pack)",
@@ -436,6 +464,13 @@ const hgSeeds = [
         price: 2750
     },
     {
+        gunplaName: "Gundam TR-6 Hazen'n-Thley II Rah",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988347/hguc-hazenthley-ii-rah_1_n4fd36.jpg",
+        series: "Advance of Zeta",
+        releaseDate: 02-2020,
+        price: 6490
+    },
+    {
         gunplaName: "Slave Wraith (Parachute Pack)",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675360/hguc-slave-wraith-parachute-pack_m81yqy.jpg",
         series: "Missing Link",
@@ -450,25 +485,11 @@ const hgSeeds = [
         price: 2200
     },
     {
-        gunplaName: "Mudrock Gundam",
-        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675363/hguc-gundam-unit-6-mudrock_1_l3wjt4.jpg",
-        series: "Missing Link",
-        releaseDate: 11-2019,
-        price: 2200
-    },
-    {
-        gunplaName: "GN-X IV (Mass Production)",
-        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675365/hg-gn-x-iv-mass-production-type_1_msl4v6.jpg",
-        series: "Gundam 00",
-        releaseDate: 12-2019,
-        price: 2420
-    },
-    {
-        gunplaName: "Sinanju Stein (Unicorn Ver.)",
-        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675360/hguc-sinanju-stein-UC-MSV-ver_1_wejdf1.jpg",
-        series: "Gundam Unicorn NT",
-        releaseDate: 12-2019,
-        price: 2860
+        gunplaName: "Leo (Full Weapon Set)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988346/hgac-leo-full-weapon-set_1_nalyni.jpg",
+        series: "Gundam Wing",
+        releaseDate: 01-2020,
+        price: 2310
     },
     {
         gunplaName: "GM Guard Custom (E-2 Spray Gun)",
@@ -492,18 +513,32 @@ const hgSeeds = [
         price: 2090
     },
     {
+        gunplaName: "GN-X IV (Mass Production)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675365/hg-gn-x-iv-mass-production-type_1_msl4v6.jpg",
+        series: "Gundam 00",
+        releaseDate: 12-2019,
+        price: 2420
+    },
+    {
+        gunplaName: "Sinanju Stein (Unicorn Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675360/hguc-sinanju-stein-UC-MSV-ver_1_wejdf1.jpg",
+        series: "Gundam Unicorn NT",
+        releaseDate: 12-2019,
+        price: 2860
+    },
+    {
+        gunplaName: "Mudrock Gundam",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630675363/hguc-gundam-unit-6-mudrock_1_l3wjt4.jpg",
+        series: "Missing Link",
+        releaseDate: 11-2019,
+        price: 2200
+    },
+    {
         gunplaName: "Gundam AgeII Magnum SV (Fx Plosion)",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630717562/hgbd-age-fx-plosion_1_gw7raf.jpg",
         series: "Gundam Build Divers",
         releaseDate: 11-2019,
         price: 3300
-    },
-    {
-        gunplaName: "GM Intercept Custom (Fellow Booster)",
-        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630717562/hg-gm-intercept-custom-fellow-booster_1_nn1d0a.jpg",
-        series: "MSV",
-        releaseDate: 09-2019,
-        price: 3240
     },
     {
         gunplaName: "GM Sniper Custom (Missile Launcher)",
@@ -520,6 +555,20 @@ const hgSeeds = [
         price: 1650
     },
     {
+        gunplaName: "GM Intercept Custom (Fellow Booster)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630717562/hg-gm-intercept-custom-fellow-booster_1_nn1d0a.jpg",
+        series: "MSV",
+        releaseDate: 09-2019,
+        price: 3240
+    },
+    {
+        gunplaName: "Maganac Corps Set",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630990345/hgac-maganac-36-set_1_jvojow.jpg",
+        series: "Gundam Wing",
+        releaseDate: 08-2019,
+        price: 48600
+    },
+    {
         gunplaName: "Gustav Karl (Gihren's Greed)",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630717563/hguc-gustav-karl-ghirens-greed-ver_1_ohmmty.jpg",
         series: "Gihren's Greed",
@@ -527,11 +576,39 @@ const hgSeeds = [
         price: 2592
     },
     {
+        gunplaName: "Maganac Auda + Ahmad Custom",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988346/hgac-auda-and-ahmad-maganac-custom_3_wulirl.jpg",
+        series: "Gundam Wing",
+        releaseDate: 07-2019,
+        price: 1728
+    },
+    {
+        gunplaName: "Maganac Rashid + Abdul Custom",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988347/hgac-rasheed-abdul-custom-maganacs_4_tx4elu.jpg",
+        series: "Gundam Wing",
+        releaseDate: 07-2019,
+        price: 1728
+    },
+    {
         gunplaName: "White Base Catapult Deck (Renewal Ver.)",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630717564/REALISTIC-MODEL-SERIES-WHITE-BASE-CATAPULT-DECK_1_wnmpnt.jpg",
         series: "Mobile Suit Gundam",
         releaseDate: 10-2019,
         price: 14080
+    },
+    {
+        gunplaName: "Second Victory Gundam",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988348/hguc-second-victory-gundam_1_jkkdaj.jpg",
+        series: "Victory Gundam",
+        releaseDate: 10-2019,
+        price: 2200
+    },
+    {
+        gunplaName: "Gundam TR-6 Haze'n-Thley II",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988347/hguc-gundam-tr-6-hyzenthley-ii_3_woqvwu.jpg",
+        series: "Advance of Zeta",
+        releaseDate: 10-2019,
+        price: 4840
     },
     {
         gunplaName: "Hyaku Shiki Revive (Gold Coating)",
@@ -562,6 +639,13 @@ const hgSeeds = [
         price: 3672
     },
     {
+        gunplaName: "Hrududu",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988346/hg_hrududu2_kaliyj.jpg",
+        series: "Advance of Zeta",
+        releaseDate: 05-2019,
+        price: 1188
+    },
+    {
         gunplaName: "Hazel Custom TR-6 Hazel Custom",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630725876/hguc_hazel_custom_with_tr-6_conversion1_ey1hbg.jpg",
         series: "Advance of Zeta",
@@ -581,6 +665,13 @@ const hgSeeds = [
         series: "Advance of Zeta",
         releaseDate: 09-2019,
         price: 1188
+    },
+    {
+        gunplaName: "Primrose",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988347/hguc-primrose_1_ojqcl5.jpg",
+        series: "Advance of Zeta",
+        releaseDate: 07-2019,
+        price: 1404
     },
     {
         gunplaName: "Dijeh (Narrative Ver.)",
@@ -688,6 +779,13 @@ const hgSeeds = [
         price: 1296
     },
     {
+        gunplaName: "Gelgoog J (Shin Matsunaga)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988348/hguc-shin-matsunaga-gelgoog-jager_1_g7r6hb.jpg",
+        series: "MSV",
+        releaseDate: 09-2018,
+        price: 1620
+    },
+    {
         gunplaName: "Graze Ritter (Mcgillis Corps)",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762480/hg-graze-ritter-mcgillis_1_yo582l.jpg",
         series: "Iron Blood Orphan",
@@ -700,6 +798,20 @@ const hgSeeds = [
         series: "08th Team",
         releaseDate: 08-2018,
         price: 2160
+    },
+     {
+        gunplaName: "Gundam Zeta (UC 0088)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988347/hguc-zeta-gundam-ver-0088_2_rhb3al.jpg",
+        series: "ZZ Gundam",
+        releaseDate: 09-2018,
+        price: 2376
+    },
+    {
+        gunplaName: "GM Sniper Custom",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988345/HG-MSD-GM-SNIPER-CUSTOM_f0lg9p.jpg",
+        series: "MSV",
+        releaseDate: 08-2018,
+        price: 2052
     },
     {
         gunplaName: "Efreet",
@@ -737,6 +849,13 @@ const hgSeeds = [
         price: 3240
     },
     {
+        gunplaName: "Advanced GN-X",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988345/hg-00v-advanced-gn-x_1_bj49ab.jpg",
+        series: "Gundam 00",
+        releaseDate: 04-2018,
+        price: 2180
+    },
+    {
         gunplaName: "Crossbone Gundam X0",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762480/hguc-crossbone-gundam-x-0_1_h7xh9u.jpg",
         series: "Crossbone Gundam",
@@ -756,6 +875,20 @@ const hgSeeds = [
         series: "Gundam Build Fighters",
         releaseDate: 03-2018,
         price: 1944
+    },
+    {
+        gunplaName: "Act Zaku",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988345/hg-msd-act-zaku_1_gl9xyo.jpg",
+        series: "MSV",
+        releaseDate: 02-2018,
+        price: 2160
+    },
+    {
+        gunplaName: "Rick-Do Gyanko",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988345/hgbf-rick-do-gyanko_1_yv9wp2.jpg",
+        series: "Gundam Build Fighters",
+        releaseDate: 01-2018,
+        price: 2700
     },
     {
         gunplaName: "Psycho GM",
@@ -784,6 +917,13 @@ const hgSeeds = [
         series: "Gundam Build Fighters",
         releaseDate: 11-2017,
         price: 1944
+    },
+    {
+        gunplaName: "Command Fumina",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988347/hgbf-command-fumina_1_oqoa2t.jpg",
+        series: "Gundam Build Fighters",
+        releaseDate: 11-2017,
+        price: 2592
     },
     {
         gunplaName: "Graze (Ground Type Set)",
@@ -821,11 +961,25 @@ const hgSeeds = [
         price: 3024
     },
     {
+        gunplaName: "Pale Rider (Space Equipment)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988347/hguc-pale-rider-space-equipment-type_1_ln1vxy.jpg",
+        series: "Missing Link",
+        releaseDate: 08-2017,
+        price: 2160
+    },
+    {
         gunplaName: "Jegan D Type (Camouflage Ver.)",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812854/hguc-type-d-jegan-camouflage_1_ehv90f.jpg",
         series: "Gundam Unicorn",
         releaseDate: 07-2019,
         price: 1944
+    },
+    {
+        gunplaName: "Sinanju Weiss",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988345/hgbf-weiss-sinanju_1_v7hcii.jpg",
+        series: "Gundam Build Fighters",
+        releaseDate: 12-2017,
+        price: 2808
     },
     {
         gunplaName: "Io Frame Shiden Custom (Riden-Go)",
@@ -846,6 +1000,13 @@ const hgSeeds = [
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812854/hg-pluma-set-invasion-chryse_1_jhrqma.jpg",
         series: "Iron Blood Orphan",
         releaseDate: 06-2017,
+        price: 1944
+    },
+    {
+        gunplaName: "Guncannon First Rollout Unit",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988345/hg-rollout-guncannon_1_uhwfua.jpg",
+        series: "MSV",
+        releaseDate: 05-2017,
         price: 1944
     },
     {
@@ -891,6 +1052,13 @@ const hgSeeds = [
         price: 4500
     },
     {
+        gunplaName: "Bugu",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988345/hg-gto-bugu-orange_1_pavdnx.jpg",
+        series: "MSV",
+        releaseDate: 02-2017,
+        price: 1836
+    },
+    {
         gunplaName: "Hugo (Dawn Horizon Corps Twin)",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812853/hg-ibo-hugo-twin-set_1_xawsj3.jpg",
         series: "Iron Blood Orphan",
@@ -903,6 +1071,20 @@ const hgSeeds = [
         series: "Iron Blood Orphan",
         releaseDate: 12-2016,
         price: 1296
+    },
+    {
+        gunplaName: "Zeta Plus C1",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988347/HGUC_zeta_plus_C1_1_vzkrjr.jpg",
+        series: "Gundam Sentinel",
+        releaseDate: 11-2016,
+        price: 2592
+    },
+    {
+        gunplaName: "Waterproof Gundam",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988346/b004-2_pzswrt.jpg",
+        series: "MSV",
+        releaseDate: 10-2016,
+        price: 2160
     },
     {
         gunplaName: "Mega Launcher (Hyaku Shiki Revive)",
@@ -1029,6 +1211,13 @@ const hgSeeds = [
         series: "Gundam Unicorn",
         releaseDate: 09-2015,
         price: 2484
+    },
+    {
+        gunplaName: "Gundam Dryon III",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988346/dryon-iii-hgbf_1_lxuruz.jpg",
+        series: "Gundam Build Fighters",
+        releaseDate: 08-2015,
+        price: 3000
     },
     {
         gunplaName: "Elf Bulllock & Mac Knife Type",

@@ -65,11 +65,25 @@ const pgSeeds = [
         price: 4104
     },
     {
+        gunplaName: "Gundam Unicorn Final Battle Ver.",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988346/BANML160401_izfelr.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 04-2016,
+        price: 24000
+    },
+    {
         gunplaName: "Unicorn Gundam Full Armor Equipment Set",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630957120/N2266772001007_012_drvhot.jpg",
         series: "Gundam Unicorn",
         releaseDate: 01-2015,
         price: 7029
+    },
+    {
+        gunplaName: "Banshee Expansion Pack",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630988350/pg_banshee_expansion_vn_bs_2_gcl24m.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: 12-2015,
+        price: 4320
     },
     {
         gunplaName: "",

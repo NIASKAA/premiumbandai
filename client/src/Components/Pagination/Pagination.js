@@ -6,7 +6,6 @@ const Paginate = ({itemsPerPage, totalItems, paginate}) => {
     const pageNumbers = []
     for (let number = 1; number <= Math.ceil(totalItems / itemsPerPage); number++) {
         pageNumbers.push(number)
-        let currentPage = number
     }
 
     return (
