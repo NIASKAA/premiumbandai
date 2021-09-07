@@ -1,0 +1,19 @@
+.title {
+    float: left;
+  }
+  
+  .email, .name, .message {
+    width: 40%;
+  }
+    
+  .contact-form {
+    margin: 5%;
+  }
+    
+  .aws-btn {
+    --button-primary-color-light: #0d6efd;
+    --button-primary-color-dark: #06347a;
+    --button-primary-color-light: #0d6efd;
+    --button-primary-color-hover: #06347a;
+    float: left;
+  }
