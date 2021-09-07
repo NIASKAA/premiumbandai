@@ -252,7 +252,7 @@ const resolvers = {
                 new: true
             })
         },
-        saveOther: async (parent, {name, id}, context) => {
+        saveOthers: async (parent, {name, id}, context) => {
             let userId = context.user ? context.user._id: id
             const findOther = await RE100.findOne({gunplaName: name})
             if(!findOther) {

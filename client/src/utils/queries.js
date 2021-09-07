@@ -206,7 +206,7 @@ export const GET_SAVE_SDGRADE = gql`
 
 export const GET_SAVE_OTHER = gql`
     query {
-        getOther {
+        getUserOther {
             username
             email
             gotRE100s {
@@ -325,7 +325,7 @@ export const GET_SDGRADE_WISH = gql`
 
 export const GET_OTHER_WISH = gql`
     query {
-        getOtherWishlist {
+        getUserOtherWishlist {
             username
             email
             re100Wish {

@@ -123,7 +123,7 @@ const typeDefs = gql`
         saveMasterGrade(name: String! id: ID): ProfileData
         savePerfectGrade(name: String! id: ID): ProfileData
         saveSDGrade(name: String! id: ID): ProfileData
-        saveOther(name: String! id: ID): ProfileData
+        saveOthers(name: String! id: ID): ProfileData
         convergeWishlist(name: String! id: ID): ProfileData
         highGradeWishlist(name: String! id: ID): ProfileData
         realGradeWishlist(name: String! id: ID): ProfileData

@@ -45,7 +45,7 @@ export const SAVE_HIGHGRADE = gql`
         saveHighGrade(name: $name id: $id) {
             username
             email
-            gotConverges {
+            gotHighGrades {
                 _id
                 gunplaName
                 series
@@ -61,7 +61,7 @@ export const SAVE_REALGRADE = gql`
         saveRealGrade(name: $name id: $id) {
             username
             email
-            gotConverges {
+            gotRealGrades {
                 _id
                 gunplaName
                 series
@@ -77,7 +77,7 @@ export const SAVE_MASTERGRADE = gql`
         saveMasterGrade(name: $name id: $id) {
             username
             email
-            gotConverges {
+            gotMasterGrades {
                 _id
                 gunplaName
                 series
@@ -93,7 +93,7 @@ export const SAVE_PERFECTGRADE = gql`
         savePerfectGrade(name: $name id: $id) {
             username
             email
-            gotConverges {
+            gotPerfectGrades {
                 _id
                 gunplaName
                 series
@@ -109,7 +109,7 @@ export const SAVE_SDGRADE = gql`
         saveSDGrade(name: $name id: $id) {
             username
             email
-            gotConverges {
+            gotSDGrades {
                 _id
                 gunplaName
                 series
@@ -142,12 +142,12 @@ export const CONVERGE_WISHLIST = gql`
             username
             email
             convergeWish {
-            _id
-            gunplaName
-            image
-            series
-            releaseDate
-            price
+                _id
+                gunplaName
+                image
+                series
+                releaseDate
+                price
             }
         }
     }
@@ -176,12 +176,12 @@ export const REALGRADE_WISHLIST = gql`
             username
             email
             realGradeWish {
-            _id
-            gunplaName
-            image
-            series
-            releaseDate
-            price
+                _id
+                gunplaName
+                image
+                series
+                releaseDate
+                price
             }
         }
     }
@@ -193,12 +193,12 @@ export const MASTERGRADE_WISHLIST = gql`
             username
             email
             masterGradeWish {
-            _id
-            gunplaName
-            image
-            series
-            releaseDate
-            price
+                _id
+                gunplaName
+                image
+                series
+                releaseDate
+                price
             }
         }
     }
@@ -227,12 +227,12 @@ export const SDGRADE_WISHLIST = gql`
             username
             email
             sdGradeWish {
-            _id
-            gunplaName
-            image
-            series
-            releaseDate
-            price
+                _id
+                gunplaName
+                image
+                series
+                releaseDate
+                price
             }
         }
     }
