@@ -7,8 +7,6 @@
     padding-left: 0% !important;
     padding-right: 0% !important;
     margin-bottom: 6% !important;
-    margin-right: 17% !important;
-    margin-left: 5% !important;
 }
 
 .infoContent {
@@ -46,8 +44,8 @@
 .column {
     padding-right: 0% !important;
     padding-left: 0% !important;
-    margin-left: 0 !important;
-    margin-right: 0% !important;
+    margin-left: 20% !important;
+    margin-right:20% !important;
 }
 
 .saveBtns:hover {
