@@ -16,7 +16,7 @@ const Home = () => {
                 <Carousel activeIndex={index} onSelect={handleSelect}>
                     {images.map(({id, image, caption, description}) => {
                     return (
-                        <Carousel.Item>
+                        <Carousel.Item interval={1000}>
                             <img key={id} src={image} alt={description} className="homeImages" />
                             <Carousel.Caption>
                                 <h3>{caption}</h3>
