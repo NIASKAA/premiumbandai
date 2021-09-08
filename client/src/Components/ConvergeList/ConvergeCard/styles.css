@@ -58,15 +58,32 @@
     color: white !important; 
 }
 
-@media only screen 
-    and (device-width: 390px) 
-    and (device-height: 844px) 
-    and (-webkit-device-pixel-ratio: 3) {
-        .infoCard {
-            max-width: 28.5ch;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            background-size: cover;
-            transition: transform 500ms ease;
-            overflow: hidden;
-        }
-}
+@media only screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) { 
+    .infoCard {
+      max-width: 28.5ch;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      background-size: cover;
+      transition: transform 500ms ease;
+      overflow: hidden;
+      margin-right: 30% !important;
+    }
+  
+    .infoContent {
+        --padding: 1.5em;
+        max-height: 20ch !important;
+        padding: var(--padding);
+        background: linear-gradient(
+            hsl( 0 0% 0% / 0),
+            hsl(0 0% 0% / 0.2),
+            hsl(0 0% 0% / 0.1)
+        );
+        transform: translateY(65%);
+        transition: transform 500ms ease;
+    }
+  
+    .infoCard:hover .infoContent {
+        transform: translateY(0);
+        margin: 0;
+    }
+  }
+  
