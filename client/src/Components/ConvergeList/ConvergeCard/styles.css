@@ -67,6 +67,12 @@
         margin-right: 14% !important;
     }
 
+    .cardImg {
+        background-position: center;
+        align-items: center;
+        justify-content: center;
+    }
+
     .column {
         padding-right: 0% !important;
         padding-left: 0% !important;
