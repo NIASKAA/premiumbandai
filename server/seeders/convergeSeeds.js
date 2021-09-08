@@ -79,6 +79,13 @@ const convergeSeeds = [
         price: 3200
     },
     {
+        gunplaName: "Endless Waltz Operation Meteor Set",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631058435/01_abo8di.jpg",
+        series: "Gundam Wing Endless",
+        releaseDate: "01-2020",
+        price: 5600
+    },
+    {
         gunplaName: 'Hi-v Gundam & Nightingale Set',
         image: 'https://res.cloudinary.com/ddtqwizaf/image/upload/v1630279845/01_uyfzt9.jpg',
         series: "Char's CounterAttack",
@@ -149,6 +156,27 @@ const convergeSeeds = [
         price: 2592
     },
     {
+        gunplaName: "FA Unicorn Gundam",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631058211/00_7_wlf3mq.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: "08-2018",
+        price: 2700
+    },
+    {
+        gunplaName: "Psycho Gundam MK II Expansion Set",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631058211/00_6_szbgbd.jpg",
+        series: "ZZ Gundam",
+        releaseDate: "06-2018",
+        price: 2100
+    },
+    {
+        gunplaName: "Fazz Core",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631058212/00_5_egbagv.jpg",
+        series: "Gundam Sentinel",
+        releaseDate: "05-2018",
+        price: 2300
+    },
+    {
         gunplaName: "White Base",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630762479/fw-gundam-converge-white-base_1_l3oamp.jpg",
         series: "Mobile Suit Gundam",
@@ -156,11 +184,81 @@ const convergeSeeds = [
         price: 24840
     },
     {
+        gunplaName: "Gundam 00 10th Anniversary Set",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631058212/00_4_gaicjm.jpg",
+        series: "Gundam 00",
+        releaseDate: "02-2018",
+        price: 5500
+    },
+    {
+        gunplaName: "Gundam Virtue Core",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631058211/10_2_vgvol2.jpg",
+        series: "Gundam 00",
+        releaseDate: "02-2018",
+        price: 2200
+    },
+    {
+        gunplaName: "God Gundam Hyper Mode Core",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631058212/00_3_rqvnjw.jpg",
+        series: "Mobile Fighter God Gundam",
+        releaseDate: "12-2017",
+        price: 2000
+    },
+    {
+        gunplaName: "Gundam MK II Full Weapon Set",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631058210/05_1_mrgg14.jpg",
+        series: "Zeta Gundam",
+        releaseDate: "09-2017",
+        price: 2000
+    },
+    {
         gunplaName: "Shamblo",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630812855/p-bandai-converge-shamblo_1_ecoozy.jpg",
         series: "Gundam Unicorn",
-        releaseDate: 06-2017,
+        releaseDate: "06-2017",
         price: 3456
+    },
+    {
+        gunplaName: "Deep Striker Core",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631058212/00_2_q6vbwv.jpg",
+        series: "Gundam Sentinel",
+        releaseDate: "05-2017",
+        price: 2800
+    },
+    {
+        gunplaName: "Nu Gundam & Sazabi (Metallic Ver.)",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631058211/00_1_qn5fbm.jpg",
+        series: "Char's Counterattack",
+        releaseDate: "04-2017",
+        price: 3200
+    },
+    {
+        gunplaName: "Neo Zeong & Unicorn Final Battle Set",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631058211/05_br4ijp.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: "03-2017",
+        price: 7100
+    },
+    {
+        gunplaName: "Neo Zeong Optional Set",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631058211/10_1_ba5b2l.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: "03-2017",
+        price: 2000
+    },
+    {
+        gunplaName: "Gundam Unicorn (Awaken Color) Core",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631058211/20_t6ozk0.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: "03-2017",
+        price: 2000
+    },
+    {
+        gunplaName: "Wings of Light Set",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631058211/10_titohk.jpg",
+        series: "Gundam Seed Destiny",
+        releaseDate: "11-2016",
+        price: 2000
     },
     {
         gunplaName: "Perfect Strike Gundam Core",
@@ -205,6 +303,13 @@ const convergeSeeds = [
         price: 1800
     },
     {
+        gunplaName: "Core Set",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1631058211/00_exoxdi.jpg",
+        series: "All",
+        releaseDate: "01-2016",
+        price: 4400
+    },
+    {
         gunplaName: "Gundam GP03D Dendrobium",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630850841/banc151041_a0rkhf.jpg",
         series: "Stardust Memory",
@@ -238,20 +343,6 @@ const convergeSeeds = [
         series: "All",
         releaseDate: "02-2014",
         price: 3150
-    },
-    {
-        gunplaName: "",
-        image: "",
-        series: "",
-        releaseDate: "0",
-        price: 0
-    },
-    {
-        gunplaName: "",
-        image: "",
-        series: "",
-        releaseDate: "0",
-        price: 0
     },
 ];
 
