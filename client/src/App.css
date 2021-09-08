@@ -27,7 +27,7 @@ body {
     background-size: cover;
     transition: transform 500ms ease;
     overflow: hidden;
-    margin-right: 20% !important;
+    margin-right: 30% !important;
   }
 
   .infoContent {
