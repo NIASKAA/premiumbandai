@@ -65,7 +65,8 @@
         background-size: cover;
         transition: transform 500ms ease;
         overflow: hidden;
-        margin-right: 20%;
+        margin-left: auto !important;
+        margin-right: auto !important;
     }
 }
   
