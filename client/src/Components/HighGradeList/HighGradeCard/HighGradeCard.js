@@ -3,7 +3,7 @@ import {useMutation} from '@apollo/client'
 import {SAVE_HIGHGRADE} from '../../../utils/mutations'
 import {HIGHGRADE_WISHLIST} from '../../../utils/mutations'
 import Auth from '../../../utils/auth'
-import {Col, Card, CardGroup, ButtonGroup, Button} from 'react-bootstrap'
+import {Alert, Col, Card, CardGroup, ButtonGroup, Button} from 'react-bootstrap'
 import './styles.css'
 
 const HighGradeCard = ({highGrade}) => {
@@ -16,6 +16,14 @@ const HighGradeCard = ({highGrade}) => {
         highGradeWish: 'no highgrades'
     })
 
+    const [show, setShow] = useState(true);
+    const [errors, setErrors] = useState({
+        addToSaveSuccess: null,
+        addToSaveFail: null,
+        addToWishlistSuccess: null,
+        addToWishlistFail: null
+    })
+
     const saveToList = async (event) => {
         event.preventDefault();
         try {
@@ -24,9 +32,11 @@ const HighGradeCard = ({highGrade}) => {
                     name: highGrade.gunplaName
                 }
             })
+            setErrors({...errors, addToSaveSuccess: true})
             setProfileData({...ProfileData, gotHighGrades: response})
         } catch (error) {
             console.log(error)
+            setErrors({...errors, addToSaveFail: true})
         }
     }
 
@@ -37,10 +47,11 @@ const HighGradeCard = ({highGrade}) => {
                     name: highGrade.gunplaName
                 }
             })
-            console.log(response)
+            setErrors({...errors, addToWishlistSuccess: true})
             setProfileData({...ProfileData, highGradeWish: response})
         } catch (error) {
             console.log(error)
+            setErrors({...errors, addToWishlistFail: true})
         }
     }
     return (
@@ -55,6 +66,22 @@ const HighGradeCard = ({highGrade}) => {
                             <p className="infoBody">Release Date: {highGrade.releaseDate}</p>
                             <p className="infoBody">Price: {highGrade.price} Yen</p>
                         </Card.Body>
+                        {errors.addToSaveSuccess && 
+                            <Alert show={show} variant="success" onClose={() => setShow(false)} dismissible>
+                                Saved
+                            </Alert>}
+                        {errors.addToSaveFail && (
+                        <Alert show={show} variant="danger" onClose={() => setShow(false)} dismissible>
+                            Error
+                        </Alert>)}
+                        {errors.addToWishlistSuccess && 
+                        <Alert show={show} variant="success" onClose={() => setShow(false)} dismissible>
+                            Added
+                        </Alert>}
+                        {errors.addToWishlistFail && (
+                        <Alert show={show} variant="danger" onClose={() => setShow(false)} dismissible>
+                            Error
+                        </Alert>)}
                         {Auth.loggedIn() ? (
                             <>
                                 <ButtonGroup>
