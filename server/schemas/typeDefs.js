@@ -26,7 +26,7 @@ const typeDefs = gql`
         gunplaName: String
         image: String
         series: String
-        releaseDate: Float
+        releaseDate: String
         price: Float
     }
 
