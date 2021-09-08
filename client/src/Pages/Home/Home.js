@@ -14,10 +14,10 @@ const Home = () => {
             <Container>
                 <h3>Premium-Bandai Gunpla Finder</h3>
                 <Carousel activeIndex={index} onSelect={handleSelect}>
-                    {images.map((id, image, caption, description) => {
+                    {images.map(({id, image, caption, description}) => {
                     return (
                         <Carousel.Item>
-                            <img key={id} src={image} alt={description} className="d-block w-100 h-60" />
+                            <img key={id} src={image} alt={description} className="homeImages" />
                             <Carousel.Caption>
                                 <h3>{caption}</h3>
                             </Carousel.Caption>
