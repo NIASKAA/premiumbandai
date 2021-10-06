@@ -39,7 +39,7 @@ const Others = () => {
         setTimeout(() => {
             setLoadingOther(false);
         }, 1000)
-    });
+    }), [loadingOther];
 
     if (loading) return <Spinner className="spinner" animation="grow" variant="dark" />;
 

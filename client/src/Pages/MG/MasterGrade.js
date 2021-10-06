@@ -38,7 +38,7 @@ const MasterGrade = () => {
         setTimeout(() => {
             setLoadMasterGrade(false)
         }, 1000)
-    })
+    }, [loadMasterGrade])
 
     if(loading) return <Spinner className="spinner" animation="grow" variant="dark" />
 
@@ -54,8 +54,6 @@ const MasterGrade = () => {
                 itemsPerPage={itemsPerPage}
                 totalItems={AllMasterGrade.length}
                 paginate={paginate}
-                currentPage={currentPage}
-                currentPage={currentPage}
                 currentPage={currentPage}
             />
         </>

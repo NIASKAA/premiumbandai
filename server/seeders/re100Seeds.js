@@ -2,6 +2,13 @@ const {RE100} = require('../models')
 
 const re100Seeds = [
     {
+        gunplaName: "Gundam Lindwurm",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1633543041/7e852df0e44343fb99dd1761f5a3fcb7_qb56nf.jpg",
+        series: "Gundam Build Divers",
+        releaseDate: 'TBH',
+        price: 0000
+    },
+    {
         gunplaName: "Vigna Ghina (Extra Finish)",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630333023/re-100-vigna-ghina-extra-finish_1_tyust6.jpg",
         series: "Gundam F91",

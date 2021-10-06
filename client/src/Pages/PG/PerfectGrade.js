@@ -39,7 +39,7 @@ const PerfectGrade = () => {
         setTimeout(() => {
             setLoadPerfectGrades(false)
         }, 1000)
-    })
+    }, [loadPerfectGrades])
 
     if(loading) return <Spinner className="spinner" animation="grow" variant="dark"/>
 

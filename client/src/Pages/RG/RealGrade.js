@@ -37,8 +37,8 @@ const RealGrade = () => {
     useEffect(() => {
         setTimeout(() => {
             setLoadRealGrade(false)
-        }, 1000)
-    })
+        }, 2000)
+    }, [loadRealGrade])
 
     if(loading) return <Spinner className="spinner" animation="grow" variant="dark"/>
 

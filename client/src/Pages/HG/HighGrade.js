@@ -39,7 +39,7 @@ const HighGrade = () => {
         setTimeout(() => {
             setLoadHighGrades(false);
         }, 1000);
-    });
+    }, [loadHighGrades]);
 
     if(loading) return <Spinner className="spinner" animation="grow" variant="dark"/>
 

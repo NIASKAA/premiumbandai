@@ -2,6 +2,13 @@ const {MasterGrade} = require("../models")
 
 const mgSeeds = [
     {
+        gunplaName: 'Shin Musha Gundam Sengoku No Jin',
+        image: 'https://res.cloudinary.com/ddtqwizaf/image/upload/v1631744120/mg-true-musha-gundam_1_owew4k.jpg',
+        series: 'Other',
+        releaseDate: '01-2022',
+        price: 10450
+    },
+    {
         gunplaName: 'Manuever Strike Pack',
         image: 'https://res.cloudinary.com/ddtqwizaf/image/upload/v1630183419/mg-maneuver-eclipse-gundam_1_lmxqld.jpg',
         series: "Gundam Seed Eclipse",

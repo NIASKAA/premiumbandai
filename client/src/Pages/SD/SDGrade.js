@@ -38,8 +38,8 @@ const SDGrade = () => {
     useEffect(() => {
         setTimeout(() => {
             setLoadSDGrade(false)
-        })
-    }, 1000)
+        }, 1000)
+    }, [loadSDGrade])
 
     if(loading) return <Spinner className="spinner" animation="grow" variant="dark"/>
 
