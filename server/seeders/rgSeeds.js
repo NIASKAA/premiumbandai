@@ -44,7 +44,7 @@ const rgSeeds = [
         price: 8250
     },
     {
-        gunplaName: "Sword Impulse GUndam",
+        gunplaName: "Sword Impulse Gundam",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630333024/rg-sword-impulse-gundam_1_cv5abx.jpg",
         series: "Gundam Seed Destiny",
         releaseDate: "11-2020",
