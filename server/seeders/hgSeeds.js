@@ -2,6 +2,13 @@ const {HighGrade} = require("../models")
 
 const hgSeeds = [
     {
+        gunplaName: "Gundam Aesculapius",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1634237174/hg-Gundam_Aesculapius_1_hdbi9u.jpg",
+        series: "Gundam Wing G-Unit",
+        releaseDate: "01-2022",
+        price: 3960
+    },
+    {
         gunplaName: "Gundam Harute Final Ver.",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630333018/hg-gundam-harute-final-battle_1_juuxcf.jpg",
         series: "Gundam 00",
