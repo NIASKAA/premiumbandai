@@ -2,6 +2,13 @@ const {HighGrade} = require("../models")
 
 const hgSeeds = [
     {
+        gunplaName: "Gundam BO2 Code Fairy",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1634751824/hguc-gundam-battle-operation-code-fairy_z8o5mf.jpg",
+        series: "Code Fairy",
+        releaseDate: "TBH",
+        price: 0000
+    },
+    {
         gunplaName: "Gundam Aesculapius",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1634237174/hg-Gundam_Aesculapius_1_hdbi9u.jpg",
         series: "Gundam Wing G-Unit",

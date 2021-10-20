@@ -2,6 +2,13 @@ const {Converge} = require('../models')
 
 const convergeSeeds = [
     {
+        gunplaName: "Gundam Converge Plus03 Set",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1634751685/01_zextxh.jpg",
+        series: "All",
+        releaseDate: "03-2022",
+        price: 4950
+    },
+    {
         gunplaName: "Gundam Anchor and Phantom Set",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1629989235/01_bzq8x1.jpg",
         series: "Gundam Dust",
