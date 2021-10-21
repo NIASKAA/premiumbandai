@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import {useDispatch, useSelector} from "react-redux"
-import {Container, Spinner} from "react-bootstrap"
+import {Row, Container, Spinner} from "react-bootstrap"
 import {useQuery} from "@apollo/client"
 import {GET_ALL_OTHERS} from '../../utils/queries'
 import {GET_OTHERS} from '../../utils/state/actions'
@@ -39,7 +39,7 @@ const Others = () => {
         setTimeout(() => {
             setLoadingOther(false);
         }, 1000)
-    }), [loadingOther];
+    }, [loadingOther]);
 
     if (loading) return <Spinner className="spinner" animation="grow" variant="dark" />;
 
@@ -47,9 +47,9 @@ const Others = () => {
         <>
             <Container>
               {loadingOther && <Spinner animation="border" role="status"/>}
-                <div className="row">
-                  {!loadingOther&& !loading && <OtherList others={currentItems} />}
-                </div>
+                <Row>
+                  {!loadingOther && !loading && <OtherList others={currentItems} />}
+                </Row>
             </Container>
             <Paginate
                 itemsPerPage={itemsPerPage}
