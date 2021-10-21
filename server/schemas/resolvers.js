@@ -1,5 +1,5 @@
 const { AuthenticationError } = require("apollo-server-express")
-const {HighGrade, RealGrade, MasterGrade, PerfectGrade, Converge, SDGrade, ProfileData, RE100} = require('../models')
+const {HighGrade, RealGrade, MasterGrade, PerfectGrade, Converge, SDGrade, ProfileData, RE100, Ensemble, GFrame} = require('../models')
 const {signToken} = require('../utils/auth')
 
 const resolvers = {
@@ -24,6 +24,12 @@ const resolvers = {
         },
         getOthers: async () => {
             return await RE100.find({})
+        },
+        getEnsemble: async () => {
+            return await Ensemble.find({})
+        },
+        getGFrame: async () => {
+            return await GFrame.find({})
         },
         user: async (parent, args, context) => {
             if(context.user) {
@@ -80,6 +86,20 @@ const resolvers = {
                 return userOther
             }
             throw new AuthenticationError("Not logged in");
+        },
+        getUserEnsemble: async (parent, args, context) => {
+            if(context.user) {
+                const userEnsemble = await ProfileData.findById(context.user._id).populate('gotEnsemble').populate('gunplaName')
+                return userEnsemble
+            }
+            throw new AuthenticationError("Not logged in")
+        },
+        getUserGFrame: async (parent, args, context) => {
+            if(context.user) {
+                const userGFrame = await ProfileData.findById(context.user._id).populate('gotGFrame').populate('gunplaName')
+                return userGFrame
+            }
+            throw new AuthenticationError("Not logged in")
         },
         getUserConvergeWishlist: async (parent, args, context) => {
             if(context.user) {

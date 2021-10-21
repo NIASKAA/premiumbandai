@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const converge = new mongoose.Schema({
+const ensemble = new mongoose.Scheme({
     gunplaName: {type: String},
     image: {type: String},
     series: {type: String},
@@ -8,6 +8,6 @@ const converge = new mongoose.Schema({
     price: {type: Number}
 });
 
-const Converge = mongoose.model("Converge", converge);
+const Ensemble = mongoose.model("Ensemble", ensemble);
 
-module.exports = {Converge, converge};
+module.exports = {Ensemble, ensemble};
