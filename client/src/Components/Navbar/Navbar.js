@@ -31,7 +31,6 @@ const Navigation = () => {
                                     <NavDropdown.Item as={Link} to={'/ensembles'}>Ensemble</NavDropdown.Item>
                                     <NavDropdown.Divider />
                                     <NavDropdown.Item as={Link} to={'/gframe'}>GFrame</NavDropdown.Item>
-
                                 </NavDropdown>
                                 {Auth.loggedIn() ? (
                                     <>

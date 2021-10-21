@@ -8,7 +8,9 @@ const initialState = {
     getMG: [],
     getPG: [],
     getSD: [],
-    getOthers: []
+    getOthers: [],
+    getEnsemble: [],
+    getGFrame: [],
 }
 
 export default createStore(reducers, initialState);
