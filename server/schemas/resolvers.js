@@ -597,6 +597,36 @@ const resolvers = {
                 new: true
             })
         },
+        deleteEnsembleSave: async (parent, {ensembleID}, context) => {
+            return await ProfileData.findOneAndUpdate({
+                _id: context.user
+            },
+            {
+                $pull: {
+                    'gotEnsemble': {
+                        _id: ensembleID
+                    }
+                }
+            },
+            {
+                new: true
+            })
+        },
+        deleteGFrameSave: async (parent, {GFrameID}, context) => {
+            return await ProfileData.findOneAndUpdate({
+                _id: context.user
+            },
+            {
+                $pull: {
+                    'gotGFrame': {
+                        _id: GFrameID
+                    }
+                }
+            },
+            {
+                new: true
+            })
+        },
         deleteConvergeWishlist: async (parent, {convergeID}, context) => {
             try {
                 return await ProfileData.findOneAndUpdate({
@@ -718,8 +748,38 @@ const resolvers = {
             {
                 new: true
             })
-        }
-    }
+        },
+        deleteEnsembleWishlist: async (parent, {ensembleID}, context) => {
+            return await ProfileData.findOneAndUpdate({
+                _id: context.user
+            },
+            {
+                $pull: {
+                    'ensembleWishlist': {
+                        _id: ensembleID
+                    }
+                }
+            },
+            {
+                new: true
+            })
+        },
+        deleteGFrameWishlist: async (parent, {GFrameID}, context) => {
+            return await ProfileData.findOneAndUpdate({
+                _id: context.user
+            },
+            {
+                $pull: {
+                    'gFrameWishlist': {
+                        _id: GFrameID
+                    }
+                }
+            },
+            {
+                new: true
+            })
+        },
+    }   
 }
 
 module.exports = resolvers;
