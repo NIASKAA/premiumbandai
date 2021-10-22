@@ -4,9 +4,9 @@ import {Container, Spinner} from 'react-bootstrap'
 import {useQuery} from '@apollo/client'
 import {GET_ALL_GFRAME} from '../../utils/queries'
 import {GET_GFRAME} from '../../utils/state/actions'
-import GFrameList from '../../Components/GFrameList/GFrameList"'
+import GFrameList from '../../Components/GFrameList/GFrameList'
 import Paginate from '../../Components/Pagination/Pagination'
-import './styles.css'
+import './Styles.css'
 
 const GFrame = () => {
     const dispatch = useDispatch()
@@ -15,6 +15,7 @@ const GFrame = () => {
     const {loading, data} = useQuery(GET_ALL_GFRAME)
     let {getGFrame} = state
     const [AllGFrame, setAllGFrame] = useState(() => [])
+    const [currentPage , setCurrentPage] = useState(1)
     const [itemsPerPage] = useState(16)
 
     useEffect(() => {
@@ -30,7 +31,7 @@ const GFrame = () => {
 
     const indexOfLastItem = currentPage * itemsPerPage
     const indexOfFirstItem = indexOfLastItem - itemsPerPage
-    const currentItems = AllEnsemble.slice(indexOfFirstItem, indexOfLastItem)
+    const currentItems = AllGFrame.slice(indexOfFirstItem, indexOfLastItem)
 
     const paginate = pageNumber => setCurrentPage(pageNumber)
 

@@ -307,7 +307,7 @@ export const ENSEMBLE_WISHLIST = gql`
 export const GFRAME_WISHLIST = gql`
     mutation gFrameWishlist($name: String! $id: ID) {
         gFrameWishlist(name: $name id: $id) {
-            $username
+            username
             email
             gFrameWish {
                 _id

@@ -2,6 +2,7 @@ import React from 'react'
 import {useMutation} from "@apollo/client"
 import {DELETE_CONVERGE_SAVE} from '../../utils/mutations'
 import {Table, Button} from 'react-bootstrap'
+import {BsFillTrashFill} from 'react-icons/bs';
 
 const ConvergeTable = ({converges}) => {
     const [deleteConvergeSave] = useMutation(DELETE_CONVERGE_SAVE)
@@ -37,7 +38,7 @@ const ConvergeTable = ({converges}) => {
                             <td>{converge.series}</td>
                             <td>{converge.price}</td>
                             <td>{converge.releaseDate}</td>
-                            <Button onClick={() => deleteItem(converge._id)} variant="danger"></Button>
+                            <Button onClick={() => deleteItem(converge._id)} variant="danger"><BsFillTrashFill/></Button>
                         </tr>
                     ))}
                 </tbody>
