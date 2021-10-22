@@ -4,6 +4,7 @@ import {Container, Spinner} from 'react-bootstrap'
 import {useQuery} from '@apollo/client'
 import {GET_ALL_GFRAME} from '../../utils/queries'
 import {GET_GFRAME} from '../../utils/state/actions'
+import GFrameList from '../../Components/GFrameList/GFrameList"'
 import Paginate from '../../Components/Pagination/Pagination'
 import './styles.css'
 
@@ -39,10 +40,15 @@ const GFrame = () => {
         }, 1000);
     })
 
+    if (loading) return <Spinner className="spinner" animation="grow" variant="dark" />;
+
     return (
         <>
             <Container>
-
+                {loadingGFrame && <Spinner animation="bordered" role="status" />}
+                <div>
+                    {!loadingGFrame && !loading && <GFrameList GFrames={currentItems} />}
+                </div>
             </Container>
             <Paginate 
                 itemsPerPage={itemsPerPage}

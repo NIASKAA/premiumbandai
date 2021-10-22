@@ -4,6 +4,7 @@ import {Container, Spinner} from "react-bootstrap"
 import {useQuery} from "@apollo/client"
 import {GET_ALL_ENSEMBLE} from '../../utils/queries'
 import {GET_ENSEMBLE} from '../../utils/state/actions'
+import EnsembleList from '../../Components/EnsembleList/EnsembleList'
 import Paginate from '../../Components/Pagination/Pagination'
 import './styles.css'
 
@@ -41,10 +42,15 @@ const Ensemble = () => {
         }, 1000);
     })
 
+    if (loading) return <Spinner className="spinner" animation="grow" variant="dark" />;
+
     return (
         <>
             <Container>
-
+                {loadingEnsemble && <Spinner animation="border" role="status" />}
+                <div className="row">
+                    {!loadingEnsemble && !loading && <EnsembleList ensembles={currentItems} />}
+                </div>
             </Container>
             <Paginate
                 itemsPerPage={itemsPerPage}
