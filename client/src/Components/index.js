@@ -18,6 +18,7 @@ export {default as PerfectGradeTable} from './PerfectGradeTable/PerfectGradeTabl
 export {default as SDGradeTable} from './SDGradeTable/SDGradeTable'
 export {default as OtherTable} from './OtherTable/OtherTable'
 export {default as EnsembleTable} from './EnsembleTable/EnsembleTable'
+export {default as GFrameTable} from './GFrameTable/GFrameTable'
 export {default as ConvergeWishlistTable} from './ConvergeTable/ConvergeWishlistTable/ConvergeWishlistTable'
 export {default as HighGradeWishlistTable} from './HighGradeTable/HighGradeWishlistTable/HighGradeWishlistTable'
 export {default as RealGradeWishlistTable} from './RealGradeTable/RealGradeWishlistTable/RealGradeWishlistTable'
@@ -26,3 +27,4 @@ export {default as PerfectGradeWishlistTable} from './PerfectGradeTable/PerfectG
 export {default as SDGradeWishlistTable} from './SDGradeTable/SDGradeWishlistTable/SDGradeWishlistTable'
 export {default as OtherWishlistTable} from './OtherTable/OtherWishlistTable/OtherWishlistTable'
 export {default as EnsembleWishlistTable} from './EnsembleTable/EnsembleWishlistTable/EnsembleWishlistTable'
+export {default as GFrameWishlistTable} from './GFrameTable/GFrameWishlistTable/GFrameWishlistTable'
