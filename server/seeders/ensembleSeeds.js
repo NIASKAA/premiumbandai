@@ -8,6 +8,48 @@ const ensembleSeeds = [
         releaseDate: '',
         price: 0000
     },
+    {
+        gunplaName: '',
+        image: '',
+        series: '',
+        releaseDate: '',
+        price: 0000
+    },
+    {
+        gunplaName: '',
+        image: '',
+        series: '',
+        releaseDate: '',
+        price: 0000
+    },
+    {
+        gunplaName: '',
+        image: '',
+        series: '',
+        releaseDate: '',
+        price: 0000
+    },
+    {
+        gunplaName: '',
+        image: '',
+        series: '',
+        releaseDate: '',
+        price: 0000
+    },
+    {
+        gunplaName: '',
+        image: '',
+        series: '',
+        releaseDate: '',
+        price: 0000
+    },
+    {
+        gunplaName: '',
+        image: '',
+        series: '',
+        releaseDate: '',
+        price: 0000
+    },
 ];
 
 const ensembleSeed = async () => {
