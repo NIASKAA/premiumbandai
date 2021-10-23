@@ -46,7 +46,7 @@ function App() {
                 <Route exact path="/sd" component={SDGrade}/>
                 <Route exact path="/converges" component={Converges}/>
                 <Route exact path="/others" component={Others} />
-                <Route exact path="/ensemble" component={Ensemble} />
+                <Route exact path="/ensembles" component={Ensemble} />
                 <Route exact path="/gframe" component={GFrame} />
                 <Route exact path='/support' component={Support}/>
               </Switch>

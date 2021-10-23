@@ -1,12 +1,11 @@
 import React, {useState, useEffect} from 'react'
 import {useDispatch, useSelector} from 'react-redux'
-import {Container, Spinner} from 'react-bootstrap'
+import {Container, Spinner, Row} from 'react-bootstrap'
 import {useQuery} from '@apollo/client'
 import {GET_ALL_GFRAME} from '../../utils/queries'
 import {GET_GFRAME} from '../../utils/state/actions'
 import GFrameList from '../../Components/GFrameList/GFrameList'
 import Paginate from '../../Components/Pagination/Pagination'
-import './Styles.css'
 
 const GFrame = () => {
     const dispatch = useDispatch()
@@ -47,9 +46,9 @@ const GFrame = () => {
         <>
             <Container>
                 {loadingGFrame && <Spinner animation="bordered" role="status" />}
-                <div>
+                <Row>
                     {!loadingGFrame && !loading && <GFrameList GFrames={currentItems} />}
-                </div>
+                </Row>
             </Container>
             <Paginate 
                 itemsPerPage={itemsPerPage}

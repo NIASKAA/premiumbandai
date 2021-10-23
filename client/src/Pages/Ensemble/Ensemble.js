@@ -1,12 +1,11 @@
 import React, {useState, useEffect} from 'react'
 import {useDispatch, useSelector} from 'react-redux'
-import {Container, Spinner} from "react-bootstrap"
+import {Container, Spinner, Row} from "react-bootstrap"
 import {useQuery} from "@apollo/client"
 import {GET_ALL_ENSEMBLE} from '../../utils/queries'
 import {GET_ENSEMBLE} from '../../utils/state/actions'
 import EnsembleList from '../../Components/EnsembleList/EnsembleList'
 import Paginate from '../../Components/Pagination/Pagination'
-import './styles.css'
 
 const Ensemble = () => {
     const dispatch = useDispatch()
@@ -48,9 +47,9 @@ const Ensemble = () => {
         <>
             <Container>
                 {loadingEnsemble && <Spinner animation="border" role="status" />}
-                <div className="row">
+                <Row>
                     {!loadingEnsemble && !loading && <EnsembleList ensembles={currentItems} />}
-                </div>
+                </Row>
             </Container>
             <Paginate
                 itemsPerPage={itemsPerPage}

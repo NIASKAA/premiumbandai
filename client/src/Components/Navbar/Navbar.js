@@ -30,7 +30,7 @@ const Navigation = () => {
                                     <NavDropdown.Divider />
                                     <NavDropdown.Item as={Link} to={'/ensembles'}>Ensemble</NavDropdown.Item>
                                     <NavDropdown.Divider />
-                                    <NavDropdown.Item as={Link} to={'/gframe'}>GFrame</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to={'/gframe'}>G-Frame</NavDropdown.Item>
                                 </NavDropdown>
                                 {Auth.loggedIn() ? (
                                     <>
