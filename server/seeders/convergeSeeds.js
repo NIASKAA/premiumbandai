@@ -1,6 +1,13 @@
-const {Converge} = require('../models')
+  const {Converge} = require('../models')
 
 const convergeSeeds = [
+    {
+        gunplaName: 'Unicorn Gundam Perfectibility (Destroy Mode)',
+        image: 'https://res.cloudinary.com/ddtqwizaf/image/upload/v1634994834/01_spaxs9.jpg',
+        series: 'Gundam Unicorn',
+        releaseDate: '03-2022',
+        price: 3500
+    },
     {
         gunplaName: "Gundam Converge Plus03 Set",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1634751685/01_zextxh.jpg",
