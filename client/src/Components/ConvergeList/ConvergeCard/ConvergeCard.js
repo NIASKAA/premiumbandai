@@ -99,7 +99,6 @@ const ConvergeCard = ({converge}) => {
                     </Card>
                 </CardGroup>
             </Col>
-            
         </>
     )
 }

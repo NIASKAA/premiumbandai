@@ -58,7 +58,7 @@ const GFrameCard = ({GFrame}) => {
 
     return (
         <>
-            <Col className="column">
+            <Col>
                 <CardGroup>
                     <Card className="infoCard">
                         <Card.Img src={GFrame.image} style={{ width: "18rem", height: "17rem"}} className="cardImg"></Card.Img>

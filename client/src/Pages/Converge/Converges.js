@@ -58,8 +58,6 @@ const Converges = () => {
             paginate={paginate}
             currentPage={currentPage}
           />  
-
-         
         </>
     )
 }

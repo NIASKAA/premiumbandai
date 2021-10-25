@@ -56,7 +56,7 @@ const Ensemble = () => {
                 totalItems={AllEnsemble.length}
                 paginate={paginate}
                 currentPage={currentPage}
-                />
+            />
         </>
     )
 }
