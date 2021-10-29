@@ -59,6 +59,13 @@ const FAQ = () => {
                 <br/>
 
                 <h3 className="titleFAQ">
+                    Is there a mobile version?
+                </h3>
+                <p className="text">
+                    There is a IOS version currently being developed but it's close to being launch. As for android, it is in the process.
+                </p>
+
+                <h3 className="titleFAQ">
                     How can I support?
                 </h3>
                 <p className="text">
