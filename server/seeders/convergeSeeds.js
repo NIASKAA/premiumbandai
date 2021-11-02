@@ -2,6 +2,13 @@
 
 const convergeSeeds = [
     {
+        gunplaName: "Solomon's Nightmare 302 Patrol Squadron Set",
+        image: 'https://res.cloudinary.com/ddtqwizaf/image/upload/v1635876472/01_tpzvyi.jpg',
+        series: 'Mobile Suit Gundam',
+        releaseDate: '05-2022',
+        price: 5100
+    },
+    {
         gunplaName: 'Unicorn Gundam Perfectibility (Destroy Mode)',
         image: 'https://res.cloudinary.com/ddtqwizaf/image/upload/v1634994834/01_spaxs9.jpg',
         series: 'Gundam Unicorn',
