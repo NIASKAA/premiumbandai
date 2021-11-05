@@ -59,7 +59,7 @@ const ConvergeCard = ({converge}) => {
 
     return (    
         <>  
-            <Col className="column">
+            <Col>
                 <CardGroup>
                     <Card className="infoCard">
                         <Card.Img src={converge.image} style={{ width: "18rem", height: "17rem"}} className="cardImg"></Card.Img>
