@@ -65,6 +65,8 @@ const FAQ = () => {
                     There is a IOS version currently being developed but it's close to being launch. As for android, it is in the process.
                 </p>
 
+                <br/>
+                
                 <h3 className="titleFAQ">
                     How can I support?
                 </h3>
