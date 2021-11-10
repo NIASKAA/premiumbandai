@@ -2,6 +2,13 @@ const {PerfectGrade} = require("../models")
 
 const pgSeeds = [
     {
+        gunplaName: "Unicorn Gundam Perfectibility",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1636552431/pg-unicorn-gundam-perfectibility_9_okbfec.jpg",
+        series: "Gundam Unicorn",
+        releaseDate: "02-2022",
+        price: 33000
+    },
+    {
         gunplaName: "RX-78-2 Gundam Unleashed (Clear)",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630333022/pg-unleashed-clear-color-body-rx-78-2-gundam_1_imfkmx.jpg",
         series: "Mobile Suit Gundam",
