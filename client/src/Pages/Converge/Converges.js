@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import {useDispatch, useSelector} from "react-redux"
-import {Container, Spinner} from "react-bootstrap"
+import {Container, Spinner, InputGroup, FormControl} from "react-bootstrap"
 import {useQuery} from "@apollo/client"
 import {GET_ALL_CONVERGES} from '../../utils/queries'
 import {GET_CONVERGES} from '../../utils/state/actions'
@@ -49,7 +49,7 @@ const Converges = () => {
     } else {
       setAllConverge(
         getConverges.filter((converge) => {
-          converge.gunplaName.trim().toLowerCase().includes(searchGunpla.trim().toLowerCase())
+          converge.gunplaName.trim().toLowerCase().includes(input.trim().toLowerCase())
         })
       )
     }
@@ -60,6 +60,18 @@ const Converges = () => {
     return (
         <>
           <Container>
+            <InputGroup>
+              <FormControl
+                placeholder="Search a Gunpla"
+                aria-label="searchbar"
+                value={searchGunpla}
+                aria-describedby="searchbar"
+                onChange={(event) => {
+                  setSearchGunpla(event.target.value);
+                  searchHandler(searchGunpla)
+                }}
+              />
+            </InputGroup>
               {loadingConverge && <Spinner animation="border" role="status"/>}
                 <div className="row">
                   {!loadingConverge && !loading && <ConvergeList converges={currentItems} />}
