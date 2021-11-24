@@ -45,7 +45,6 @@ const Converges = () => {
   const searchHandler = (input) => {
     if(searchGunpla.trim().length <= 1 && getConverges.length <=1) {
       dispatch({type: GET_CONVERGES, payload: data.getConverges})
-      console.log(data.getConverges)
       setAllConverge(state.getConverges)
     } else {
       setAllConverge(
