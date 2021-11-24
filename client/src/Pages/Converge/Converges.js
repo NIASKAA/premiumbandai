@@ -11,6 +11,7 @@ import './styles.css'
 const Converges = () => {
   const dispatch = useDispatch()
   const state = useSelector((state) => state)
+  const [searchGunpla, setSearchGunpla] = useState("")
   const [loadingConverge, setLoadingConverge] = useState(true)
   const {loading, data} = useQuery(GET_ALL_CONVERGES)
   let {getConverges} = state
@@ -27,7 +28,6 @@ const Converges = () => {
         setAllConverge(getConverges)
       }
     }
-    console.log(data)
   }, [loading ,data])
 
   const indexOfLastItem = currentPage * itemsPerPage
@@ -41,6 +41,19 @@ const Converges = () => {
       setLoadingConverge(false);
     }, 1000);
   });
+
+  const searchHandler = (input) => {
+    if(searchGunpla.trim().length <= 1 && getConverges.length <=1) {
+      dispatch({type: GET_CONVERGES, payload: data.getConverges})
+      setAllConverge(state.getConverges)
+    } else {
+      setAllConverge(
+        getConverges.filter((converge) => {
+          converge.gunplaName.trim().toLowerCase().includes(searchGunpla.trim().toLowerCase())
+        })
+      )
+    }
+  }
 
   if (loading) return <Spinner className="spinner" animation="grow" variant="dark" />;
 
