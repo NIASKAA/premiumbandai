@@ -45,12 +45,13 @@ const Converges = () => {
   const searchHandler = (input) => {
     if(searchGunpla.trim().length <= 1 && getConverges.length <=1) {
       dispatch({type: GET_CONVERGES, payload: data.getConverges})
+      console.log(data.getConverges)
       setAllConverge(state.getConverges)
     } else {
       setAllConverge(
-        getConverges.filter((converge) => {
+        getConverges.filter((converge) => 
           converge.gunplaName.trim().toLowerCase().includes(input.trim().toLowerCase())
-        })
+        )
       )
     }
   }
@@ -68,7 +69,7 @@ const Converges = () => {
                 aria-describedby="searchbar"
                 onChange={(event) => {
                   setSearchGunpla(event.target.value);
-                  searchHandler(searchGunpla)
+                  searchHandler(searchGunpla);
                 }}
               />
             </InputGroup>
