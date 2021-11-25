@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import {useDispatch, useSelector} from "react-redux"
-import {Row, Container, Spinner} from "react-bootstrap"
+import {Row, Container, Spinner, InputGroup, FormControl} from "react-bootstrap"
 import {useQuery} from "@apollo/client"
 import {GET_ALL_SD} from '../../utils/queries'
 import {GET_SDS} from '../../utils/state/actions'
@@ -10,6 +10,7 @@ import Paginate from '../../Components/Pagination/Pagination'
 const SDGrade = () => {
     const dispatch = useDispatch()
     const state = useSelector((state) => state)
+    const [searchGunpla, setSearchGunpla] = useState("")
     const [loadSDGrade, setLoadSDGrade] = useState(true)
     const {loading, data} = useQuery(GET_ALL_SD)
     let {getSD} = state
@@ -41,11 +42,35 @@ const SDGrade = () => {
         }, 1000)
     }, [loadSDGrade])
 
+    const searchHandler = (input) => {
+        if(searchGunpla.trim().length <= 1 && getSD.length <= 1) {
+            dispatch({type: GET_SDS, payload: data.getSD})
+            setAllSDGrade(state.getSD)
+        } else {
+            setAllSDGrade(
+                getSD.filter((sdGrade) => 
+                sdGrade.gunplaName.trim().toLowerCase().includes(input.trim().toLowerCase()))
+            )
+        }
+    }
+
     if(loading) return <Spinner className="spinner" animation="grow" variant="dark"/>
 
     return (
         <>
             <Container>
+                <InputGroup>
+                    <FormControl
+                        placeholder="Search a Gunpla"
+                        aria-label="searchbar"
+                        aria-describedby="searchbar"
+                        value={searchGunpla}
+                        onChange={(event) => {
+                            setSearchGunpla(event.target.value)
+                            searchHandler(AllSDGrade)
+                        }}
+                    />
+                </InputGroup>
                 {loadSDGrade && <Spinner animation="border" role="status"/>}
                 <Row>
                   {!loadSDGrade && !loading && <SDGradeList sdGrades={currentItems} />}
