@@ -60,7 +60,7 @@ const Ensemble = () => {
     return (
         <>
             <Container>
-                <InputGroup>
+                <InputGroup className="mx-auto searchInput">
                     <FormControl
                         placeholder="Search a Gunpla"
                         aria-label="searchbar"
