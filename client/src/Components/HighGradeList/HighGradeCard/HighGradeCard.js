@@ -4,7 +4,6 @@ import {SAVE_HIGHGRADE} from '../../../utils/mutations'
 import {HIGHGRADE_WISHLIST} from '../../../utils/mutations'
 import Auth from '../../../utils/auth'
 import {Alert, Col, Card, CardGroup, ButtonGroup, Button} from 'react-bootstrap'
-import './styles.css'
 
 const HighGradeCard = ({highGrade}) => {
     const [saveHighGrade] = useMutation(SAVE_HIGHGRADE)

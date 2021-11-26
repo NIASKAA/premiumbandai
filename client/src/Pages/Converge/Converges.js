@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import {useDispatch, useSelector} from "react-redux"
-import {Container, Spinner, InputGroup, FormControl} from "react-bootstrap"
+import {Container, Spinner, InputGroup, FormControl, Row} from "react-bootstrap"
 import {useQuery} from "@apollo/client"
 import {GET_ALL_CONVERGES} from '../../utils/queries'
 import {GET_CONVERGES} from '../../utils/state/actions'
@@ -60,7 +60,7 @@ const Converges = () => {
     return (
         <>
           <Container>
-            <InputGroup>
+            <InputGroup className="mx-auto searchInput">
               <FormControl
                 placeholder="Search a Gunpla"
                 aria-label="searchbar"
@@ -73,9 +73,9 @@ const Converges = () => {
               />
             </InputGroup>
               {loadingConverge && <Spinner animation="border" role="status"/>}
-                <div className="row">
+                <Row>
                   {!loadingConverge && !loading && <ConvergeList converges={currentItems} />}
-                </div>
+                </Row>
           </Container>
           <Paginate
             itemsPerPage={itemsPerPage}

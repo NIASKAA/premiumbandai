@@ -4,7 +4,6 @@ import {SAVE_SDGRADE} from '../../../utils/mutations'
 import {SDGRADE_WISHLIST} from '../../../utils/mutations'
 import {Alert, Col, Card, CardGroup, Button, ButtonGroup} from 'react-bootstrap'
 import Auth from '../../../utils/auth'
-import './styles.css'
 
 const SDGradeCard = ({sdGrade}) => {
     const [saveSDGrade] = useMutation(SAVE_SDGRADE)

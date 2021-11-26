@@ -4,7 +4,6 @@ import {SAVE_PERFECTGRADE} from '../../../utils/mutations'
 import {PERFECTGRADE_WISHLIST} from '../../../utils/mutations'
 import {Alert, Col, Card, CardGroup, ButtonGroup, Button} from 'react-bootstrap'
 import Auth from '../../../utils/auth'
-import './styles.css'
 
 const PerfectGradeCard = ({perfectGrade}) => {
     const [savePerfectGrade] = useMutation(SAVE_PERFECTGRADE)

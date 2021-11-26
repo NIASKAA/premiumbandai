@@ -4,7 +4,6 @@ import {SAVE_GFRAME} from '../../../utils/mutations'
 import {GFRAME_WISHLIST} from '../../../utils/mutations'
 import Auth from '../../../utils/auth'
 import {Alert, Col, Card, CardGroup, ButtonGroup, Button} from 'react-bootstrap'
-import './styles.css'
 
 const GFrameCard = ({GFrame}) => {
     const [saveGFrame] = useMutation(SAVE_GFRAME)

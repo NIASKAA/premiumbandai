@@ -4,7 +4,6 @@ import {SAVE_ENSEMBLE} from '../../../utils/mutations'
 import {ENSEMBLE_WISHLIST} from '../../../utils/mutations'
 import Auth from '../../../utils/auth'
 import {Alert, Col, Card, CardGroup, ButtonGroup, Button} from 'react-bootstrap'
-import './styles.css';
 
 const EnsembleCard = ({ensemble}) => {
     const [saveEnsemble] = useMutation(SAVE_ENSEMBLE)

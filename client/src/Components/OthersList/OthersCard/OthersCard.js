@@ -4,7 +4,6 @@ import {SAVE_OTHERS} from '../../../utils/mutations'
 import {OTHER_WISHLIST} from '../../../utils/mutations'
 import Auth from '../../../utils/auth'
 import {Alert, Col, Card, CardGroup, ButtonGroup, Button} from 'react-bootstrap'
-import './styles.css'
 
 const OthersCard = ({other}) => {
     const [saveOthers] = useMutation(SAVE_OTHERS)

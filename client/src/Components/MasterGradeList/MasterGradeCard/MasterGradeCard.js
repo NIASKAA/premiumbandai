@@ -4,7 +4,6 @@ import {SAVE_MASTERGRADE} from '../../../utils/mutations'
 import {MASTERGRADE_WISHLIST} from '../../../utils/mutations'
 import {Alert, Col, Card, CardGroup, Button, ButtonGroup} from 'react-bootstrap'
 import Auth from '../../../utils/auth'
-import './styles.css'
 
 const MasterGradeCard = ({masterGrade}) => {
     const [saveMasterGrade] = useMutation(SAVE_MASTERGRADE)
