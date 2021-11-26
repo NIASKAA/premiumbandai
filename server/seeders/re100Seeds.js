@@ -2,6 +2,13 @@ const {RE100} = require('../models')
 
 const re100Seeds = [
     {
+        gunplaName: "Aile Calamity Gundam",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1637943976/fm-aile-calamity-gundam_1_fwefgq.jpg",
+        series: "Gundam Seed Eclipse",
+        releaseDate: '04-2022',
+        price: 5500
+    },
+    {
         gunplaName: "Gundam Lindwurm",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1636134410/re-100-gundam-lindwurm_1_al35ul.jpg",
         series: "Gundam Build Divers",
