@@ -59,7 +59,7 @@ const OthersCard = ({other}) => {
 
     return (
         <>
-            <Col className="column">
+            <Col>
                 <CardGroup>
                     <Card className="infoCard">
                         <Card.Img src={other.image} style={{ width: "18rem", height: "17rem"}}></Card.Img>

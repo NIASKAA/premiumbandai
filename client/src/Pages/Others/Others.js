@@ -72,7 +72,7 @@ const Others = () => {
                         }}
                     />
                 </InputGroup>
-              {loadingOther && <Spinner animation="border" role="status"/>}
+                {loadingOther && <Spinner animation="border" role="status"/>}
                 <Row>
                   {!loadingOther && !loading && <OtherList others={currentItems} />}
                 </Row>
