@@ -12,7 +12,6 @@ const Home = () => {
     return (
         <>
             <Container>
-                <h3>Premium-Bandai Gunpla Finder</h3>
                 <Carousel activeIndex={index} onSelect={handleSelect}>
                     {images.map(({id, image, caption, description}) => {
                     return (
