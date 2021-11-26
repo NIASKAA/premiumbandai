@@ -1,3 +1,19 @@
 .homeImages {
-    max-height: 70% !important;
+    max-height: 60% !important;
+}
+
+@media only screen and (max-width: 660px) {
+    .homeImages {
+        max-width: 70% !important;
+        max-height: 45% !important;
+        z-index: 1;
+    } 
+}
+
+@media only screen and (max-width: 560px) {
+    .homeImages {
+        max-width: 60% !important;
+        max-height: 40% !important;
+        z-index: 1;
+    } 
 }
