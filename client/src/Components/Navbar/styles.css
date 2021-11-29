@@ -1,9 +1,10 @@
 .navbar {
     height: 80px;
+    z-index: 2;
 }
 
 @media only screen and (max-width: 660px) {
     .navbar {
-        margin-bottom: 24%;
+        margin-bottom: 26%;
     }
 }

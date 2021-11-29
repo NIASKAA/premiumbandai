@@ -108,7 +108,7 @@
         background-size: cover;
         transition: transform 500ms ease;
         overflow: hidden;
-        margin-left: 16% !important;
+        margin-left: 24% !important;
     }
 
     .cardImg {

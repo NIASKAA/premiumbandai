@@ -60,7 +60,7 @@ const GFrameCard = ({GFrame}) => {
             <Col>
                 <CardGroup>
                     <Card className="infoCard">
-                        <Card.Img src={GFrame.image} style={{ width: "18rem", height: "17rem"}} className="cardImg"></Card.Img>
+                        <Card.Img src={GFrame.image} style={{ width: "18rem", height: "17rem"}} className="cardImg" alt={GFrame.gunplaName}></Card.Img>
                         <Card.Body className="infoContent">
                             <p className="infoText">{GFrame.gunplaName}</p>
                             <p className="infoBody">Series: {GFrame.series}</p>

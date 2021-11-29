@@ -61,7 +61,7 @@ const OthersCard = ({other}) => {
             <Col>
                 <CardGroup>
                     <Card className="infoCard">
-                        <Card.Img src={other.image} style={{ width: "18rem", height: "17rem"}}></Card.Img>
+                        <Card.Img src={other.image} style={{ width: "18rem", height: "17rem"}} alt={other.gunplaName}></Card.Img>
                         <Card.Body className="infoContent">
                             <p className="infoText">{other.gunplaName}</p>
                             <p className="infoBody">Series: {other.series}</p>

@@ -60,7 +60,7 @@ const EnsembleCard = ({ensemble}) => {
             <Col>
                 <CardGroup>
                     <Card className="infoCard">
-                        <Card.Img src={ensemble.image} style={{ width: "18rem", height: "17rem"}} className="cardImg"></Card.Img>
+                        <Card.Img src={ensemble.image} style={{ width: "18rem", height: "17rem"}} className="cardImg" alt={ensemble.gunplaName}></Card.Img>
                         <Card.Body className="infoContent">
                             <p className="infoText">{ensemble.gunplaName}</p>
                             <p className="infoBody">Series: {ensemble.series}</p>
