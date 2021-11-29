@@ -59,7 +59,7 @@ const RealGradeCard = ({realGrade}) => {
             <Col>
                 <CardGroup>
                     <Card className="infoCard">
-                        <Card.Img src={realGrade.image} style={{width: '17.9rem', height: "17rem"}} />
+                        <Card.Img src={realGrade.image} style={{width: '17.9rem', height: "17rem"}} alt={realGrade.gunplaName}/>
                         <Card.Body className="infoContent">
                             <h3 className="infoText">{realGrade.gunplaName}</h3>
                             <p className="infoBody">Series: {realGrade.series}</p>
