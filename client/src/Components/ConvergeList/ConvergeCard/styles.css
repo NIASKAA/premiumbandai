@@ -49,6 +49,23 @@
     color: white !important; 
 }
 
+@media only screen and (max-width: 500px) {
+    .infoCard {
+        max-width: 28.5ch;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-size: cover;
+        transition: transform 500ms ease;
+        overflow: hidden;
+        margin-left: 24% !important;
+    }
+
+    .cardImg {
+        background-position: center;
+        align-items: center;
+        justify-content: center;
+    }  
+}
+
 @media only screen and (max-width: 560px) {
     .infoCard {
         max-width: 28.5ch;
@@ -65,3 +82,39 @@
         justify-content: center;
     }  
 }
+
+
+@media only screen and (max-width: 860px) {
+    .infoCard {
+        max-width: 28.5ch;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-size: cover;
+        transition: transform 500ms ease;
+        overflow: hidden;
+        margin-left: 24% !important;
+    }
+
+    .cardImg {
+        background-position: center;
+        align-items: center;
+        justify-content: center;
+    }  
+  }
+  
+  @media only screen and (max-width: 1060px) {
+    .infoCard {
+        max-width: 28.5ch;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-size: cover;
+        transition: transform 500ms ease;
+        overflow: hidden;
+        margin-left: 16% !important;
+    }
+
+    .cardImg {
+        background-position: center;
+        align-items: center;
+        justify-content: center;
+    }  
+}
+  
