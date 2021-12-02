@@ -2,6 +2,20 @@ const {MasterGrade} = require("../models")
 
 const mgSeeds = [
     {
+        gunplaName: 'Gundam Astraea Type F Avalanche Dash Unit (Extension Parts Only)',
+        image: 'https://res.cloudinary.com/ddtqwizaf/image/upload/v1638416728/mg-avalanche-astraea-dash_1_fot2qq.jpg',
+        series: 'Gundam 00',
+        releaseDate: '04-2022',
+        price: 3300
+    },
+    {
+        gunplaName: 'Gundam Astraea Type F (Full Weapon Set)',
+        image: 'https://res.cloudinary.com/ddtqwizaf/image/upload/v1638416726/mg-gundam-astarae-full-weapon-set_1_ty3xvu.jpg',
+        series: 'Gundam 00',
+        releaseDate: '04-2022',
+        price: 6820
+    },
+    {
         gunplaName: 'Shin Musha Gundam Sengoku No Jin',
         image: 'https://res.cloudinary.com/ddtqwizaf/image/upload/v1631744120/mg-true-musha-gundam_1_owew4k.jpg',
         series: 'Other',
