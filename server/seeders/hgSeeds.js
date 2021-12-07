@@ -2,10 +2,24 @@ const {HighGrade} = require("../models")
 
 const hgSeeds = [
     {
-        gunplaName: "Gundam BO2 Code Fairy",
-        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1634751824/hguc-gundam-battle-operation-code-fairy_z8o5mf.jpg",
+        gunplaName: "White Rider",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1638845434/hguc-white-rider_1_rhalgf.jpg",
         series: "Code Fairy",
-        releaseDate: "TBH",
+        releaseDate: "02/2022",
+        price: 2420
+    }, 
+    {
+        gunplaName: "Black Rider",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1638845434/hguc-black-rider_1_nv1i1t.jpg",
+        series: "Code Fairy",
+        releaseDate: "02/2022",
+        price: 2420
+    },
+    {
+        gunplaName: "Efreet Jaeger",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1638845434/hguc-efreet-jaeger_1_x8ghhb.jpg",
+        series: "Code Fairy",
+        releaseDate: "02/2022",
         price: 0000
     },
     {
