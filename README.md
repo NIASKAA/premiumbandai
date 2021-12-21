@@ -20,7 +20,7 @@ This application was created solely on a life problem I've encountered. With the
   
 ## Deployment
 
-Link to heroku: https://premiumbandaitracker.herokuapp.com/
+Link to heroku: https://premiumbandaigunplafinder.herokuapp.com/
 
 
 ## Authors
