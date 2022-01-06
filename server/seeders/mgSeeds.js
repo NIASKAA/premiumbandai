@@ -2,6 +2,13 @@ const {MasterGrade} = require("../models")
 
 const mgSeeds = [
     {
+        gunplaName: 'Gundam F90 [Mars Independent Zeon Forces]',
+        image: 'https://res.cloudinary.com/ddtqwizaf/image/upload/v1641498871/mg-gundam-f90-mars-version_2_slao6c.jpg',
+        series: 'Gundam F90',
+        releaseDate: '04-2022',
+        price: 4500
+    },
+    {
         gunplaName: 'Gundam Astraea Type F Avalanche Dash Unit (Extension Parts Only)',
         image: 'https://res.cloudinary.com/ddtqwizaf/image/upload/v1638416728/mg-avalanche-astraea-dash_1_fot2qq.jpg',
         series: 'Gundam 00',
