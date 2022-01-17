@@ -2,6 +2,13 @@ const {HighGrade} = require("../models")
 
 const hgSeeds = [
     {
+        gunplaName: "Lord Astray Omega",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1642414049/hgce-gundam-load-astray-omega_1_hxkhrl.jpg",
+        series: "Gundam Seed Astray",
+        releaseDate: "04/2022",
+        price: 2640
+    }, 
+    {
         gunplaName: "White Rider",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1638845434/hguc-white-rider_1_rhalgf.jpg",
         series: "Code Fairy",
