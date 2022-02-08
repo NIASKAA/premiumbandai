@@ -2,6 +2,13 @@ const {HighGrade} = require("../models")
 
 const hgSeeds = [
     {
+        gunplaName: "Gundam Age Razor & Artimes Set",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1643142597/p-bandai-gundam-age-ultimate-set_4_me4swy.jpg",
+        series: "Gundam Age",
+        releaseDate: "03/2022",
+        price: 3960
+    }, 
+    {
         gunplaName: "Lord Astray Omega",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1642414049/hgce-gundam-load-astray-omega_1_hxkhrl.jpg",
         series: "Gundam Seed Astray",
