@@ -2,6 +2,20 @@ const {Ensemble} = require('../models')
 
 const ensembleSeeds = [
     {
+        gunplaName: 'Full Armor ZZ Gundam',
+        image: 'https://res.cloudinary.com/ddtqwizaf/image/upload/v1644326182/mobile-suit-gundam-mobile-suit-ensemble-ex37-full-armor-zz-gundam-limited-edition-bandai-_zkptvw.jpg',
+        series: 'ZZ Gundam',
+        releaseDate: '06-2022',
+        price: 5500
+    },
+    {
+        gunplaName: 'Quebeley Set',
+        image: 'https://res.cloudinary.com/ddtqwizaf/image/upload/v1644326184/mobile-suit-gundam-mobile-suit-ensemble-ex38-qubeley-set-limited-edition-bandai-_uwht9c.jpg',
+        series: 'ZZ Gundam',
+        releaseDate: '06-2022',
+        price: 7150
+    },
+    {
         gunplaName: 'Destiny Gundam',
         image: 'https://res.cloudinary.com/ddtqwizaf/image/upload/v1634994838/N2598263001001_001_oe8n5u.jpg',
         series: 'Gundam Seed Destiny',
