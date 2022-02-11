@@ -2,6 +2,13 @@ const {Ensemble} = require('../models')
 
 const ensembleSeeds = [
     {
+        gunplaName: 'Crossbone Gundam Full Cloth',
+        image: 'https://res.cloudinary.com/ddtqwizaf/image/upload/v1644596403/1000170765_2_large_bujvkb.jpg',
+        series: 'Crossbone Gundam',
+        releaseDate: '07-2022',
+        price: 5500
+    },
+    {
         gunplaName: 'Full Armor ZZ Gundam',
         image: 'https://res.cloudinary.com/ddtqwizaf/image/upload/v1644326182/mobile-suit-gundam-mobile-suit-ensemble-ex37-full-armor-zz-gundam-limited-edition-bandai-_zkptvw.jpg',
         series: 'ZZ Gundam',

@@ -2,6 +2,13 @@ const {RealGrade} = require("../models")
 
 const rgSeeds = [
     {
+        gunplaName: "Robbert Giliam's Zaku II",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1644596372/RG-ROBERT-GILLIAMS-ZAKU-II_1_uws4sv.jpg",
+        series: "Gundam MSV",
+        releaseDate: "05-2022",
+        price: 3630
+    },
+    {
         gunplaName: "Hi-Nu Gundam Hyper Mega Bazooka Launcher",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1630183023/rg-hyper-mega-launcher-beltorchika-children_3_txyran.jpg",
         series: "Char's CounterAttack",
