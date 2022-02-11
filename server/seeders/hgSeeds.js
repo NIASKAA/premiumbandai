@@ -2,6 +2,13 @@ const {HighGrade} = require("../models")
 
 const hgSeeds = [
     {
+        gunplaName: "Gundam TR-1 Gigantic Arm Unit",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1644596374/hguc-gundam-owsla-gigantic-arm_1_qlnydb.jpg",
+        series: "Advance of Zeta",
+        releaseDate: "05/2022",
+        price: 6200
+    }, 
+    {
         gunplaName: "Gundam Age Razor & Artimes Set",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1643142597/p-bandai-gundam-age-ultimate-set_4_me4swy.jpg",
         series: "Gundam Age",
