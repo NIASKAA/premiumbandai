@@ -2,6 +2,13 @@
 
 const convergeSeeds = [
     {
+        gunplaName: "Argama Class Crusier",
+        image: 'https://res.cloudinary.com/ddtqwizaf/image/upload/v1645424708/N2604231001001_002_efrdt8.jpg',
+        series: 'Zeta Gundam',
+        releaseDate: '07-2022',
+        price: 4950
+    },
+    {
         gunplaName: "Solomon's Nightmare 302 Patrol Squadron Set",
         image: 'https://res.cloudinary.com/ddtqwizaf/image/upload/v1635876472/01_tpzvyi.jpg',
         series: 'Mobile Suit Gundam',
