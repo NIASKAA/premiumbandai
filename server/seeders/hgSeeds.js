@@ -2,6 +2,13 @@ const {HighGrade} = require("../models")
 
 const hgSeeds = [
     {
+        gunplaName: "Gundam Heavyarms Kai",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1645543490/hgac-gundam-heavyarms-kai_1_nbrq7x.jpg",
+        series: "Gundam Wing",
+        releaseDate: "06/2022",
+        price: 1650
+    }, 
+    {
         gunplaName: "Gundam TR-1 Gigantic Arm Unit",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1644596374/hguc-gundam-owsla-gigantic-arm_1_qlnydb.jpg",
         series: "Advance of Zeta",
