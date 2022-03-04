@@ -2,6 +2,13 @@ const {HighGrade} = require("../models")
 
 const hgSeeds = [
     {
+        gunplaName: "Phantom Gundam",
+        image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1646377622/hguc-phantom-gundam_1_vpwrow.jpg",
+        series: "Gundam Crossbone Ghost",
+        releaseDate: "06/2022",
+        price: 2750
+    }, 
+    {
         gunplaName: "Fawn Farsia",
         image: "https://res.cloudinary.com/ddtqwizaf/image/upload/v1645752264/hg-fawn-farsia_1_swkywp.jpg",
         series: "Gundam Age",
