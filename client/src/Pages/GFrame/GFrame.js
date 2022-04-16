@@ -66,7 +66,7 @@ const GFrame = () => {
                         aria-describedby="searchbar"
                         onChange={(event) => {
                             setSearchGunpla(event.target.value);
-                            searchHandler(AllGFrame);
+                            searchHandler(searchGunpla);
                         }}
                         />
                 </InputGroup>

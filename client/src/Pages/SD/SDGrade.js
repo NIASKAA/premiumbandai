@@ -67,7 +67,7 @@ const SDGrade = () => {
                         value={searchGunpla}
                         onChange={(event) => {
                             setSearchGunpla(event.target.value)
-                            searchHandler(AllSDGrade)
+                            searchHandler(searchGunpla)
                         }}
                     />
                 </InputGroup>

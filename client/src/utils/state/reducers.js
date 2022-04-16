@@ -40,7 +40,7 @@ export const reducers = (state, action) => {
         case GET_OTHERS: 
             return {
                 ...state,
-                getOther: action.payload
+                getOthers: action.payload
             }
         case GET_ENSEMBLE: 
             return {

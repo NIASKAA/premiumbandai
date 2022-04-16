@@ -66,7 +66,7 @@ const RealGrade = () => {
                         value={searchGunpla}
                         onChange={(event) => {
                             setSearchGunpla(event.target.value);
-                            searchHandler(AllRealGrade)
+                            searchHandler(searchGunpla)
                         }}
                     />
                 </InputGroup>

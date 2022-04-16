@@ -27,7 +27,6 @@ const HighGrade = () => {
                 setAllHighGrade(getHG)
             }
         }
-        console.log(data)
     }, [loading, data])
 
     const indexOfLastItem = currentPage * itemsPerPage
@@ -66,8 +65,8 @@ const HighGrade = () => {
                         value={searchGunpla}
                         aria-describedby="searchbar"
                         onChange={(event) => {
-                            searchHandler(AllHighGrade)
                             setSearchGunpla(event.target.value)
+                            searchHandler(searchGunpla)
                         }}
                     />
                 </InputGroup>

@@ -3,7 +3,7 @@ import {useDispatch, useSelector} from "react-redux"
 import {Row, Container, Spinner, InputGroup, FormControl, Form} from "react-bootstrap"
 import {useQuery} from "@apollo/client"
 import {GET_ALL_MG} from '../../utils/queries'
-import {GET_HGS, GET_MGS} from '../../utils/state/actions'
+import {GET_MGS} from '../../utils/state/actions'
 import MasterGradeList from '../../Components/MasterGradeList/MasterGradeList'
 import Paginate from '../../Components/Pagination/Pagination'
 
@@ -66,7 +66,7 @@ const MasterGrade = () => {
                         value={searchGunpla}
                         onChange={(event) => {
                             setSearchGunpla(event.target.value);
-                            searchHandler(AllMasterGrade)
+                            searchHandler(searchGunpla)
                         }}
                     />
                 </InputGroup>

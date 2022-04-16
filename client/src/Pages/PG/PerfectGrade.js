@@ -67,7 +67,7 @@ const PerfectGrade = () => {
                         value={searchGunpla}
                         onChange={(event) => {
                             setSearchGunpla(event.target.value);
-                            searchHandler(AllPerfectGrade);
+                            searchHandler(searchGunpla);
                         }}
                     />
                 </InputGroup>

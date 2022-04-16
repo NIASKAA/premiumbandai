@@ -67,8 +67,8 @@ const Converges = () => {
                 value={searchGunpla}
                 aria-describedby="searchbar"
                 onChange={(event) => {
-                  setSearchGunpla(event.target.value);
-                  searchHandler(searchGunpla);
+                  setSearchGunpla(event.target.value)
+                  searchHandler(searchGunpla)
                 }}
               />
             </InputGroup>

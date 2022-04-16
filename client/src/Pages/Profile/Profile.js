@@ -165,7 +165,7 @@ const Profile = () => {
     }, [loadEnsembleWish, ensembleWishData])
 
     useEffect(() => {
-        if(!loadGFrameList && loadGFrameWish) {
+        if(!loadGFrameList && GFrameWishData) {
             setLoadGFrameList(GFrameWishData.getUserGFrameWishlist.gFrameWish)
         }
     }, [loadGFrameWish, GFrameWishData])
@@ -285,7 +285,7 @@ const Profile = () => {
                 <Accordion.Item eventKey="8">
                     <Accordion.Header>G-Frame Wishlist</Accordion.Header>
                     <Accordion.Body>
-                       {loadGFrameList && !loadGFrameWish && <GFrameWishlistTable GFrames={loadEnsembleList} />}
+                       {loadGFrameList && !loadGFrameWish && <GFrameWishlistTable GFrames={loadGFrame} />}
                     </Accordion.Body>
                 </Accordion.Item>
             </Accordion>

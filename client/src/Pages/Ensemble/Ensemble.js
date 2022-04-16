@@ -68,7 +68,7 @@ const Ensemble = () => {
                         aria-describedby="searchbar"
                         onChange={(event) => {
                             setSearchGunpla(event.target.value);
-                            searchHandler(AllEnsemble);
+                            searchHandler(searchGunpla);
                         }}
                     />
                 </InputGroup>

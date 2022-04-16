@@ -27,7 +27,6 @@ const Others = () => {
                 setAllOther(getOthers)
             }
         }
-        console.log(data)
     }, [loading, data])
 
     const indexOfLastItem = currentPage * itemsPerPage
@@ -53,6 +52,7 @@ const Others = () => {
                 )
             )
         }
+        console.log(searchGunpla)
     }
 
     if (loading) return <Spinner className="spinner" animation="grow" variant="dark" />;
@@ -68,7 +68,7 @@ const Others = () => {
                         value={searchGunpla}
                         onChange={(event) => {
                             setSearchGunpla(event.target.value);
-                            searchHandler(AllOther)
+                            searchHandler(searchGunpla)
                         }}
                     />
                 </InputGroup>
