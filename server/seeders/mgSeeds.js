@@ -2,6 +2,13 @@ const {MasterGrade} = require("../models")
 
 const mgSeeds = [
     {
+        gunplaName: 'Ginn Gladiator',
+        image: 'https://res.cloudinary.com/ddtqwizaf/image/upload/v1651641195/Screen_Shot_04-17-22_at_09.05_PM_k8m4ot.jpg',
+        series: 'Gundam Seed Eclipse',
+        releaseDate: '07-2022',
+        price: 6600
+    },
+    {
         gunplaName: 'Gundam F90 [Mars Independent Zeon Forces]',
         image: 'https://res.cloudinary.com/ddtqwizaf/image/upload/v1641498871/mg-gundam-f90-mars-version_2_slao6c.jpg',
         series: 'Gundam F90',
